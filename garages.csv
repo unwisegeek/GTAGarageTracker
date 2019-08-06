@@ -1,109 +1,109 @@
-Name;Type;Capacity;Owned
-2045 North Conker Avenue;High-End;10;0
-2113 Mad Wayne Thunder Drive;High-End;10;0
-2117 Milton Road;High-End;10;0
-2862 Hillcrest Avenue;High-End;10;0
-2866 Hillcrest Avenue;High-End;10;0
-2868 Hillcrest Avenue;High-End;10;0
-2874 Hillcrest Avenue;High-End;10;0
-3 Alta Street, Apartment 57;High-End;10;0
-3 Alta Street, Apartment. 10;High-End;10;0
-331 Supply Street;High-End;10;0
-3655 Wild Oats Drive;High-End;10;0
-3677 Whispymound Drive;High-End;10;0
-4 Integrity Way, Apartment 28;High-End;10;0
-4 Integrity Way, Apartment 30;High-End;10;0
-4 Integrity Way, Apartment 35;High-End;10;0
-Greenwich Parkway, Unit 76;High-End;10;0
-Weazel Plaza, Apartment 70;High-End;10;0
-Eclipse Towers, Apartment 9;High-End;10;0
-Eclipse Towers, Apartment 5;High-End;10;0
-Eclipse Towers, Apartment 40;High-End;10;0
-Eclipse Towers, Apartment 31;High-End;10;0
-Eclipse Towers, Apartment 3;High-End;10;0
-Eclipse Towers Penthouse Suite 3;High-End;10;0
-Eclipse Towers Penthouse Suite 2;High-End;10;0
-Eclipse Towers Penthouse Suite 1;High-End;10;0
-Del Perro Heights, Apartment 20;High-End;10;0
-Del Perro Heights, Apartment 4;High-End;10;0
-2044 North Conker Avenue;High-End;10;0
-Del Perro Heights, Apartment 7;High-End;10;0
-Tinsel Towers, Apartment 29;High-End;10;0
-Richards Majestic, Apartment 2;High-End;10;0
-Weazel Plaza, Apartment 26;High-End;10;0
-0120 Murrieta Heights;High-End;10;0
-Weazel Plaza, Apartment 101;High-End;10;0
-Richards Majestic, Apartment 4;High-End;10;0
-1623 South Shambles Street;High-End;10;0
-Tinsel Towers, Apartment 45;High-End;10;0
-Tinsel Towers, Apartment 42;High-End;10;0
-Popular Street, Unit 2;High-End;10;0
-Richards Majestic, Apartment 51;High-End;10;0
-1337 Exceptionalists Way;High-End;10;0
-1932 Grapeseed Avenue;Low-End;2;0
-Garage Innocence Boulevard;Low-End;2;0
-0754 Roy Lowenstein Boulevard;Low-End;2;0
-0232 Paleto Boulevard;Low-End;2;0
-0112 South Rockford Drive, Apartment 13;Low-End;2;0
-634 Boulevard Del Perro;Low-End;2;0
-0897 Mirror Park Boulevard;Low-End;2;0
-Popular Street, Unit 124;Low-End;2;0
-1920 Senora Way;Low-End;2;0
-197 Route 68;Low-End;2;0
-2000 Great Ocean Highway;Low-End;2;0
-1893 Grapeseed Avenue;Low-End;2;0
-2057 Vespucci Boulevard, Apartment 1;Low-End;2;0
-1561 San Vitas Street, Apartment 2;Low-End;2;0
-2143 Las Lagunas Boulevard;Low-End;2;0
-1 Strawberry Avenue;Low-End;2;0
-142 Paleto Boulevard;Low-End;2;0
-140 Zancudo Avenue;Low-End;2;0
-1237 Prosperity Street, Apartment 21;Low-End;2;0
-1200 Route 68;Low-End;2;0
-12 Little Bighorn Avenue;Low-End;2;0
-1115 Boulevard Del Perro, Apartment 18;Low-End;2;0
-0069 Cougar Avenue, Apartment 19;Low-End;2;0
-Popular Street, Unit 14;Mid;6;0
-Olympic Freeway, Unit 1;Mid;6;0
-The Royale, Apartment 19;Mid;6;0
-4584 Procopio Drive;Mid;6;0
-4531 Dry Dock Street;Mid;6;0
-1905 Davis Avenue;Mid;6;0
-12 Sustancia Road;Mid;6;0
-1162 Power Street, Apartment 3;Mid;6;0
-0605 Spanish Avenue, Apartment 1;Mid;6;0
-0604 Las Lagunas Boulevard, Apartment 4;Mid;6;0
-Dream Tower, Apartment 15;Mid;6;0
-870 Route 68 Approach;Mid;6;0
-0552 Roy Lowenstein Boulevard;Mid;6;0
-8754 Route 68;Mid;6;0
-0504 South Mo Milton Drive;Mid;6;0
-0432 Davis Avenue;Mid;6;0
-0325 South Rockford Drive;Mid;6;0
-4401 Procopio Drive;Mid;6;0
-0184 Milton Road Apartment 13;Mid;6;0
-0115 Bay City Avenue, Apartment 45;Mid;6;0
-4 Hangman Ave;Mid;6;0
-Pegasus Only;Other;10;0
-Clubhouse;Real Estate;10;0
-Vehicle Wearhouse;Real Estate;8;0
-Office Garage 3;Real Estate;20;0
-Office Garage 1;Real Estate;20;0
-Nightclub B5;Real Estate;1;0
-Nightclub B4;Real Estate;10;0
-Nightclub B3;Real Estate;10;0
-Nightclub B2;Real Estate;10;0
-Nightclub B1;Real Estate;3;0
-Nightclub;Real Estate;1;0
-Casino Penthouse;Real Estate;10;0
-Hanger;Real Estate;20;0
-Office Garage 2;Real Estate;20;0
-Facility;Real Estate;12;0
-Arena Workshop;Real Estate;10;0
-Arena Workshop B1;Real Estate;10;0
-Arena Workshop B2;Real Estate;10;0
-Bunker;Real Estate;4;0
-Terrorbyte;Vehicle;1;0
-Mobile Operations Center;Vehicle;1;0
-Avenger;Vehicle;1;0
-Yacht;Vehicle;4;0
+Index;Name;Type;Capacity;Owned
+105;Mobile Operations Center;Vehicle;1;0
+104;Terrorbyte;Vehicle;1;0
+95;Nightclub;Real Estate;1;0
+90;Nightclub B5;Real Estate;1;0
+106;Avenger;Vehicle;1;0
+53;2057 Vespucci Boulevard, Apartment 1;Low-End;2;0
+43;0754 Roy Lowenstein Boulevard;Low-End;2;0
+44;0232 Paleto Boulevard;Low-End;2;0
+45;0112 South Rockford Drive, Apartment 13;Low-End;2;0
+46;634 Boulevard Del Perro;Low-End;2;0
+47;0897 Mirror Park Boulevard;Low-End;2;0
+48;Popular Street, Unit 124;Low-End;2;0
+49;1920 Senora Way;Low-End;2;0
+50;197 Route 68;Low-End;2;0
+51;2000 Great Ocean Highway;Low-End;2;0
+52;1893 Grapeseed Avenue;Low-End;2;0
+56;1 Strawberry Avenue;Low-End;2;0
+55;2143 Las Lagunas Boulevard;Low-End;2;0
+42;Garage Innocence Boulevard;Low-End;2;0
+57;142 Paleto Boulevard;Low-End;2;0
+58;140 Zancudo Avenue;Low-End;2;0
+59;1237 Prosperity Street, Apartment 21;Low-End;2;0
+60;1200 Route 68;Low-End;2;0
+61;12 Little Bighorn Avenue;Low-End;2;0
+62;1115 Boulevard Del Perro, Apartment 18;Low-End;2;0
+63;0069 Cougar Avenue, Apartment 19;Low-End;2;0
+54;1561 San Vitas Street, Apartment 2;Low-End;2;0
+41;1932 Grapeseed Avenue;Low-End;2;0
+94;Nightclub B1;Real Estate;3;0
+103;Bunker;Real Estate;4;0
+107;Yacht;Vehicle;4;0
+69;1905 Davis Avenue;Mid;6;0
+81;4401 Procopio Drive;Mid;6;0
+80;0325 South Rockford Drive;Mid;6;0
+79;0432 Davis Avenue;Mid;6;0
+78;0504 South Mo Milton Drive;Mid;6;0
+77;8754 Route 68;Mid;6;0
+76;0552 Roy Lowenstein Boulevard;Mid;6;0
+75;870 Route 68 Approach;Mid;6;0
+74;Dream Tower, Apartment 15;Mid;6;0
+73;0604 Las Lagunas Boulevard, Apartment 4;Mid;6;0
+72;0605 Spanish Avenue, Apartment 1;Mid;6;0
+71;1162 Power Street, Apartment 3;Mid;6;0
+70;12 Sustancia Road;Mid;6;0
+64;Popular Street, Unit 14;Mid;6;0
+65;Olympic Freeway, Unit 1;Mid;6;0
+66;The Royale, Apartment 19;Mid;6;0
+82;0184 Milton Road Apartment 13;Mid;6;0
+67;4584 Procopio Drive;Mid;6;0
+83;0115 Bay City Avenue, Apartment 45;Mid;6;0
+68;4531 Dry Dock Street;Mid;6;0
+84;4 Hangman Ave;Mid;6;0
+87;Vehicle Wearhouse;Real Estate;8;0
+1;2113 Mad Wayne Thunder Drive;High-End;10;0
+2;2117 Milton Road;High-End;10;0
+3;2862 Hillcrest Avenue;High-End;10;0
+30;Richards Majestic, Apartment 2;High-End;10;0
+102;Arena Workshop B2;Real Estate;10;0
+101;Arena Workshop B1;Real Estate;10;0
+100;Arena Workshop;Real Estate;10;0
+85;Pegasus Only;Other;10;0
+5;2868 Hillcrest Avenue;High-End;10;0
+93;Nightclub B2;Real Estate;10;0
+92;Nightclub B3;Real Estate;10;0
+91;Nightclub B4;Real Estate;10;0
+6;2874 Hillcrest Avenue;High-End;10;0
+86;Clubhouse;Real Estate;10;0
+4;2866 Hillcrest Avenue;High-End;10;0
+96;Casino Penthouse;Real Estate;10;0
+31;Weazel Plaza, Apartment 26;High-End;10;0
+8;3 Alta Street, Apartment. 10;High-End;10;0
+32;0120 Murrieta Heights;High-End;10;0
+33;Weazel Plaza, Apartment 101;High-End;10;0
+34;Richards Majestic, Apartment 4;High-End;10;0
+35;1623 South Shambles Street;High-End;10;0
+36;Tinsel Towers, Apartment 45;High-End;10;0
+37;Tinsel Towers, Apartment 42;High-End;10;0
+38;Popular Street, Unit 2;High-End;10;0
+39;Richards Majestic, Apartment 51;High-End;10;0
+40;1337 Exceptionalists Way;High-End;10;0
+29;Tinsel Towers, Apartment 29;High-End;10;0
+28;Del Perro Heights, Apartment 7;High-End;10;0
+27;2044 North Conker Avenue;High-End;10;0
+26;Del Perro Heights, Apartment 4;High-End;10;0
+7;3 Alta Street, Apartment 57;High-End;10;0
+25;Del Perro Heights, Apartment 20;High-End;10;0
+0;2045 North Conker Avenue;High-End;10;0
+23;Eclipse Towers Penthouse Suite 2;High-End;10;0
+13;4 Integrity Way, Apartment 30;High-End;10;0
+14;4 Integrity Way, Apartment 35;High-End;10;0
+10;3655 Wild Oats Drive;High-End;10;0
+24;Eclipse Towers Penthouse Suite 1;High-End;10;0
+15;Greenwich Parkway, Unit 76;High-End;10;0
+12;4 Integrity Way, Apartment 28;High-End;10;0
+16;Weazel Plaza, Apartment 70;High-End;10;0
+18;Eclipse Towers, Apartment 5;High-End;10;0
+19;Eclipse Towers, Apartment 40;High-End;10;0
+20;Eclipse Towers, Apartment 31;High-End;10;0
+21;Eclipse Towers, Apartment 3;High-End;10;0
+9;331 Supply Street;High-End;10;0
+22;Eclipse Towers Penthouse Suite 3;High-End;10;0
+17;Eclipse Towers, Apartment 9;High-End;10;0
+11;3677 Whispymound Drive;High-End;10;0
+99;Facility;Real Estate;12;0
+97;Hanger;Real Estate;20;0
+89;Office Garage 1;Real Estate;20;0
+98;Office Garage 2;Real Estate;20;0
+88;Office Garage 3;Real Estate;20;0

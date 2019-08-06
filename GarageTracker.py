@@ -82,12 +82,14 @@ class MainWindow():
         # Set Vehicle SortBy Options
         local_vehicle_data_headers = []
         for col in global_vehicle_data.columns:
-            local_vehicle_data_headers += [col]
+            if col != "Index":
+                local_vehicle_data_headers += [col]
 
         # Configure Vehicle Table
         vmodel = DataFrameModel(local_vehicle_data)
         self.ui.tableVehicle.setModel(vmodel)
         self.ui.tableVehicle.resizeColumnsToContents()
+        self.ui.tableVehicle.setColumnHidden(0,True)
 
         # Load Garage Data
         local_garage_data = pd.read_csv("garages.csv", sep=";", engine='python')
@@ -95,12 +97,14 @@ class MainWindow():
         # Load Garage SortBy Options
         local_garage_data_headers = []
         for col in local_garage_data.columns:
-            local_garage_data_headers += [col]
+            if col != "Index":
+                local_garage_data_headers += [col]
 
         # Configure Garage Table
         gmodel = DataFrameModel(local_garage_data)
         self.ui.tableGarage.setModel(gmodel)
         self.ui.tableGarage.resizeColumnsToContents()
+        self.ui.tableGarage.setColumnHidden(0, True)
 
         # Populate Vehicle SortBy Combo Box
         for idx in range(0, len(local_vehicle_data_headers)):
@@ -121,7 +125,7 @@ class MainWindow():
         sort_criteria = self.ui.comboVehiclesSortBy.currentText()
         vehicle_data = pd.read_csv("vehicles.csv",sep=";",engine='python')
         new_vehicle_data = vehicle_data.sort_values(sort_criteria)
-        new_vehicle_data.to_csv("vehicles.csv", index=None, header=True,sep=";")
+        new_vehicle_data.to_csv("vehicles.csv", index=False, header=True,sep=";")
 
         vmodel = DataFrameModel(pd.read_csv("vehicles.csv",sep=";",engine='python'))
         self.ui.tableVehicle.setModel(vmodel)
@@ -130,7 +134,7 @@ class MainWindow():
         sort_criteria = self.ui.comboGaragesSortBy.currentText()
         garage_data = pd.read_csv("garages.csv",sep=";",engine='python')
         new_garage_data = garage_data.sort_values(sort_criteria)
-        new_garage_data.to_csv("garages.csv", index=None, header=True,sep=";")
+        new_garage_data.to_csv("garages.csv", index=False, header=True,sep=";")
 
         gmodel = DataFrameModel(pd.read_csv("garages.csv",sep=";",engine='python'))
         self.ui.tableGarage.setModel(gmodel)
