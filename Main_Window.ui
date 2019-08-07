@@ -24,7 +24,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>2</number>
     </property>
     <widget class="QWidget" name="tabVehicles">
      <attribute name="title">
@@ -145,6 +145,31 @@
       </property>
       <property name="text">
        <string>Search</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tabDashboard">
+     <attribute name="title">
+      <string>Dashboard</string>
+     </attribute>
+     <widget class="QTableView" name="tableDashboard">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>651</width>
+        <height>521</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QListWidget" name="listDashboard">
+      <property name="geometry">
+       <rect>
+        <x>650</x>
+        <y>0</y>
+        <width>141</width>
+        <height>521</height>
+       </rect>
       </property>
      </widget>
     </widget>

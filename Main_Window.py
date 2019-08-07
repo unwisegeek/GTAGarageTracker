@@ -55,6 +55,15 @@ class Ui_MainWindow(object):
         self.pushGarageSearch.setGeometry(QtCore.QRect(664, 480, 111, 27))
         self.pushGarageSearch.setObjectName("pushGarageSearch")
         self.tabWidget.addTab(self.tabGarages, "")
+        self.tabDashboard = QtWidgets.QWidget()
+        self.tabDashboard.setObjectName("tabDashboard")
+        self.tableDashboard = QtWidgets.QTableView(self.tabDashboard)
+        self.tableDashboard.setGeometry(QtCore.QRect(0, 0, 651, 521))
+        self.tableDashboard.setObjectName("tableDashboard")
+        self.listDashboard = QtWidgets.QListWidget(self.tabDashboard)
+        self.listDashboard.setGeometry(QtCore.QRect(650, 0, 141, 521))
+        self.listDashboard.setObjectName("listDashboard")
+        self.tabWidget.addTab(self.tabDashboard, "")
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
         self.menubar.setGeometry(QtCore.QRect(0, 0, 832, 25))
@@ -71,7 +80,7 @@ class Ui_MainWindow(object):
         self.menubar.addAction(self.menuFile.menuAction())
 
         self.retranslateUi(MainWindow)
-        self.tabWidget.setCurrentIndex(0)
+        self.tabWidget.setCurrentIndex(2)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
     def retranslateUi(self, MainWindow):
@@ -83,5 +92,6 @@ class Ui_MainWindow(object):
         self.labelGarageSortBy.setText(_translate("MainWindow", "Sort By"))
         self.pushGarageSearch.setText(_translate("MainWindow", "Search"))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tabGarages), _translate("MainWindow", "Garages"))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tabDashboard), _translate("MainWindow", "Dashboard"))
         self.menuFile.setTitle(_translate("MainWindow", "File"))
         self.actionQuit.setText(_translate("MainWindow", "Quit"))
