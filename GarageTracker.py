@@ -2,6 +2,7 @@ import PyQt5
 from PyQt5 import QtCore
 from PyQt5.QtWidgets import *
 from PyQt5.QtCore import *
+from PyQt5 import QtCore, QtGui
 from Main_Window import Ui_MainWindow
 from Vehicle_Edit import Ui_DialogVehicleEdit
 from Garage_Edit import Ui_DialogGarageEdit
@@ -10,68 +11,28 @@ import pandas as pd, sys
 global_vehicle_data = pd.read_csv("vehicles.csv",sep=";",engine='python')
 global_garage_data = pd.read_csv("garages.csv",sep=";",engine='python')
 
-class DataFrameModel(QtCore.QAbstractTableModel):
-    DtypeRole = QtCore.Qt.UserRole + 1000
-    ValueRole = QtCore.Qt.UserRole + 1001
+class DataFrameModel(QtGui.QStandardItemModel):
+    def __init__(self, data, parent=None):
+        QtGui.QStandardItemModel.__init__(self, parent)
+        self._data = data
+        for row in data.values.tolist():
+            data_row = [ QtGui.QStandardItem("{}".format(x)) for x in row ]
+            self.appendRow(data_row)
+        return
 
-    def __init__(self, df=pd.DataFrame(), parent=None):
-        super(DataFrameModel, self).__init__(parent)
-        self._dataframe = df
+    def rowCount(self, parent=None):
+        return len(self._data.values)
 
-    def setDataFrame(self, dataframe):
-        self.beginResetModel()
-        self._dataframe = dataframe.copy()
-        self.endResetModel()
+    def columnCount(self, parent=None):
+        return self._data.columns.size
 
-    def dataFrame(self):
-        return self._dataframe
-
-    dataFrame = QtCore.pyqtProperty(pd.DataFrame, fget=dataFrame, fset=setDataFrame)
-
-    @QtCore.pyqtSlot(int, QtCore.Qt.Orientation, result=str)
-    def headerData(self, section: int, orientation: QtCore.Qt.Orientation, role: int = QtCore.Qt.DisplayRole):
-        if role == QtCore.Qt.DisplayRole:
-            if orientation == QtCore.Qt.Horizontal:
-                return self._dataframe.columns[section]
-            else:
-                return str(self._dataframe.index[section])
-        return QtCore.QVariant()
-
-    def rowCount(self, parent=QtCore.QModelIndex()):
-        if parent.isValid():
-            return 0
-        return len(self._dataframe.index)
-
-    def columnCount(self, parent=QtCore.QModelIndex()):
-        if parent.isValid():
-            return 0
-        return self._dataframe.columns.size
-
-    def data(self, index, role=QtCore.Qt.DisplayRole):
-        if not index.isValid() or not (0 <= index.row() < self.rowCount()
-            and 0 <= index.column() < self.columnCount()):
-            return QtCore.QVariant()
-        row = self._dataframe.index[index.row()]
-        col = self._dataframe.columns[index.column()]
-        dt = self._dataframe[col].dtype
-
-        val = self._dataframe.iloc[row][col]
-        if role == QtCore.Qt.DisplayRole:
-            return str(val)
-        elif role == DataFrameModel.ValueRole:
-            return val
-        if role == DataFrameModel.DtypeRole:
-            return dt
-        return QtCore.QVariant()
-
-    def roleNames(self):
-        roles = {
-            QtCore.Qt.DisplayRole: b'display',
-            DataFrameModel.DtypeRole: b'dtype',
-            DataFrameModel.ValueRole: b'value'
-        }
-        return roles
-
+    def headerData(self, x, orientation, role):
+        if orientation == QtCore.Qt.Horizontal and role == QtCore.Qt.DisplayRole:
+            return self._data.columns[x]
+        if orientation == QtCore.Qt.Vertical and role == QtCore.Qt.DisplayRole:
+            return self._data.index[x]
+        return None
+    
 class GarageEditor(QDialog, Ui_DialogGarageEdit):
     def __init__(self, target, parent=None):
         super(GarageEditor, self).__init__(parent)
@@ -133,9 +94,14 @@ class VehicleEditor(QDialog, Ui_DialogVehicleEdit):
         # Process the variables into the QT Layout
         if vehicle_info['owned'] == "True":
             self.checkOwned.setChecked(True)
+        if vehicle_info['garage'] != "None":
+            for idx in range(0, len(garages_data['Name'])):
+                if garages_data['Owned'][idx] == True and garages_data['Name'][idx] == vehicle_info['garage']:
+                    self.comboGarage.addItem(vehicle_info['garage'])
         self.comboGarage.addItem("None")
         for idx in range(0, len(garages_data['Name'])):
-            self.comboGarage.addItem(garages_data['Name'][idx])
+            if garages_data['Owned'][idx] == True and garages_data['Name'][idx] != vehicle_info['garage']:
+                self.comboGarage.addItem(garages_data['Name'][idx])
 
         # Connect Slots
         self.pushCancel.clicked.connect(self.close)
@@ -203,6 +169,25 @@ class MainWindow():
         self.ui.comboGaragesSortBy.activated.connect(self.garage_sort_criteria_changed)
         self.ui.tableVehicle.doubleClicked.connect(lambda: self.table_vehicle_clicked())
         self.ui.tableGarage.doubleClicked.connect(lambda: self.table_garage_clicked())
+        self.ui.pushVehicleSearch.clicked.connect(lambda: self.table_vehicle_search())
+        self.ui.pushGarageSearch.clicked.connect(lambda: self.table_garage_search())
+        self.ui.actionQuit.triggered.connect(lambda: sys.exit())
+
+    def table_vehicle_search(self):
+        vehicle_data = pd.read_csv("vehicles.csv",sep=';')
+        filtered_vehicle_data = vehicle_data[vehicle_data['Vehicle'].str.contains(self.ui.lineVehicleSearch.text())==True]
+        vmodel = DataFrameModel(filtered_vehicle_data)
+        self.ui.tableVehicle.setModel(vmodel)
+        self.ui.tableVehicle.resizeColumnsToContents()
+        self.ui.tableVehicle.setColumnHidden(0, True)
+
+    def table_garage_search(self):
+        garage_data = pd.read_csv("garages.csv",sep=';')
+        filtered_garage_data = garage_data[garage_data['Name'].str.contains(self.ui.lineGarageSearch.text())==True]
+        gmodel = DataFrameModel(filtered_garage_data)
+        self.ui.tableGarage.setModel(gmodel)
+        self.ui.tableGarage.resizeColumnsToContents()
+        self.ui.tableGarage.setColumnHidden(0, True)
 
     def table_vehicle_clicked(self):
         for ix in self.ui.tableVehicle.selectedIndexes():
@@ -211,10 +196,13 @@ class MainWindow():
         if col == 1:
             self.child_win = VehicleEditor(target)
             self.child_win.exec_()
-            vmodel = DataFrameModel(pd.read_csv("vehicles.csv",sep=';'))
-            self.ui.tableVehicle.setModel(vmodel)
-            self.ui.tableVehicle.resizeColumnsToContents()
-            self.ui.tableVehicle.setColumnHidden(0, True)
+            if self.ui.lineVehicleSearch.text() != "":
+                self.table_vehicle_search()
+            else:
+                vmodel = DataFrameModel(pd.read_csv("vehicles.csv",sep=';'))
+                self.ui.tableVehicle.setModel(vmodel)
+                self.ui.tableVehicle.resizeColumnsToContents()
+                self.ui.tableVehicle.setColumnHidden(0, True)
 
     def table_garage_clicked(self):
         for ix in self.ui.tableGarage.selectedIndexes():
@@ -223,10 +211,13 @@ class MainWindow():
         if col == 1:
             self.child_win = GarageEditor(target)
             self.child_win.exec_()
-            gmodel = DataFrameModel(pd.read_csv("garages.csv",sep=';'))
-            self.ui.tableGarage.setModel(gmodel)
-            self.ui.tableGarage.resizeColumnsToContents()
-            self.ui.tableGarage.setColumnHidden(0, True)
+            if self.ui.lineGarageSearch.text() != "":
+                self.table_garage_search()
+            else:
+                gmodel = DataFrameModel(pd.read_csv("garages.csv",sep=';'))
+                self.ui.tableGarage.setModel(gmodel)
+                self.ui.tableGarage.resizeColumnsToContents()
+                self.ui.tableGarage.setColumnHidden(0, True)
 
 
     def vehicle_sort_criteria_changed(self):

@@ -24,7 +24,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>0</number>
     </property>
     <widget class="QWidget" name="tabVehicles">
      <attribute name="title">
@@ -63,6 +63,29 @@
        </rect>
       </property>
      </widget>
+     <widget class="QLineEdit" name="lineVehicleSearch">
+      <property name="geometry">
+       <rect>
+        <x>660</x>
+        <y>450</y>
+        <width>121</width>
+        <height>21</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushVehicleSearch">
+      <property name="geometry">
+       <rect>
+        <x>664</x>
+        <y>480</y>
+        <width>111</width>
+        <height>27</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Search</string>
+      </property>
+     </widget>
     </widget>
     <widget class="QWidget" name="tabGarages">
      <attribute name="title">
@@ -99,6 +122,29 @@
         <width>121</width>
         <height>26</height>
        </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineGarageSearch">
+      <property name="geometry">
+       <rect>
+        <x>660</x>
+        <y>450</y>
+        <width>121</width>
+        <height>21</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushGarageSearch">
+      <property name="geometry">
+       <rect>
+        <x>664</x>
+        <y>480</y>
+        <width>111</width>
+        <height>27</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Search</string>
       </property>
      </widget>
     </widget>

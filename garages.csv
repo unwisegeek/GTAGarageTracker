@@ -1,8 +1,8 @@
 Index;Name;Type;Capacity;Owned
 105;Mobile Operations Center;Vehicle;1;False
 104;Terrorbyte;Vehicle;1;False
-95;Nightclub;Real Estate;1;False
-90;Nightclub B5;Real Estate;1;False
+95;Nightclub;Real Estate;1;True
+90;Nightclub B5;Real Estate;1;True
 106;Avenger;Vehicle;1;False
 53;2057 Vespucci Boulevard, Apartment 1;Low-End;2;False
 43;0754 Roy Lowenstein Boulevard;Low-End;2;False
@@ -27,7 +27,7 @@ Index;Name;Type;Capacity;Owned
 63;0069 Cougar Avenue, Apartment 19;Low-End;2;False
 54;1561 San Vitas Street, Apartment 2;Low-End;2;False
 41;1932 Grapeseed Avenue;Low-End;2;False
-94;Nightclub B1;Real Estate;3;False
+94;Nightclub B1;Real Estate;3;True
 103;Bunker;Real Estate;4;False
 107;Yacht;Vehicle;4;False
 69;1905 Davis Avenue;Mid;6;False
@@ -61,9 +61,9 @@ Index;Name;Type;Capacity;Owned
 100;Arena Workshop;Real Estate;10;False
 85;Pegasus Only;Other;10;False
 5;2868 Hillcrest Avenue;High-End;10;False
-93;Nightclub B2;Real Estate;10;False
-92;Nightclub B3;Real Estate;10;False
-91;Nightclub B4;Real Estate;10;False
+93;Nightclub B2;Real Estate;10;True
+92;Nightclub B3;Real Estate;10;True
+91;Nightclub B4;Real Estate;10;True
 6;2874 Hillcrest Avenue;High-End;10;False
 86;Clubhouse;Real Estate;10;False
 4;2866 Hillcrest Avenue;High-End;10;False
@@ -106,4 +106,4 @@ Index;Name;Type;Capacity;Owned
 97;Hanger;Real Estate;20;False
 89;Office Garage 1;Real Estate;20;False
 98;Office Garage 2;Real Estate;20;False
-88;Office Garage 3;Real Estate;20;0
+88;Office Garage 3;Real Estate;20;False
