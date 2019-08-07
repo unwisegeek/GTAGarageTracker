@@ -25,39 +25,10 @@
   <property name="windowTitle">
    <string>Vehicle Editor</string>
   </property>
-  <widget class="QDialogButtonBox" name="buttonBox">
-   <property name="geometry">
-    <rect>
-     <x>370</x>
-     <y>10</y>
-     <width>81</width>
-     <height>191</height>
-    </rect>
-   </property>
-   <property name="orientation">
-    <enum>Qt::Vertical</enum>
-   </property>
-   <property name="standardButtons">
-    <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
-   </property>
-  </widget>
-  <widget class="QLabel" name="labelVehicleName">
-   <property name="geometry">
-    <rect>
-     <x>10</x>
-     <y>10</y>
-     <width>241</width>
-     <height>17</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Car</string>
-   </property>
-  </widget>
   <widget class="QComboBox" name="comboGarage">
    <property name="geometry">
     <rect>
-     <x>0</x>
+     <x>10</x>
      <y>40</y>
      <width>351</width>
      <height>31</height>
@@ -67,9 +38,9 @@
   <widget class="QCheckBox" name="checkOwned">
    <property name="geometry">
     <rect>
-     <x>250</x>
+     <x>280</x>
      <y>10</y>
-     <width>95</width>
+     <width>78</width>
      <height>22</height>
     </rect>
    </property>
@@ -77,40 +48,33 @@
     <string>Owned</string>
    </property>
   </widget>
+  <widget class="QPushButton" name="pushCancel">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>40</y>
+     <width>95</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Cancel</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushOk">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>10</y>
+     <width>95</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Ok</string>
+   </property>
+  </widget>
  </widget>
  <resources/>
- <connections>
-  <connection>
-   <sender>buttonBox</sender>
-   <signal>accepted()</signal>
-   <receiver>DialogVehicleEdit</receiver>
-   <slot>accept()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>248</x>
-     <y>254</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>157</x>
-     <y>274</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>buttonBox</sender>
-   <signal>rejected()</signal>
-   <receiver>DialogVehicleEdit</receiver>
-   <slot>reject()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>316</x>
-     <y>260</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>286</x>
-     <y>274</y>
-    </hint>
-   </hints>
-  </connection>
- </connections>
+ <connections/>
 </ui>

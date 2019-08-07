@@ -3,6 +3,8 @@ from PyQt5 import QtCore
 from PyQt5.QtWidgets import *
 from PyQt5.QtCore import *
 from Main_Window import Ui_MainWindow
+from Vehicle_Edit import Ui_DialogVehicleEdit
+from Garage_Edit import Ui_DialogGarageEdit
 import pandas as pd, sys
 
 global_vehicle_data = pd.read_csv("vehicles.csv",sep=";",engine='python')
@@ -70,6 +72,85 @@ class DataFrameModel(QtCore.QAbstractTableModel):
         }
         return roles
 
+class GarageEditor(QDialog, Ui_DialogGarageEdit):
+    def __init__(self, target, parent=None):
+        super(GarageEditor, self).__init__(parent)
+        self.setupUi(self)
+
+        # Load the Dataframes
+        garages_data = pd.read_csv("garages.csv",sep=';',engine='python').sort_values('Name')
+
+        self.setWindowTitle("Garage Editor - {}".format(target))
+
+        # Find the target in the dataframe and populate the variables
+        garage_info = { "index": "", "name": "", "type": "", "capacity": "", "owned": "" }
+        for idx in range(0, len(garages_data['Name'])):
+            if garages_data['Name'][idx] == target:
+                garage_info['index'] = idx
+                garage_info['name'] = garages_data['Name'][idx]
+                garage_info['type'] = garages_data['Type'][idx]
+                garage_info['capacity'] = garages_data['Capacity'][idx]
+                garage_info['owned'] = str(garages_data['Owned'][idx])
+
+        # Process the variables into the QT Layout
+        if garage_info['owned'] == "True":
+            self.checkOwned.setChecked(True)
+
+        # Connect Slots
+        self.pushCancel.clicked.connect(self.close)
+        self.pushOk.clicked.connect(lambda: self.write_config(garage_info))
+
+    def write_config(self, garage_info):
+        garages_data = pd.read_csv("garages.csv",sep=';')
+        garages_data['Owned'][int(garage_info['index'])] = self.checkOwned.isChecked()
+        garages_data.to_csv("garages.csv",sep=';',index=False)
+        self.close()
+
+
+    def show(self):
+        self.garage_edit_win.show()
+
+class VehicleEditor(QDialog, Ui_DialogVehicleEdit):
+    def __init__(self, target, parent=None):
+        super(VehicleEditor, self).__init__(parent)
+        self.setupUi(self)
+
+        # Load the Dataframes
+        vehicle_data = pd.read_csv("vehicles.csv",sep=';',engine='python')
+        garages_data = pd.read_csv("garages.csv",sep=';',engine='python').sort_values('Name')
+
+        self.setWindowTitle("Vehicle Editor - {}".format(target))
+
+        # Find the target in the dataframe and populate the variables
+        vehicle_info = { "index": "", "name": "", "owned": "", "garage": ""}
+        for idx in range(0, len(vehicle_data['Vehicle'])):
+            if vehicle_data['Vehicle'][idx] == target:
+                vehicle_info['index'] = idx
+                vehicle_info['name'] = vehicle_data['Vehicle'][idx]
+                vehicle_info['owned'] = str(vehicle_data['Owned'][idx])
+                vehicle_info['garage'] = str(vehicle_data['Garage'][idx])
+
+        # Process the variables into the QT Layout
+        if vehicle_info['owned'] == "True":
+            self.checkOwned.setChecked(True)
+        self.comboGarage.addItem("None")
+        for idx in range(0, len(garages_data['Name'])):
+            self.comboGarage.addItem(garages_data['Name'][idx])
+
+        # Connect Slots
+        self.pushCancel.clicked.connect(self.close)
+        self.pushOk.clicked.connect(lambda: self.write_config(vehicle_data, vehicle_info))
+
+    def write_config(self, vehicle_data, vehicle_info):
+        vehicle_data['Owned'][int(vehicle_info['index'])] = self.checkOwned.isChecked()
+        vehicle_data['Garage'][int(vehicle_info['index'])] = self.comboGarage.currentText()
+        vehicle_data.to_csv("vehicles.csv",sep=';',index=False)
+        self.close()
+
+
+    def show(self):
+        self.vehicle_edit_win.show()
+
 class MainWindow():
     def __init__(self):
         self.main_win = QMainWindow()
@@ -120,6 +201,33 @@ class MainWindow():
         # Connections to Slots
         self.ui.comboVehiclesSortBy.activated.connect(self.vehicle_sort_criteria_changed)
         self.ui.comboGaragesSortBy.activated.connect(self.garage_sort_criteria_changed)
+        self.ui.tableVehicle.doubleClicked.connect(lambda: self.table_vehicle_clicked())
+        self.ui.tableGarage.doubleClicked.connect(lambda: self.table_garage_clicked())
+
+    def table_vehicle_clicked(self):
+        for ix in self.ui.tableVehicle.selectedIndexes():
+            col = ix.column()
+            target = ix.data(Qt.DisplayRole)
+        if col == 1:
+            self.child_win = VehicleEditor(target)
+            self.child_win.exec_()
+            vmodel = DataFrameModel(pd.read_csv("vehicles.csv",sep=';'))
+            self.ui.tableVehicle.setModel(vmodel)
+            self.ui.tableVehicle.resizeColumnsToContents()
+            self.ui.tableVehicle.setColumnHidden(0, True)
+
+    def table_garage_clicked(self):
+        for ix in self.ui.tableGarage.selectedIndexes():
+            col = ix.column()
+            target = ix.data(Qt.DisplayRole)
+        if col == 1:
+            self.child_win = GarageEditor(target)
+            self.child_win.exec_()
+            gmodel = DataFrameModel(pd.read_csv("garages.csv",sep=';'))
+            self.ui.tableGarage.setModel(gmodel)
+            self.ui.tableGarage.resizeColumnsToContents()
+            self.ui.tableGarage.setColumnHidden(0, True)
+
 
     def vehicle_sort_criteria_changed(self):
         sort_criteria = self.ui.comboVehiclesSortBy.currentText()
