@@ -32,7 +32,7 @@ class DataFrameModel(QtGui.QStandardItemModel):
         if orientation == QtCore.Qt.Vertical and role == QtCore.Qt.DisplayRole:
             return self._data.index[x]
         return None
-    
+
 class GarageEditor(QDialog, Ui_DialogGarageEdit):
     def __init__(self, target, parent=None):
         super(GarageEditor, self).__init__(parent)
