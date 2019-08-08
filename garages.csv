@@ -80,7 +80,7 @@ Index;Name;Type;Capacity;Owned;Plan
 15;Greenwich Parkway, Unit 76;High-End;10;True;Coupes and Compacts
 97;Hanger;Real Estate;20;True;Aircraft
 105;Mobile Operations Center;Vehicle;1;True;MOC Vehicle Storage
-95;Nightclub;Real Estate;1;True;Armored Car Storage
+95;Nightclub Service Entrance;Real Estate;1;True;Armored Car Storage
 94;Nightclub B1;Real Estate;3;True;Delivery Vehicles
 93;Nightclub B2;Real Estate;10;True;Electric Vehicles
 92;Nightclub B3;Real Estate;10;True; 
@@ -106,4 +106,4 @@ Index;Name;Type;Capacity;Owned;Plan
 33;Weazel Plaza, Apartment 101;High-End;10;False; 
 31;Weazel Plaza, Apartment 26;High-End;10;False; 
 16;Weazel Plaza, Apartment 70;High-End;10;False; 
-107;Yacht;Vehicle;4;False;
+107;Yacht;Vehicle;4;False; 

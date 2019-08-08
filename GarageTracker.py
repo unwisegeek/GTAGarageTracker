@@ -2,8 +2,7 @@ import PyQt5
 from PyQt5 import QtCore
 from PyQt5.QtWidgets import *
 from PyQt5.QtCore import *
-from PyQt5 import QtCore, QtGui
-from PyQt5.QtGui import QStandardItemModel, QStandardItem
+from PyQt5 import QtCore, QtGui, QtWidgets
 from Main_Window import Ui_MainWindow
 from Vehicle_Edit import Ui_DialogVehicleEdit
 from Garage_Edit import Ui_DialogGarageEdit
@@ -97,10 +96,16 @@ class VehicleEditor(QDialog, Ui_DialogVehicleEdit):
                 vehicle_info['name'] = vehicle_data['Vehicle'][idx]
                 vehicle_info['owned'] = str(vehicle_data['Owned'][idx])
                 vehicle_info['garage'] = str(vehicle_data['Garage'][idx])
+                vehicle_info['pegasus'] = str(vehicle_data['Pegasus'][idx])
+                vehicle_info['wishlist'] = str(vehicle_data['Wishlist'][idx])
 
         # Process the variables into the QT Layout
         if vehicle_info['owned'] == "True":
             self.checkOwned.setChecked(True)
+        if vehicle_info['pegasus'] == "True":
+            self.checkPegasus.setChecked(True)
+        if vehicle_info['wishlist'] == True:
+            self.checkWishlist.setChecked(True)
         if vehicle_info['garage'] != "None":
             for idx in range(0, len(garages_data['Name'])):
                 if garages_data['Owned'][idx] == True and garages_data['Name'][idx] == vehicle_info['garage']:
@@ -117,6 +122,8 @@ class VehicleEditor(QDialog, Ui_DialogVehicleEdit):
     def write_config(self, vehicle_data, vehicle_info):
         vehicle_data['Owned'][int(vehicle_info['index'])] = self.checkOwned.isChecked()
         vehicle_data['Garage'][int(vehicle_info['index'])] = self.comboGarage.currentText()
+        vehicle_data['Wishlist'][int(vehicle_info['index'])] = self.checkWishlist.isChecked()
+        vehicle_data['Pegasus'][int(vehicle_info['index'])] = self.checkPegasus.isChecked()
         vehicle_data.to_csv("vehicles.csv",sep=';',index=False)
         self.close()
 
@@ -142,8 +149,8 @@ class MainWindow():
         # Configure Vehicle Table
         vmodel = DataFrameModel(local_vehicle_data)
         self.ui.tableVehicle.setModel(vmodel)
-        self.ui.tableVehicle.resizeColumnsToContents()
         self.ui.tableVehicle.setColumnHidden(0,True)
+        self.set_vheaders()
 
         # Load Garage Data
         local_garage_data = pd.read_csv("garages.csv", sep=";", engine='python')
@@ -157,8 +164,8 @@ class MainWindow():
         # Configure Garage Table
         gmodel = DataFrameModel(local_garage_data)
         self.ui.tableGarage.setModel(gmodel)
-        self.ui.tableGarage.resizeColumnsToContents()
         self.ui.tableGarage.setColumnHidden(0, True)
+        self.set_gheaders()
 
         # Populate Vehicle SortBy Combo Box
         for idx in range(0, len(local_vehicle_data_headers)):
@@ -175,19 +182,21 @@ class MainWindow():
         for idx in range(0, len(local_garage_data['Name'])):
             if local_garage_data['Owned'][idx] == True:
                 self.ui.listDashboard.addItem(local_garage_data['Name'][idx])
+        self.ui.listDashboard.addItem("Pegasus Vehicles")
+        self.ui.listDashboard.addItem("Wishlist")
         self.ui.listDashboard.setCurrentRow(0)
 
+        # Configure Dashboard Table
         dtmodel = DataFrameModel(local_vehicle_data)
         target = self.ui.listDashboard.currentItem().text()
         vehicle_data = pd.read_csv("vehicles.csv", sep=";")
         filtered_vehicle_list = vehicle_data[vehicle_data['Garage'].str.contains(target) == True]
         dtmodel = DataFrameModel(filtered_vehicle_list)
         self.ui.tableDashboard.setModel(dtmodel)
-        self.ui.tableDashboard.resizeColumnsToContents()
         self.ui.tableDashboard.setColumnHidden(0, True)
         self.ui.tableDashboard.setModel(dtmodel)
-        self.ui.tableDashboard.resizeColumnsToContents()
-        self.ui.tableDashboard.setColumnHidden(0, True)
+        self.set_dtheaders()
+
 
         # Connections to Slots
         self.ui.comboVehiclesSortBy.activated.connect(self.vehicle_sort_criteria_changed)
@@ -201,17 +210,76 @@ class MainWindow():
         self.ui.tableDashboard.doubleClicked.connect(lambda: self.table_dashboard_clicked())
         self.ui.actionQuit.triggered.connect(lambda: sys.exit())
 
+    def set_vheaders(self):
+        vheader = self.ui.tableVehicle.horizontalHeader()
+        vheader.setSectionResizeMode(1, QtWidgets.QHeaderView.ResizeToContents)
+        vheader.setSectionResizeMode(2, QtWidgets.QHeaderView.Stretch)
+        vheader.setSectionResizeMode(3, QtWidgets.QHeaderView.Stretch)
+        vheader.setSectionResizeMode(4, QtWidgets.QHeaderView.Stretch)
+        vheader.setSectionResizeMode(5, QtWidgets.QHeaderView.Stretch)
+        vheader.setSectionResizeMode(6, QtWidgets.QHeaderView.ResizeToContents)
+
+    def set_gheaders(self):
+        gheader = self.ui.tableGarage.horizontalHeader()
+        gheader.setSectionResizeMode(1, QtWidgets.QHeaderView.ResizeToContents)
+        gheader.setSectionResizeMode(2, QtWidgets.QHeaderView.Stretch)
+        gheader.setSectionResizeMode(3, QtWidgets.QHeaderView.Stretch)
+        gheader.setSectionResizeMode(4, QtWidgets.QHeaderView.Stretch)
+        gheader.setSectionResizeMode(5, QtWidgets.QHeaderView.ResizeToContents)
+
+    def set_dtheaders(self):
+        dtheader = self.ui.tableDashboard.horizontalHeader()
+        dtheader.setSectionResizeMode(1, QtWidgets.QHeaderView.ResizeToContents)
+        dtheader.setSectionResizeMode(2, QtWidgets.QHeaderView.Stretch)
+        dtheader.setSectionResizeMode(3, QtWidgets.QHeaderView.Stretch)
+        dtheader.setSectionResizeMode(4, QtWidgets.QHeaderView.Stretch)
+        dtheader.setSectionResizeMode(5, QtWidgets.QHeaderView.Stretch)
+        dtheader.setSectionResizeMode(6, QtWidgets.QHeaderView.ResizeToContents)
+
     def dashboard_list_clicked(self):
         target = ""
         for ix in self.ui.listDashboard.selectedIndexes():
             col = ix.column()
             target = ix.data(Qt.DisplayRole)
         vehicle_data = pd.read_csv("vehicles.csv",sep=";")
-        filtered_vehicle_list = vehicle_data[vehicle_data['Garage'].str.contains(target)==True]
+        list_info = { "Index": [], "Vehicle": [], "Class": [], "Owned": [], "Pegasus": [], "Wishlist": [], "Garage": [] }
+        if target == "Pegasus Vehicles":
+            for idx in range(0,len(vehicle_data['Vehicle'])):
+                if vehicle_data['Pegasus'][idx] == True and vehicle_data['Owned'][idx] == True:
+                    list_info["Index"].append(str(vehicle_data['Index'][idx]))
+                    list_info["Vehicle"].append(str(vehicle_data['Vehicle'][idx]))
+                    list_info["Class"].append(str(vehicle_data['Class'][idx]))
+                    list_info["Owned"].append(str(vehicle_data['Owned'][idx]))
+                    list_info["Pegasus"].append(str(vehicle_data['Pegasus'][idx]))
+                    list_info["Wishlist"].append(str(vehicle_data['Wishlist'][idx]))
+                    list_info["Garage"].append(str(vehicle_data['Garage'][idx]))
+            filtered_vehicle_list = pd.DataFrame({"Index": list_info["Index"], "Vehicle": list_info["Vehicle"],
+                                                  "Class": list_info["Class"],"Owned": list_info["Owned"],
+                                                  "Pegasus": list_info["Pegasus"], "Wishlist": list_info["Wishlist"],
+                                                  "Garage": list_info["Garage"]
+                                                  })
+        elif target == "Wishlist":
+            for idx in range(0, len(vehicle_data['Vehicle'])):
+                if vehicle_data['Wishlist'][idx] == True:
+                    list_info["Index"].append(str(vehicle_data['Index'][idx]))
+                    list_info["Vehicle"].append(str(vehicle_data['Vehicle'][idx]))
+                    list_info["Class"].append(str(vehicle_data['Class'][idx]))
+                    list_info["Owned"].append(str(vehicle_data['Owned'][idx]))
+                    list_info["Pegasus"].append(str(vehicle_data['Pegasus'][idx]))
+                    list_info["Wishlist"].append(str(vehicle_data['Wishlist'][idx]))
+                    list_info["Garage"].append(str(vehicle_data['Garage'][idx]))
+                filtered_vehicle_list = pd.DataFrame({"Index": list_info["Index"], "Vehicle": list_info["Vehicle"],
+                                                      "Class": list_info["Class"], "Owned": list_info["Owned"],
+                                                      "Pegasus": list_info["Pegasus"],
+                                                      "Wishlist": list_info["Wishlist"],
+                                                      "Garage": list_info["Garage"]
+                                                      })
+        else:
+            filtered_vehicle_list = vehicle_data[vehicle_data['Garage'].str.contains(target)==True]
         dtmodel = DataFrameModel(filtered_vehicle_list)
         self.ui.tableDashboard.setModel(dtmodel)
-        self.ui.tableDashboard.resizeColumnsToContents()
         self.ui.tableDashboard.setColumnHidden(0, True)
+        self.set_dtheaders()
 
     def table_dashboard_clicked(self):
         for ix in self.ui.tableDashboard.selectedIndexes():
@@ -220,23 +288,15 @@ class MainWindow():
         if col == 1:
             self.child_win = VehicleEditor(target)
             self.child_win.exec_()
-        vehicle_data = pd.read_csv("vehicles.csv", sep=";")
-        filtered_vehicle_list = vehicle_data[vehicle_data['Garage'].str.contains(self.ui.listDashboard.currentItem().text()) == True]
-        dtmodel = DataFrameModel(filtered_vehicle_list)
-        self.ui.tableDashboard.setModel(dtmodel)
-        self.ui.tableDashboard.resizeColumnsToContents()
-        self.ui.tableDashboard.setColumnHidden(0, True)
-
+        self.dashboard_list_clicked()
 
     def table_vehicle_search(self):
         vehicle_data = pd.read_csv("vehicles.csv",sep=';')
         filtered_vehicle_data = vehicle_data[vehicle_data['Vehicle'].str.contains(self.ui.lineVehicleSearch.text())==True]
         vmodel = DataFrameModel(filtered_vehicle_data)
         self.ui.tableVehicle.setModel(vmodel)
-        self.ui.tableVehicle.resizeColumnsToContents()
         self.ui.tableVehicle.setColumnHidden(0, True)
-        self.ui.tableVehicle.setColumnHidden(3, True)
-        self.ui.tableVehicle.setColumnHidden(4, True)
+        self.set_vheaders()
 
 
     def table_garage_search(self):
@@ -244,8 +304,8 @@ class MainWindow():
         filtered_garage_data = garage_data[garage_data['Name'].str.contains(self.ui.lineGarageSearch.text())==True]
         gmodel = DataFrameModel(filtered_garage_data)
         self.ui.tableGarage.setModel(gmodel)
-        self.ui.tableGarage.resizeColumnsToContents()
         self.ui.tableGarage.setColumnHidden(0, True)
+        self.set_gheaders()
 
     def table_vehicle_clicked(self):
         for ix in self.ui.tableVehicle.selectedIndexes():
@@ -259,8 +319,8 @@ class MainWindow():
             else:
                 vmodel = DataFrameModel(pd.read_csv("vehicles.csv",sep=';'))
                 self.ui.tableVehicle.setModel(vmodel)
-                self.ui.tableVehicle.resizeColumnsToContents()
                 self.ui.tableVehicle.setColumnHidden(0, True)
+                self.set_vheaders()
 
     def table_garage_clicked(self):
         for ix in self.ui.tableGarage.selectedIndexes():
@@ -274,8 +334,8 @@ class MainWindow():
             else:
                 gmodel = DataFrameModel(pd.read_csv("garages.csv",sep=';'))
                 self.ui.tableGarage.setModel(gmodel)
-                self.ui.tableGarage.resizeColumnsToContents()
                 self.ui.tableGarage.setColumnHidden(0, True)
+                self.set_gheaders()
 
     def vehicle_sort_criteria_changed(self):
         sort_criteria = self.ui.comboVehiclesSortBy.currentText()
