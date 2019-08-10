@@ -19,6 +19,10 @@
   <property name="windowTitle">
    <string>GTA Garage Tracker</string>
   </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>GarageTracker.svg</normaloff>GarageTracker.svg</iconset>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <property name="sizePolicy">
     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">

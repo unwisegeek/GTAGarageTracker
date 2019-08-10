@@ -1,9 +1,7 @@
-import PyQt5
-from PyQt5 import QtCore
+from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtWidgets import *
 from PyQt5.QtCore import *
-from PyQt5 import QtCore, QtGui, QtWidgets
-from PyQt5.QtSvg import QGraphicsSvgItem, QSvgRenderer
+from PyQt5.QtGui import QPixmap
 from Main_Window import Ui_MainWindow
 from Vehicle_Edit import Ui_DialogVehicleEdit
 from Garage_Edit import Ui_DialogGarageEdit
@@ -84,13 +82,12 @@ class AboutWindow(QDialog, Ui_About_Window):
         super(AboutWindow, self).__init__(parent)
         self.setupUi(self)
 
-        icon = QGraphicsSvgItem("GarageTracker.svg")
-        self.graphicsIcon.addItem(icon)
+        icon = QPixmap("GarageTracker.svg")
+        self.labelIcon.setPixmap(icon)
+        self.labelVersion.setText("Version 0.5")
 
     def show(self):
         self.show()
-
-
 
 class VehicleEditor(QDialog, Ui_DialogVehicleEdit):
     def __init__(self, target, parent=None):
