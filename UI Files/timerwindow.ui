@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>660</width>
+    <height>248</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>QtGTATimer</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="0" column="0">
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="0">
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <item>
+         <widget class="QPushButton" name="pushNightclub">
+          <property name="text">
+           <string>Nightclub</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushBunker">
+          <property name="text">
+           <string>Bunker</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushCoke">
+          <property name="text">
+           <string>Coke</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushMeth">
+          <property name="text">
+           <string>Meth</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushCash">
+          <property name="text">
+           <string>Cash</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="0" column="1">
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="QProgressBar" name="progressNightclub">
+          <property name="value">
+           <number>24</number>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QProgressBar" name="progressBunker">
+          <property name="value">
+           <number>24</number>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QProgressBar" name="progressCoke">
+          <property name="value">
+           <number>24</number>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QProgressBar" name="progressMeth">
+          <property name="value">
+           <number>24</number>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QProgressBar" name="progressCash">
+          <property name="value">
+           <number>24</number>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="0" column="2">
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="QLabel" name="labelNightclubRem">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="text">
+           <string>TextLabel</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="labelBunkerRem">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="text">
+           <string>TextLabel</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="labelCokeRem">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="text">
+           <string>TextLabel</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="labelMethRem">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="text">
+           <string>TextLabel</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="labelCashRem">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="text">
+           <string>TextLabel</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>660</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionQuit"/>
+   </widget>
+   <widget class="QMenu" name="menuReset">
+    <property name="title">
+     <string>Reset</string>
+    </property>
+    <addaction name="actionReset_All_Timers_2"/>
+    <addaction name="actionNightclub"/>
+    <addaction name="actionBunker"/>
+    <addaction name="actionCoke"/>
+    <addaction name="actionMeth"/>
+    <addaction name="actionCash"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuReset"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionReset_All_Timers">
+   <property name="text">
+    <string>Reset All Timers</string>
+   </property>
+  </action>
+  <action name="actionQuit">
+   <property name="text">
+    <string>Quit</string>
+   </property>
+  </action>
+  <action name="actionReset_All_Timers_2">
+   <property name="text">
+    <string>Reset All Timers</string>
+   </property>
+  </action>
+  <action name="actionNightclub">
+   <property name="text">
+    <string>Reset Nightclub</string>
+   </property>
+  </action>
+  <action name="actionBunker">
+   <property name="text">
+    <string>Bunker</string>
+   </property>
+  </action>
+  <action name="actionCoke">
+   <property name="text">
+    <string>Coke</string>
+   </property>
+  </action>
+  <action name="actionMeth">
+   <property name="text">
+    <string>Meth</string>
+   </property>
+  </action>
+  <action name="actionCash">
+   <property name="text">
+    <string>Cash</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

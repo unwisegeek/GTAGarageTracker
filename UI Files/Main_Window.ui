@@ -405,12 +405,24 @@
     </property>
     <addaction name="actionQuit"/>
    </widget>
+   <widget class="QMenu" name="menuTimer">
+    <property name="title">
+     <string>Timer</string>
+    </property>
+    <addaction name="actionTimerOpen"/>
+   </widget>
    <addaction name="menuFile"/>
+   <addaction name="menuTimer"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
   <action name="actionQuit">
    <property name="text">
     <string>Quit</string>
+   </property>
+  </action>
+  <action name="actionTimerOpen">
+   <property name="text">
+    <string>Open</string>
    </property>
   </action>
  </widget>

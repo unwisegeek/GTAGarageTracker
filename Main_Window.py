@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'Main_Window.ui'
+# Form implementation generated from reading ui file './UI Files/Main_Window.ui'
 #
 # Created by: PyQt5 UI code generator 5.13.0
 #
@@ -195,14 +195,20 @@ class Ui_MainWindow(object):
         self.menubar.setObjectName("menubar")
         self.menuFile = QtWidgets.QMenu(self.menubar)
         self.menuFile.setObjectName("menuFile")
+        self.menuTimer = QtWidgets.QMenu(self.menubar)
+        self.menuTimer.setObjectName("menuTimer")
         MainWindow.setMenuBar(self.menubar)
         self.statusbar = QtWidgets.QStatusBar(MainWindow)
         self.statusbar.setObjectName("statusbar")
         MainWindow.setStatusBar(self.statusbar)
         self.actionQuit = QtWidgets.QAction(MainWindow)
         self.actionQuit.setObjectName("actionQuit")
+        self.actionTimerOpen = QtWidgets.QAction(MainWindow)
+        self.actionTimerOpen.setObjectName("actionTimerOpen")
         self.menuFile.addAction(self.actionQuit)
+        self.menuTimer.addAction(self.actionTimerOpen)
         self.menubar.addAction(self.menuFile.menuAction())
+        self.menubar.addAction(self.menuTimer.menuAction())
 
         self.retranslateUi(MainWindow)
         self.tabWidget.setCurrentIndex(2)
@@ -219,4 +225,6 @@ class Ui_MainWindow(object):
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tabGarages), _translate("MainWindow", "Garages"))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tabDashboard), _translate("MainWindow", "Dashboard"))
         self.menuFile.setTitle(_translate("MainWindow", "File"))
+        self.menuTimer.setTitle(_translate("MainWindow", "Timer"))
         self.actionQuit.setText(_translate("MainWindow", "Quit"))
+        self.actionTimerOpen.setText(_translate("MainWindow", "Open"))

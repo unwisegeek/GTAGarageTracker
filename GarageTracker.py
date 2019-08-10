@@ -6,7 +6,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 from Main_Window import Ui_MainWindow
 from Vehicle_Edit import Ui_DialogVehicleEdit
 from Garage_Edit import Ui_DialogGarageEdit
-import pandas as pd, sys
+import pandas as pd, sys, subprocess
 
 global_vehicle_data = pd.read_csv("vehicles.csv",sep=";",engine='python')
 global_garage_data = pd.read_csv("garages.csv",sep=";",engine='python')
@@ -98,14 +98,21 @@ class VehicleEditor(QDialog, Ui_DialogVehicleEdit):
                 vehicle_info['garage'] = str(vehicle_data['Garage'][idx])
                 vehicle_info['pegasus'] = str(vehicle_data['Pegasus'][idx])
                 vehicle_info['wishlist'] = str(vehicle_data['Wishlist'][idx])
+                vehicle_info['insured'] = str(vehicle_data['Insured'][idx])
+                vehicle_info['modified'] = str(vehicle_data['Modified'][idx])
+
 
         # Process the variables into the QT Layout
         if vehicle_info['owned'] == "True":
             self.checkOwned.setChecked(True)
         if vehicle_info['pegasus'] == "True":
             self.checkPegasus.setChecked(True)
-        if vehicle_info['wishlist'] == True:
+        if vehicle_info['wishlist'] == "True":
             self.checkWishlist.setChecked(True)
+        if vehicle_info['insured'] == "True":
+            self.checkInsured.setChecked(True)
+        if vehicle_info['modified'] == "True":
+            self.checkModified.setChecked(True)
         if vehicle_info['garage'] != "None":
             for idx in range(0, len(garages_data['Name'])):
                 if garages_data['Owned'][idx] == True and garages_data['Name'][idx] == vehicle_info['garage']:
@@ -124,6 +131,8 @@ class VehicleEditor(QDialog, Ui_DialogVehicleEdit):
         vehicle_data['Garage'][int(vehicle_info['index'])] = self.comboGarage.currentText()
         vehicle_data['Wishlist'][int(vehicle_info['index'])] = self.checkWishlist.isChecked()
         vehicle_data['Pegasus'][int(vehicle_info['index'])] = self.checkPegasus.isChecked()
+        vehicle_data['Insured'][int(vehicle_info['index'])] = self.checkInsured.isChecked()
+        vehicle_data['Modified'][int(vehicle_info['index'])] = self.checkModified.isChecked()
         vehicle_data.to_csv("vehicles.csv",sep=';',index=False)
         self.close()
 
@@ -150,6 +159,7 @@ class MainWindow():
         vmodel = DataFrameModel(local_vehicle_data)
         self.ui.tableVehicle.setModel(vmodel)
         self.ui.tableVehicle.setColumnHidden(0,True)
+        self.ui.tableVehicle.setColumnHidden(8, True)
         self.set_vheaders()
 
         # Load Garage Data
@@ -169,7 +179,8 @@ class MainWindow():
 
         # Populate Vehicle SortBy Combo Box
         for idx in range(0, len(local_vehicle_data_headers)):
-            self.ui.comboVehiclesSortBy.addItem(local_vehicle_data_headers[idx])
+            if local_vehicle_data_headers[idx] != "Pegasus":
+                self.ui.comboVehiclesSortBy.addItem(local_vehicle_data_headers[idx])
 
         # Populate Garages SortBy Combo Box
         for idx in range(0, len(local_garage_data_headers)):
@@ -194,6 +205,7 @@ class MainWindow():
         dtmodel = DataFrameModel(filtered_vehicle_list)
         self.ui.tableDashboard.setModel(dtmodel)
         self.ui.tableDashboard.setColumnHidden(0, True)
+        self.ui.tableDashboard.setColumnHidden(8, True)
         self.ui.tableDashboard.setModel(dtmodel)
         self.set_dtheaders()
 
@@ -208,16 +220,18 @@ class MainWindow():
         self.ui.listDashboard.clicked.connect(lambda: self.dashboard_list_clicked())
         self.ui.listDashboard.selectionModel().currentChanged.connect(lambda: self.dashboard_list_clicked())
         self.ui.tableDashboard.doubleClicked.connect(lambda: self.table_dashboard_clicked())
+        self.ui.actionTimerOpen.triggered.connect(lambda: subprocess.Popen(['python3', 'QtGTATimer.py']))
         self.ui.actionQuit.triggered.connect(lambda: sys.exit())
 
     def set_vheaders(self):
         vheader = self.ui.tableVehicle.horizontalHeader()
         vheader.setSectionResizeMode(1, QtWidgets.QHeaderView.ResizeToContents)
-        vheader.setSectionResizeMode(2, QtWidgets.QHeaderView.Stretch)
+        vheader.setSectionResizeMode(2, QtWidgets.QHeaderView.ResizeToContents)
         vheader.setSectionResizeMode(3, QtWidgets.QHeaderView.Stretch)
         vheader.setSectionResizeMode(4, QtWidgets.QHeaderView.Stretch)
         vheader.setSectionResizeMode(5, QtWidgets.QHeaderView.Stretch)
-        vheader.setSectionResizeMode(6, QtWidgets.QHeaderView.ResizeToContents)
+        vheader.setSectionResizeMode(6, QtWidgets.QHeaderView.Stretch)
+        vheader.setSectionResizeMode(7, QtWidgets.QHeaderView.ResizeToContents)
 
     def set_gheaders(self):
         gheader = self.ui.tableGarage.horizontalHeader()
@@ -230,11 +244,12 @@ class MainWindow():
     def set_dtheaders(self):
         dtheader = self.ui.tableDashboard.horizontalHeader()
         dtheader.setSectionResizeMode(1, QtWidgets.QHeaderView.ResizeToContents)
-        dtheader.setSectionResizeMode(2, QtWidgets.QHeaderView.Stretch)
+        dtheader.setSectionResizeMode(2, QtWidgets.QHeaderView.ResizeToContents)
         dtheader.setSectionResizeMode(3, QtWidgets.QHeaderView.Stretch)
         dtheader.setSectionResizeMode(4, QtWidgets.QHeaderView.Stretch)
         dtheader.setSectionResizeMode(5, QtWidgets.QHeaderView.Stretch)
-        dtheader.setSectionResizeMode(6, QtWidgets.QHeaderView.ResizeToContents)
+        dtheader.setSectionResizeMode(6, QtWidgets.QHeaderView.Stretch)
+        dtheader.setSectionResizeMode(7, QtWidgets.QHeaderView.ResizeToContents)
 
     def dashboard_list_clicked(self):
         target = ""
@@ -279,6 +294,7 @@ class MainWindow():
         dtmodel = DataFrameModel(filtered_vehicle_list)
         self.ui.tableDashboard.setModel(dtmodel)
         self.ui.tableDashboard.setColumnHidden(0, True)
+        self.ui.tableDashboard.setColumnHidden(8, True)
         self.set_dtheaders()
 
     def table_dashboard_clicked(self):
@@ -297,7 +313,6 @@ class MainWindow():
         self.ui.tableVehicle.setModel(vmodel)
         self.ui.tableVehicle.setColumnHidden(0, True)
         self.set_vheaders()
-
 
     def table_garage_search(self):
         garage_data = pd.read_csv("garages.csv",sep=';')
