@@ -110,7 +110,7 @@ class MainWindow():
 
         # Set Nightclub Information
         if timers['nightclub'][0] == 0:
-            self.ui.labelNightclubRem.setValue("--:--:--")
+            self.ui.labelNightclubRem.setText("--:--:--")
             self.ui.progressNightclub.setValue(0)
             self.ui.progressNightclub.setToolTip("This progress bar is non-operational.")
         else:
@@ -124,13 +124,13 @@ class MainWindow():
                 self.ui.progressNightclub.setValue(perc_time)
                 estvalue = "Unknown"
             self.ui.progressNightclub.setToolTip(
-                "Timered started at {}, and will end at {}. Current estimated value is {}.".format(
+                "Timer started at {}, and will end at {}. Current estimated value is {}.".format(
                     convert_epoch_to_string(start_time), convert_epoch_to_string(end_time), estvalue
                 ))
 
         # Set Bunker Information
         if timers['bunker'][0] == 0:
-            self.ui.labelBunkerRem.setValue("--:--:--")
+            self.ui.labelBunkerRem.setText("--:--:--")
             self.ui.progressBunker.setValue(0)
             self.ui.progressBunker.setToolTip("This progress bar is non-operational.")
         else:
@@ -144,7 +144,7 @@ class MainWindow():
                 self.ui.progressBunker.setValue(perc_time)
                 estvalue = "210000"
             self.ui.progressBunker.setToolTip(
-                "Timered started at {}, and will end at {}. Current estimated value is {}.".format(
+                "Timer started at {}, and will end at {}. Current estimated value is {}.".format(
                     convert_epoch_to_string(start_time), convert_epoch_to_string(end_time), estvalue
                 ))
 
@@ -152,6 +152,7 @@ class MainWindow():
         if timers['coke'][0] == 0:
             self.ui.labelCokeRem.setText("--:--:--")
             self.ui.progressCoke.setValue(0)
+            self.ui.progressCoke.setToolTip("This progress bar is non-operational.")
         else:
             start_time, end_time, rem_time, perc_time = get_timer_stats(timers, "coke", 7200)
             self.ui.labelCokeRem.setText(convert_seconds_to_hms(rem_time))
@@ -160,13 +161,17 @@ class MainWindow():
             if perc_time >= 100 and timers['coke'][0] != 0:
                 perc_time = 100
                 self.ui.progressCoke.setValue(perc_time)
-                self.ui.labelCokeVal.setText(str((1680 / 100) * int(perc_time)))
+                estvalue = str((1680 / 100) * int(perc_time))
+            self.ui.progressCoke.setToolTip("Timer started at {}, and will end at {}. Current estimated value is {}.".format(
+                    convert_epoch_to_string(start_time), convert_epoch_to_string(end_time), estvalue
+                ))
 
 
         # Set Meth Lab Information
         if timers['meth'][0] == 0:
             self.ui.labelMethRem.setText("--:--:--")
             self.ui.progressMeth.setValue(0)
+            self.ui.progressMeth.setToolTip("This progress bar is non-operational.")
         else:
             start_time, end_time, rem_time, perc_time = get_timer_stats(timers, "meth", 8640)
             self.ui.labelMethRem.setText(convert_seconds_to_hms(rem_time))
@@ -175,12 +180,16 @@ class MainWindow():
             if perc_time >= 100 and timers['meth'][0] != 0:
                 perc_time = 100
                 self.ui.progressMeth.setValue(perc_time)
-                self.ui.labelMethVal.setText(str((1680 / 100) * int(perc_time)))
+                estvalue = str((1680 / 100) * int(perc_time))
+            self.ui.progressMeth.setToolTip("Timer started at {}, and will end at {}. Current estimated value is {}.".format(
+                convert_epoch_to_string(start_time), convert_epoch_to_string(end_time), estvalue
+            ))
 
         # Set Cash Factory Information
         if timers['cash'][0] == 0:
             self.ui.labelCashRem.setText("--:--:--")
             self.ui.progressCash.setValue(0)
+            self.ui.progressCash.setToolTip("This progress bar is non-operational.")
         else:
             start_time, end_time, rem_time, perc_time = get_timer_stats(timers, "cash", 9600)
             self.ui.labelCashRem.setText(convert_seconds_to_hms(rem_time))
@@ -189,7 +198,11 @@ class MainWindow():
             if perc_time >= 100 and timers['cash'][0] != 0:
                 perc_time = 100
                 self.ui.progressCash.setValue(perc_time)
-                self.ui.labelCashVal.setText(str((1680 / 100) * int(perc_time)))
+                estvalue = str((1680 / 100) * int(perc_time))
+            self.ui.progressCash.setToolTip(
+                "Timer started at {}, and will end at {}. Current estimated value is {}.".format(
+                 convert_epoch_to_string(start_time), convert_epoch_to_string(end_time), estvalue
+            ))
 
 
 if __name__ == '__main__':
