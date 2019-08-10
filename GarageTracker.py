@@ -3,9 +3,11 @@ from PyQt5 import QtCore
 from PyQt5.QtWidgets import *
 from PyQt5.QtCore import *
 from PyQt5 import QtCore, QtGui, QtWidgets
+from PyQt5.QtSvg import QGraphicsSvgItem, QSvgRenderer
 from Main_Window import Ui_MainWindow
 from Vehicle_Edit import Ui_DialogVehicleEdit
 from Garage_Edit import Ui_DialogGarageEdit
+from About_Window import Ui_About_Window
 import pandas as pd, sys, subprocess
 
 global_vehicle_data = pd.read_csv("vehicles.csv",sep=";",engine='python')
@@ -76,6 +78,19 @@ class GarageEditor(QDialog, Ui_DialogGarageEdit):
 
     def show(self):
         self.garage_edit_win.show()
+
+class AboutWindow(QDialog, Ui_About_Window):
+    def __init__(self, parent=None):
+        super(AboutWindow, self).__init__(parent)
+        self.setupUi(self)
+
+        icon = QGraphicsSvgItem("GarageTracker.svg")
+        self.graphicsIcon.addItem(icon)
+
+    def show(self):
+        self.show()
+
+
 
 class VehicleEditor(QDialog, Ui_DialogVehicleEdit):
     def __init__(self, target, parent=None):
@@ -221,6 +236,7 @@ class MainWindow():
         self.ui.listDashboard.selectionModel().currentChanged.connect(lambda: self.dashboard_list_clicked())
         self.ui.tableDashboard.doubleClicked.connect(lambda: self.table_dashboard_clicked())
         self.ui.actionTimerOpen.triggered.connect(lambda: subprocess.Popen(['python3', 'QtGTATimer.py']))
+        self.ui.actionAbout.triggered.connect(lambda: self.about_menu_clicked())
         self.ui.actionQuit.triggered.connect(lambda: sys.exit())
 
     def set_vheaders(self):
@@ -336,6 +352,10 @@ class MainWindow():
                 self.ui.tableVehicle.setModel(vmodel)
                 self.ui.tableVehicle.setColumnHidden(0, True)
                 self.set_vheaders()
+
+    def about_menu_clicked(self):
+        self.child_win = AboutWindow()
+        self.child_win.exec()
 
     def table_garage_clicked(self):
         for ix in self.ui.tableGarage.selectedIndexes():
