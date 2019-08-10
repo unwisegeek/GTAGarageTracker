@@ -25,7 +25,11 @@
   <property name="windowTitle">
    <string>Vehicle Editor</string>
   </property>
-  <widget class="QWidget" name="">
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>GarageTracker.svg</normaloff>GarageTracker.svg</iconset>
+  </property>
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>10</x>

@@ -31,6 +31,10 @@
   <property name="windowTitle">
    <string>Vehicle Editor</string>
   </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>GarageTracker.svg</normaloff>GarageTracker.svg</iconset>
+  </property>
   <layout class="QVBoxLayout" name="verticalLayout_5">
    <item>
     <layout class="QVBoxLayout" name="verticalLayout_4">

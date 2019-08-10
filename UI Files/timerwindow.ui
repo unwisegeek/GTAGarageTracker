@@ -13,6 +13,10 @@
   <property name="windowTitle">
    <string>QtGTATimer</string>
   </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>GarageTracker.svg</normaloff>GarageTracker.svg</iconset>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QGridLayout" name="gridLayout_2">
     <item row="0" column="0">
@@ -189,7 +193,7 @@
      <x>0</x>
      <y>0</y>
      <width>660</width>
-     <height>25</height>
+     <height>28</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuFile">

@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'vehicle_edit.ui'
+# Form implementation generated from reading ui file './UI Files/vehicle_edit.ui'
 #
 # Created by: PyQt5 UI code generator 5.13.0
 #
@@ -21,6 +21,9 @@ class Ui_DialogVehicleEdit(object):
         DialogVehicleEdit.setSizePolicy(sizePolicy)
         DialogVehicleEdit.setMinimumSize(QtCore.QSize(458, 150))
         DialogVehicleEdit.setMaximumSize(QtCore.QSize(458, 151))
+        icon = QtGui.QIcon()
+        icon.addPixmap(QtGui.QPixmap("GarageTracker.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        DialogVehicleEdit.setWindowIcon(icon)
         self.verticalLayout_5 = QtWidgets.QVBoxLayout(DialogVehicleEdit)
         self.verticalLayout_5.setObjectName("verticalLayout_5")
         self.verticalLayout_4 = QtWidgets.QVBoxLayout()
