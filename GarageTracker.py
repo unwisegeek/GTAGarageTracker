@@ -2,10 +2,12 @@
 import pandas as pd
 import subprocess
 import sys
+import os
 from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtCore import *
 from PyQt5.QtGui import *
 from PyQt5.QtWidgets import *
+from PyQt5.QtWebEngineWidgets import *
 
 from Main_Window import Ui_MainWindow
 from Vehicle_Edit import Ui_DialogVehicleEdit
@@ -230,6 +232,7 @@ class MainWindow:
 
         # Connections to Slots
         self.ui.actionTimerOpen.triggered.connect(lambda: subprocess.Popen(['python3', 'QtGTATimer.py']))
+        self.ui.actionHelp.triggered.connect(lambda: self.show_help())
         self.ui.actionAbout.triggered.connect(lambda: self.about_menu_clicked())
         self.ui.actionQuit.triggered.connect(lambda: sys.exit())
         self.ui.comboVehiclesSortBy.activated.connect(self.vehicle_sort_criteria_changed)
@@ -241,6 +244,13 @@ class MainWindow:
         self.ui.tableVehicle.doubleClicked.connect(lambda: self.table_vehicle_clicked())
         self.ui.tableGarage.doubleClicked.connect(lambda: self.table_garage_clicked())
         self.ui.tableDashboard.doubleClicked.connect(lambda: self.table_dashboard_clicked())
+
+    def show_help(self):
+        self.help_win = QWebEngineView()
+        url = QUrl.fromLocalFile(os.path.abspath(os.path.join(os.path.dirname(__file__), "Help/index.html")))
+        self.help_win.load(url)
+        self.help_win.setWindowTitle("GTAGarageTracker Help")
+        self.help_win.show()
 
     def dashboard_list_clicked(self):
         target = ""
