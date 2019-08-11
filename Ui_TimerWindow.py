@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'timerwindow.ui'
+# Form implementation generated from reading ui file './UI Files/timerwindow.ui'
 #
 # Created by: PyQt5 UI code generator 5.13.0
 #
@@ -14,6 +14,9 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(660, 248)
+        icon = QtGui.QIcon()
+        icon.addPixmap(QtGui.QPixmap("GarageTracker.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        MainWindow.setWindowIcon(icon)
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.gridLayout_2 = QtWidgets.QGridLayout(self.centralwidget)
@@ -112,7 +115,7 @@ class Ui_MainWindow(object):
         self.gridLayout_2.addLayout(self.gridLayout, 0, 0, 1, 1)
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 660, 25))
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 660, 28))
         self.menubar.setObjectName("menubar")
         self.menuFile = QtWidgets.QMenu(self.menubar)
         self.menuFile.setObjectName("menuFile")

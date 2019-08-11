@@ -1,12 +1,16 @@
-import sys, os, time
-import pandas as pd
-
-from typing import Type
-from Ui_TimerWindow import Ui_MainWindow
-from PyQt5.QtWidgets import QApplication, QMainWindow
-from PyQt5.QtCore import QTimer
+import os
+import sys
+import time
 from datetime import datetime
 from datetime import timedelta
+from typing import Type
+
+import pandas as pd
+from PyQt5.QtCore import QTimer
+from PyQt5.QtWidgets import QApplication, QMainWindow
+
+from Ui_TimerWindow import Ui_MainWindow
+
 
 # Import Data or create a .qtgtatimer data file in the user home directory
 def load_config():
@@ -19,7 +23,7 @@ def load_config():
                 'meth': [0],
                 'cash': [0]}
         # df = pd.DataFrame(data)
-        df = pd.DataFrame(data, columns=['nightclub','bunker','coke','meth','cash'])
+        df = pd.DataFrame(data, columns=['nightclub', 'bunker', 'coke', 'meth', 'cash'])
         df.to_csv('./.gtatimer')
         if os.path.isfile('./.gtatimer'):
             timers = pd.read_csv('./.gtatimer')
@@ -27,8 +31,10 @@ def load_config():
             sys.exit(1)
     return timers
 
+
 def write_config(timers):
     timers.to_csv('./.gtatimer')
+
 
 def convert_epoch_to_string(secs):
     # return time.strftime("%m/%d/%y %H:%m", time.strptime(time.ctime(secs)))
@@ -39,15 +45,18 @@ def convert_epoch_to_string(secs):
     retval = "{}:{}:{}".format(hours, mins, sec)
     return retval
 
+
 def convert_seconds_to_hms(secs):
     remaining = str(timedelta(seconds=secs)).split(":")
     retval: str = "{}:{}:{}".format(remaining[0].zfill(2), remaining[1].zfill(2), remaining[2].zfill(2))
     return retval[:8]
 
+
 def start_new_timer(timers, target):
     timers[target][0] = time.time()
     write_config(timers)
     # main_win.refresh()
+
 
 def get_timer_stats(timers, target, offset):
     curr_time = time.time()
@@ -58,7 +67,7 @@ def get_timer_stats(timers, target, offset):
     return start_time, end_time, rem_time, perc_time
 
 
-class MainWindow():
+class MainWindow:
     def __init__(self):
         self.main_win = QMainWindow()
         self.ui = Ui_MainWindow()
@@ -93,7 +102,7 @@ class MainWindow():
 
     def reset_timers(self, timers):
         new_time = time.time() - 72000
-        for each in ["nightclub","bunker","coke","meth","cash"]:
+        for each in ["nightclub", "bunker", "coke", "meth", "cash"]:
             timers[each][0] = new_time
         write_config(timers)
 
@@ -101,7 +110,6 @@ class MainWindow():
         new_time = 0
         timers[target][0] = new_time
         write_config(timers)
-
 
     def refresh(self):
 
@@ -125,8 +133,7 @@ class MainWindow():
                 estvalue = "Unknown"
             self.ui.progressNightclub.setToolTip(
                 "Timer started at {}, and will end at {}. Current estimated value is {}.".format(
-                    convert_epoch_to_string(start_time), convert_epoch_to_string(end_time), estvalue
-                ))
+                    convert_epoch_to_string(start_time), convert_epoch_to_string(end_time), estvalue))
 
         # Set Bunker Information
         if timers['bunker'][0] == 0:
@@ -145,8 +152,7 @@ class MainWindow():
                 estvalue = "210000"
             self.ui.progressBunker.setToolTip(
                 "Timer started at {}, and will end at {}. Current estimated value is {}.".format(
-                    convert_epoch_to_string(start_time), convert_epoch_to_string(end_time), estvalue
-                ))
+                    convert_epoch_to_string(start_time), convert_epoch_to_string(end_time), estvalue))
 
         # Set Coke Lockup Information
         if timers['coke'][0] == 0:
@@ -162,10 +168,9 @@ class MainWindow():
                 perc_time = 100
                 self.ui.progressCoke.setValue(perc_time)
                 estvalue = str((1680 / 100) * int(perc_time))
-            self.ui.progressCoke.setToolTip("Timer started at {}, and will end at {}. Current estimated value is {}.".format(
-                    convert_epoch_to_string(start_time), convert_epoch_to_string(end_time), estvalue
-                ))
-
+            self.ui.progressCoke.setToolTip(
+                "Timer started at {}, and will end at {}. Current estimated value is {}.".format(
+                    convert_epoch_to_string(start_time), convert_epoch_to_string(end_time), estvalue))
 
         # Set Meth Lab Information
         if timers['meth'][0] == 0:
@@ -181,9 +186,9 @@ class MainWindow():
                 perc_time = 100
                 self.ui.progressMeth.setValue(perc_time)
                 estvalue = str((1680 / 100) * int(perc_time))
-            self.ui.progressMeth.setToolTip("Timer started at {}, and will end at {}. Current estimated value is {}.".format(
-                convert_epoch_to_string(start_time), convert_epoch_to_string(end_time), estvalue
-            ))
+            self.ui.progressMeth.setToolTip(
+                "Timer started at {}, and will end at {}. Current estimated value is {}.".format(
+                    convert_epoch_to_string(start_time), convert_epoch_to_string(end_time), estvalue))
 
         # Set Cash Factory Information
         if timers['cash'][0] == 0:
@@ -201,8 +206,7 @@ class MainWindow():
                 estvalue = str((1680 / 100) * int(perc_time))
             self.ui.progressCash.setToolTip(
                 "Timer started at {}, and will end at {}. Current estimated value is {}.".format(
-                 convert_epoch_to_string(start_time), convert_epoch_to_string(end_time), estvalue
-            ))
+                    convert_epoch_to_string(start_time), convert_epoch_to_string(end_time), estvalue))
 
 
 if __name__ == '__main__':
