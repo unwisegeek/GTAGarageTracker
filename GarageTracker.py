@@ -6,6 +6,7 @@ from Main_Window import Ui_MainWindow
 from Vehicle_Edit import Ui_DialogVehicleEdit
 from Garage_Edit import Ui_DialogGarageEdit
 from About_Window import Ui_About_Window
+from Ui_Windows import
 import pandas as pd, sys, subprocess
 
 global_vehicle_data = pd.read_csv("vehicles.csv",sep=";",engine='python')
