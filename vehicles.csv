@@ -1,617 +1,625 @@
 Index;Vehicle;Class;Wishlist;Owned;Insured;Modified;Garage;Pegasus
-0;190z;Sports Classics;False;False;False;False;None;False
-1;811;Super;False;False;False;False;None;False
-2;8F Drafter;Sports;False;True;False;False;Casino Penthouse;False
-3;9F;Sports;False;False;False;False;None;False
-4;9F Cabrio;Sports;False;False;False;False;None;False
-5;APC;Military;False;True;False;False;Facility;False
-6;Adder;Super;False;False;False;False;None;False
-7;Airport Bus;Service;False;False;False;False;None;True
-8;Airtug;Utility;False;False;False;False;None;False
-9;Akula;Helicopters;False;True;False;False;Hanger;False
-10;Akuma;Motorcycles;False;False;False;False;None;False
-11;Alpha;Sports;False;False;False;False;None;False
-12;Alpha-Z1;Planes;False;False;False;False;None;False
-13;Annihilator;Helicopters;False;False;False;False;None;True
-14;Anti-Aircraft Trailer;Military;False;True;False;False;Bunker;False
-15;Apocalypse Bruiser;Off-Road;False;False;False;False;None;False
-16;Apocalypse Brutus;Off-Road;False;False;False;False;None;False
-17;Apocalypse Cerberus;Commercial;False;False;False;False;None;False
-18;Apocalypse Deathbike;Motorcycles;False;False;False;False;None;False
-19;Apocalypse Dominator;Muscle;False;False;False;False;None;False
-20;Apocalypse Impaler;Muscle;False;False;False;False;None;False
-21;Apocalypse Imperator;Muscle;False;False;False;False;None;False
-22;Apocalypse Issi;Compacts;False;False;False;False;None;False
-23;Apocalypse Sasquatch;Off-Road;False;False;False;False;None;False
-24;Apocalypse Scarab;Military;False;False;False;False;None;False
-25;Apocalypse Slamvan;Muscle;False;False;False;False;None;False
-26;Apocalypse ZR380;Sports;False;False;False;False;None;False
-27;Ardent;Sports Classics;False;False;False;False;None;False
-28;Armored Boxville;Vans;False;False;False;False;None;False
-29;Asea;Sedans;False;False;False;False;None;False
-30;Asea (Snow);Sedans;False;False;False;False;None;False
-31;Asterope;Sedans;False;True;False;False;1337 Exceptionalists Way;False
-32;Atomic Blimp;Planes;False;False;False;False;None;False
-33;Autarch;Super;False;True;False;False;Office Garage 1;False
-34;Avarus;Motorcycles;False;False;False;False;None;False
-35;Avenger;Planes;False;True;False;False;Facility;False
-36;Avenger (Prop);Planes;False;False;False;False;None;False
-37;B-11 Strikeforce;Planes;False;False;False;False;None;False
-38;BF400;Motorcycles;False;True;False;False;870 Route 68 Approach;False
-39;BMX;Cycles;False;False;False;False;None;False
-40;Bagger;Motorcycles;False;False;False;False;None;False
-41;Baller;SUVs;False;False;False;False;None;False
-42;Baller (Second Generation);SUVs;False;False;False;False;None;False
-43;Baller LE;SUVs;False;False;False;False;None;False
-44;Baller LE (Armored);SUVs;False;False;False;False;None;False
-45;Baller LE LWB;SUVs;False;False;False;False;None;False
-46;Baller LE LWB (Armored);SUVs;False;False;False;False;None;False
-47;Banshee;Sports;False;False;False;False;None;False
-48;Banshee 900R;Super;False;True;False;False;Office Garage 3;False
-49;Barracks;Military;False;False;False;False;None;True
-50;Barracks (Heist);Military;False;False;False;False;None;False
-51;Barracks Semi;Military;False;False;False;False;None;False
-52;Barrage;Military;False;False;False;False;None;False
-53;Bati 801;Motorcycles;False;True;True;False;Clubhouse;False
-54;Bati 801RR;Motorcycles;False;False;False;False;None;False
-55;BeeJay XL;SUVs;False;False;False;False;None;False
-56;Benson;Commercial;False;False;False;False;None;False
-57;Besra;Planes;False;False;False;False;None;True
-58;Bestia GTS;Sports;False;False;False;False;None;False
-59;Biff;Commercial;False;False;False;False;None;False
-60;Bifta;Off-Road;False;False;False;False;None;False
-61;Bison;Vans;False;True;False;False;Eclipse Towers Penthouse Suite 3;False
-62;Bison (McGill-Olsen);Vans;False;False;False;False;None;False
-63;Bison (The Mighty Bush);Vans;False;False;False;False;None;False
-64;Blade;Muscle;False;False;False;False;None;False
-65;Blazer;Off-Road;False;False;False;False;None;False
-66;Blazer Aqua;Off-Road;False;True;False;False;Vehicle Wearhouse;False
-67;Blazer Lifeguard;Off-Road;False;False;False;False;None;False
-68;Blimp;Planes;False;False;False;False;None;True
-69;Blista;Compacts;False;True;False;False;Greenwich Parkway, Unit 76;False
-70;Blista Compact;Sports;False;False;False;False;None;False
-71;Bobcat XL;Vans;False;False;False;False;None;False
-72;Bodhi;Off-Road;False;False;False;False;None;False
-73;Boxville;Vans;False;False;False;False;None;True
-74;Boxville (Go Postal);Vans;False;False;False;False;None;False
-75;Boxville (Humane Labs);Vans;False;False;False;False;None;False
-76;Boxville (Post OP);Vans;False;False;False;False;None;False
-77;Brawler;Off-Road;False;False;False;False;None;False
-78;Brickade;Service;False;False;False;False;None;True
-79;Brioso R/A;Compacts;False;False;False;False;None;False
-80;Buccaneer;Muscle;False;True;False;False;Office Garage 3;False
-81;Buccaneer Custom;Muscle;False;False;False;False;None;False
-82;Buffalo;Sports;False;False;False;False;None;False
-83;Buffalo S;Sports;False;False;False;False;None;False
-84;Bullet;Super;False;False;False;False;None;False
-85;Burger Shot Stallion;Muscle;False;False;False;False;None;False
-86;Burrito;Vans;False;False;False;False;None;False
-87;Burrito (Bugstars);Vans;False;False;False;False;None;False
-88;Burrito (McGill-Olsen);Vans;False;False;False;False;None;False
-89;Burrito (Second Generation);Vans;False;False;False;False;None;False
-90;Burrito (Snow);Vans;False;False;False;False;None;False
-91;Bus;Service;False;False;False;False;None;True
-92;Buzzard;Helicopters;False;False;False;False;None;False
-93;Buzzard Attack Chopper;Helicopters;False;True;False;False;Hanger;True
-94;Caddy;Utility;False;False;False;False;None;False
-95;Caddy (Bunker);Utility;False;False;False;False;None;False
-96;Caddy (Civilian);Utility;False;False;False;False;None;False
-97;Camper;Vans;False;False;False;False;None;False
-98;Caracara;Off-Road;False;False;False;False;None;False
-99;Caracara 4x4;Off-Road;False;True;False;False;Casino Penthouse;False
-100;Carbon RS;Motorcycles;False;False;False;False;None;False
-101;Carbonizzare;Sports;False;False;False;False;None;False
-102;Cargo Plane;Planes;False;False;False;False;None;False
-103;Cargobob;Helicopters;False;True;False;False;Hanger;True
-104;Cargobob (Closed Doors);Helicopters;False;False;False;False;None;False
-105;Cargobob (Jetsam);Helicopters;False;False;False;False;None;True
-106;Cargobob (Trevor Philips Enterprises);Helicopters;False;False;False;False;None;False
-107;Casco;Sports Classics;False;False;False;False;None;False
-108;Cavalcade;SUVs;False;False;False;False;None;False
-109;Cavalcade (Second Generation);SUVs;False;False;False;False;None;False
-110;Cheburek;Sports Classics;False;False;False;False;None;False
-111;Cheetah;Super;False;False;False;False;None;False
-112;Cheetah Classic;Sports Classics;False;False;False;False;None;False
-113;Chernobog;Military;False;False;False;False;None;False
-114;Chimera;Motorcycles;False;False;False;False;None;False
-115;Chino;Muscle;False;False;False;False;None;False
-116;Chino Custom;Muscle;False;False;False;False;None;False
-117;Cliffhanger;Motorcycles;False;False;False;False;None;False
-118;Clique;Muscle;False;False;False;False;None;False
-119;Clown Van;Vans;False;False;False;False;None;False
-120;Cognoscenti;Sedans;False;False;False;False;None;False
-121;Cognoscenti (Armored);Sedans;False;False;False;False;None;False
-122;Cognoscenti 55;Sedans;False;False;False;False;None;False
-123;Cognoscenti 55 (Armored);Sedans;False;False;False;False;None;False
-124;Cognoscenti Cabrio;Coupes;False;False;False;False;None;False
-125;Comet;Sports;False;False;False;False;None;False
-126;Comet Retro Custom;Sports;False;False;False;False;None;False
-127;Comet SR;Sports;False;False;False;False;None;False
-128;Comet Safari;Sports;False;False;False;False;None;False
-129;Contender;SUVs;False;False;False;False;None;False
-130;Coquette;Sports;False;False;False;False;None;False
-131;Coquette BlackFin;Muscle;False;False;False;False;None;False
-132;Coquette Classic;Sports Classics;False;True;False;False;Office Garage 2;False
-133;Cruiser;Cycles;False;False;False;False;None;False
-134;Crusader;Military;False;False;False;False;None;True
-135;Cuban 800;Planes;False;True;False;False;Hanger;True
-136;Cutter;Industrial;False;False;False;False;None;False
-137;Cyclone;Super;False;False;False;False;None;False
-138;Daemon;Motorcycles;False;False;False;False;None;False
-139;Daemon (Lost);Motorcycles;False;False;False;False;None;False
-140;Dashound;Service;False;False;False;False;None;True
-141;Defiler;Motorcycles;False;False;False;False;None;False
-142;Deluxo;Sports Classics;False;False;False;False;None;False
-143;Desert Raid;Off-Road;False;False;False;False;None;False
-144;Deveste Eight;Super;False;True;False;False;Office Garage 1;False
-145;Deviant;Muscle;False;False;False;False;None;False
-146;Diabolus;Motorcycles;False;False;False;False;None;False
-147;Diabolus Custom;Motorcycles;False;False;False;False;None;False
-148;Dilettante;Compacts;False;True;False;False;Nightclub B2;False
-149;Dilettante (Security);Compacts;False;False;False;False;None;False
-150;Dinghy;Boats;False;False;False;False;None;True
-151;Dinghy (2-Seater);Boats;False;False;False;False;None;False
-152;Dinghy (Heist);Boats;False;False;False;False;None;False
-153;Dinghy (Yacht);Boats;False;False;False;False;None;False
-154;Dock Handler;Industrial;False;False;False;False;None;False
-155;Docktug;Utility;False;False;False;False;None;False
-156;Dodo;Planes;False;False;False;False;None;True
-157;Dominator;Muscle;False;True;False;False;Office Garage 1;False
-158;Dominator GTX;Muscle;False;False;False;False;None;False
-159;Double T;Motorcycles;False;False;False;False;None;False
-160;Dozer;Industrial;False;False;False;False;None;False
-161;Drift Tampa;Sports;False;False;False;False;None;False
-162;Dubsta;SUVs;False;True;False;False;Eclipse Towers Penthouse Suite 3;False
-163;Dubsta 6x6;Off-Road;False;False;False;False;None;False
-164;Dubsta2;SUVs;False;False;False;False;None;False
-165;Duke O'Death;Muscle;False;False;False;False;None;False
-166;Dukes;Muscle;False;False;False;False;None;False
-167;Dump;Industrial;False;False;False;False;None;True
-168;Dune;Service;False;False;False;False;None;True
-169;Dune Buggy;Off-Road;False;False;False;False;None;False
-170;Dune FAV;Off-Road;False;True;False;False;Facility;False
-171;Duneloader;Off-Road;False;False;False;False;None;False
-172;Duster;Planes;False;False;False;False;None;True
-173;Dynasty;Sports Classics;False;False;False;False;None;False
-174;ETR1;Super;False;False;False;False;None;False
-175;Elegy RH8;Sports;False;True;False;False;Office Garage 2;False
-176;Elegy Retro Custom;Sports;False;True;False;False;Office Garage 3;False
-177;Ellie;Muscle;False;False;False;False;None;False
-178;Emerus;Super;False;False;False;False;None;False
-179;Emperor;Sedans;False;False;False;False;None;False
-180;Emperor (Beater);Sedans;False;False;False;False;None;False
-181;Emperor (Snow);Sedans;False;False;False;False;None;False
-182;Endurex Race Bike;Cycles;False;False;False;False;None;False
-183;Enduro;Motorcycles;False;False;False;False;None;False
-184;Entity XF;Super;False;False;False;False;None;False
-185;Entity XXR;Super;False;False;False;False;None;False
-186;Esskey;Motorcycles;False;False;False;False;None;False
-187;Exemplar;Coupes;False;False;False;False;None;False
-188;F620;Coupes;False;False;False;False;None;False
-189;FCR 1000;Motorcycles;False;False;False;False;None;False
-190;FCR 1000 Custom;Motorcycles;False;False;False;False;None;False
-191;FH-1 Hunter;Helicopters;False;True;False;False;Hanger;False
-192;FMJ;Super;False;False;False;False;None;False
-193;FQ 2;SUVs;False;False;False;False;None;False
-194;Faction;Muscle;False;False;False;False;None;False
-195;Faction Custom;Muscle;False;False;False;False;None;False
-196;Faction Custom Donk;Muscle;False;False;False;False;None;False
-197;Fagaloa;Sports Classics;False;False;False;False;None;False
-198;Faggio;Motorcycles;False;False;False;False;None;False
-199;Faggio Mod;Motorcycles;False;False;False;False;None;False
-200;Faggio Sport;Motorcycles;False;True;True;True;Clubhouse;False
-201;Felon;Coupes;False;True;False;False;Eclipse Towers Penthouse Suite 3;False
-202;Felon GT;Coupes;False;False;False;False;None;False
-203;Feltzer;Sports;False;False;False;False;None;False
-204;Festival Bus;Service;False;False;False;False;None;True
-205;Fieldmaster;Utility;False;False;False;False;None;False
-206;Fieldmaster (Snow);Utility;False;False;False;False;None;False
-207;Fixter;Cycles;False;False;False;False;None;False
-208;Flash GT;Sports;False;True;False;False;Office Garage 2;False
-209;Flatbed;Industrial;False;False;False;False;None;False
-210;Forklift;Utility;False;False;False;False;None;False
-211;Freecrawler;Off-Road;False;False;False;False;None;False
-212;Frogger;Helicopters;False;True;False;False;None;True
-213;Frogger (Trevor Philips Enterprises);Helicopters;False;False;False;False;None;False
-214;Fränken Stange;Sports Classics;False;False;False;False;None;False
-215;Fugitive;Sedans;False;False;False;False;None;False
-216;Furore GT;Sports;False;False;False;False;None;False
-217;Fusilade;Sports;False;False;False;False;None;False
-218;Futo;Sports;False;True;False;False;Office Garage 2;False
-219;Future Shock Bruiser;Off-Road;False;False;False;False;None;False
-220;Future Shock Brutus;Off-Road;False;False;False;False;None;False
-221;Future Shock Cerberus;Commercial;False;False;False;False;None;False
-222;Future Shock Deathbike;Motorcycles;False;True;False;False;Arena Workshop;False
-223;Future Shock Dominator;Muscle;False;True;False;False;Arena Workshop;False
-224;Future Shock Impaler;Muscle;False;False;False;False;None;False
-225;Future Shock Imperator;Muscle;False;False;False;False;None;False
-226;Future Shock Issi;Compacts;False;False;False;False;None;False
-227;Future Shock Sasquatch;Off-Road;False;False;False;False;None;False
-228;Future Shock Scarab;Military;False;False;False;False;None;False
-229;Future Shock Slamvan;Muscle;False;False;False;False;None;False
-230;Future Shock ZR380;Sports;False;True;False;False;Arena Workshop;False
-231;GB200;Sports;False;False;False;False;None;False
-232;GP1;Super;False;False;False;False;None;False
-233;GT500;Sports Classics;False;False;False;False;None;False
-234;Gang Burrito;Vans;False;False;False;False;None;False
-235;Gang Burrito (Civilian);Vans;False;False;False;False;None;False
-236;Gargoyle;Motorcycles;False;False;False;False;None;False
-237;Gauntlet;Muscle;False;False;False;False;None;False
-238;Gauntlet Classic;Muscle;False;False;False;False;None;False
-239;Gauntlet Hellfire;Muscle;False;False;False;False;None;False
-240;Glendale;Sedans;False;True;False;False;Arena Workshop;False
-241;Go Go Monkey Blista;Sports;False;False;False;False;None;False
-242;Granger;SUVs;False;False;False;False;None;False
-243;Gresley;SUVs;False;False;False;False;None;False
-244;Guardian;Industrial;False;False;False;False;None;False
-245;Habanero;SUVs;False;True;False;False;Eclipse Towers Penthouse Suite 3;False
-246;Hakuchou;Motorcycles;False;False;False;False;None;False
-247;Hakuchou Drag;Motorcycles;False;True;True;True;Clubhouse;False
-248;Half-track;Military;False;False;False;False;None;False
-249;Hauler;Commercial;False;False;False;False;None;False
-250;Hauler Custom;Commercial;False;False;False;False;None;False
-251;Havok;Helicopters;False;False;False;False;None;False
-252;Hellion;Off-Road;False;False;False;False;None;False
-253;Hermes;Muscle;False;False;False;False;None;False
-254;Hexer;Motorcycles;False;False;False;False;None;False
-255;Hot Rod Blazer;Off-Road;False;False;False;False;None;False
-256;Hotknife;Muscle;False;False;False;False;None;False
-257;Hotring Sabre;Sports;False;True;False;False;Office Garage 2;False
-258;Howard NX-25;Planes;False;False;False;False;None;False
-259;Huntley S;SUVs;False;False;False;False;None;False
-260;Hustler;Muscle;False;False;False;False;None;False
-261;Hydra;Planes;False;True;False;False;Hanger;True
-262;Impaler;Muscle;False;False;False;False;None;False
-263;Infernus;Super;False;False;False;False;None;False
-264;Infernus Classic;Sports Classics;False;True;False;False;Office Garage 2;False
-265;Ingot;Sedans;False;False;False;False;None;False
-266;Injection;Off-Road;False;False;False;False;None;False
-267;Innovation;Motorcycles;False;False;False;False;None;False
-268;Insurgent;Off-Road;False;False;False;False;None;False
-269;Insurgent Pick-Up;Off-Road;False;True;False;False;None;True
-270;Insurgent Pick-Up Custom;Off-Road;False;True;False;False;Facility;False
-271;Intruder;Sedans;False;False;False;False;None;False
-272;Issi;Compacts;False;True;False;False;Greenwich Parkway, Unit 76;False
-273;Issi Classic;Compacts;False;True;False;False;Arena Workshop;False
-274;Issi Sport;Sports;False;True;False;False;Casino Penthouse;False
-275;Itali GTB;Super;False;False;False;False;None;False
-276;Itali GTB Custom;Super;False;True;False;False;Office Garage 3;False
-277;Itali GTO;Sports;False;False;False;False;None;False
-278;JB 700;Sports Classics;False;False;False;False;None;False
-279;Jackal;Coupes;False;False;False;False;None;False
-280;Jester;Sports;False;False;False;False;None;False
-281;Jester (Racecar);Sports;False;True;False;False;Office Garage 2;False
-282;Jester Classic;Sports;False;False;False;False;None;False
-283;Jet;Planes;False;False;False;False;None;False
-284;Jetmax;Boats;False;True;False;False;None;True
-285;Journey;Vans;False;False;False;False;None;True
-286;Jugular;Sports;False;False;False;False;None;False
-287;Kalahari;Off-Road;False;False;False;False;None;False
-288;Kamacho;Off-Road;False;False;False;False;None;False
-289;Kamacho Topless;Off-Road;False;True;False;False;870 Route 68 Approach;False
-290;Khamelion;Sports;False;True;False;False;Nightclub B2;False
-291;Kraken;Boats;False;False;False;False;None;True
-292;Krieger;Super;False;False;False;False;None;False
-293;Kuruma;Sports;False;False;False;False;None;False
-294;Kuruma (Armored);Sports;False;True;False;False;Nightclub Service Entrance;False
-295;LF-22 Starling;Planes;False;True;False;False;Hanger;False
-296;Landstalker;SUVs;False;False;False;False;None;False
-297;Lawn Mower;Utility;False;False;False;False;None;False
-298;Lectro;Motorcycles;False;False;False;False;None;False
-299;Locust;Sports;False;False;False;False;None;False
-300;Lost Slamvan;Muscle;False;False;False;False;None;False
-301;Lurcher;Muscle;False;False;False;False;None;False
-302;Luxor;Planes;False;False;False;False;None;True
-303;Luxor Deluxe;Planes;False;False;False;False;None;True
-304;Lynx;Sports;False;False;False;False;None;False
-305;Mallard;Planes;False;False;False;False;None;False
-306;Mamba;Sports Classics;False;False;False;False;None;False
-307;Mammatus;Planes;False;False;False;False;None;True
-308;Manana;Sports Classics;False;False;False;False;None;False
-309;Manchez;Motorcycles;False;False;False;False;None;False
-310;Marquis;Boats;False;False;False;False;None;True
-311;Marshall;Off-Road;False;False;False;False;None;True
-312;Massacro;Sports;False;False;False;False;None;False
-313;Massacro (Racecar);Sports;False;True;False;False;Office Garage 2;False
-314;Maverick;Helicopters;False;False;False;False;None;True
-315;Menacer;Off-Road;False;False;False;False;None;False
-316;Mesa;SUVs;False;False;False;False;None;False
-317;Mesa (Merryweather);Off-Road;False;False;False;False;None;False
-318;Mesa (Snow);SUVs;False;False;False;False;None;False
-319;Michelli GT;Sports Classics;False;False;False;False;None;False
-320;Miljet;Planes;False;False;False;False;None;True
-321;Minivan;Vans;False;False;False;False;None;False
-322;Minivan Custom;Vans;False;True;False;False;Office Garage 3;False
-323;Mixer (First Generation);Industrial;False;False;False;False;None;False
-324;Mixer (Second Generation);Industrial;False;False;False;False;None;False
-325;Mobile Operations Center;Trailers;False;True;False;False;Bunker;False
-326;Mogul;Planes;False;False;False;False;None;False
-327;Monroe;Sports Classics;False;False;False;False;None;False
-328;Moonbeam;Muscle;False;False;False;False;None;False
-329;Moonbeam Custom;Muscle;False;False;False;False;None;False
-330;Mule;Commercial;False;False;False;False;None;True
-331;Mule (Heist);Commercial;False;False;False;False;None;False
-332;Mule (Ramp-door);Commercial;False;False;False;False;None;False
-333;Mule Custom;Commercial;False;True;False;False;Nightclub B1;False
-334;Nebula Turbo;Sports Classics;False;False;False;False;None;False
-335;Nemesis;Motorcycles;False;True;True;False;Clubhouse;False
-336;Neo;Sports;False;False;False;False;None;False
-337;Neon;Sports;False;False;False;False;None;False
-338;Nero;Super;False;False;False;False;None;False
-339;Nero Custom;Super;False;True;False;False;Office Garage 3;False
-340;Nightblade;Motorcycles;False;False;False;False;None;False
-341;Nightmare Bruiser;Off-Road;False;False;False;False;None;False
-342;Nightmare Brutus;Off-Road;False;False;False;False;None;False
-343;Nightmare Cerberus;Commercial;False;False;False;False;None;False
-344;Nightmare Deathbike;Motorcycles;False;False;False;False;None;False
-345;Nightmare Dominator;Muscle;False;False;False;False;None;False
-346;Nightmare Impaler;Muscle;False;False;False;False;None;False
-347;Nightmare Imperator;Muscle;False;False;False;False;None;False
-348;Nightmare Issi;Compacts;False;False;False;False;None;False
-349;Nightmare Sasquatch;Off-Road;False;False;False;False;None;False
-350;Nightmare Scarab;Military;False;False;False;False;None;False
-351;Nightmare Slamvan;Muscle;False;False;False;False;None;False
-352;Nightmare ZR380;Sports;False;False;False;False;None;False
-353;Nightshade;Muscle;False;False;False;False;None;False
-354;Nightshark;Off-Road;False;False;False;False;None;False
-355;Nimbus;Planes;False;False;False;False;None;True
-356;Novak;SUVs;False;False;False;False;None;False
-357;Omnis;Sports;False;True;False;False;Office Garage 2;False
-358;Oppressor;Motorcycles;False;False;False;False;None;False
-359;Oppressor Mk II;Motorcycles;False;True;False;False;Terrorbyte;False
-360;Oracle;Coupes;False;True;False;False;Greenwich Parkway, Unit 76;False
-361;Oracle XS;Coupes;False;False;False;False;None;False
-362;Osiris;Super;False;False;False;False;None;False
-363;P-45 Nokota;Planes;False;True;False;False;Hanger;False
-364;P-996 LAZER;Planes;False;False;False;False;None;True
-365;PCJ 600;Motorcycles;False;False;False;False;None;False
-366;Packer;Commercial;False;False;False;False;None;False
-367;Panto;Compacts;False;False;False;False;None;False
-368;Paradise;Vans;False;False;False;False;None;False
-369;Paragon R;Sports;False;False;False;False;None;False
-370;Paragon R (Armored);Sports;False;True;False;False;Casino Penthouse;False
-371;Pariah;Sports;False;True;False;False;Office Garage 2;False
-372;Patriot;SUVs;False;True;False;False;Eclipse Towers Penthouse Suite 3;False
-373;Patriot Stretch;SUVs;False;False;False;False;None;False
-374;Penetrator;Super;False;False;False;False;None;False
-375;Penumbra;Sports;False;True;False;False;Office Garage 2;False
-376;Peyote;Sports Classics;False;True;False;False;Office Garage 2;False
-377;Peyote Gasser;Muscle;False;False;False;False;None;False
-378;Phantom;Commercial;False;False;False;False;None;False
-379;Phantom Custom;Commercial;False;False;False;False;None;False
-380;Phantom Wedge;Commercial;False;False;False;False;None;False
-381;Phoenix;Muscle;False;False;False;False;None;False
-382;Picador;Muscle;False;False;False;False;None;False
-383;Pigalle;Sports Classics;False;False;False;False;None;False
-384;Pißwasser Dominator;Muscle;False;False;False;False;None;False
-385;Pony;Vans;False;False;False;False;None;False
-386;Pony (Smoke on The Water);Vans;False;False;False;False;None;False
-387;Pounder;Commercial;False;False;False;False;None;False
-388;Pounder Custom;Commercial;False;True;False;False;Nightclub B1;False
-389;Prairie;Compacts;False;True;False;False;Greenwich Parkway, Unit 76;False
-390;Premier;Sedans;False;True;False;False;1337 Exceptionalists Way;False
-391;Primo;Sedans;False;True;False;False;Office Garage 3;False
-392;Primo Custom;Sedans;False;False;False;False;None;False
-615;Prison Bus;Commercial;False;False;False;False;None;True
-393;Pyro;Planes;False;True;False;False;Hanger;False
-394;RC Bandito;Off-Road;False;False;False;False;None;False
-395;RE-7B;Super;False;False;False;False;None;False
-396;RM-10 Bombushka;Planes;False;False;False;False;None;False
-397;Radius;SUVs;False;True;False;False;Eclipse Towers Penthouse Suite 3;False
-398;Raiden;Sports;False;True;False;False;Nightclub B2;False
-399;Ramp Buggy;Off-Road;False;True;False;False;Vehicle Wearhouse;False
-400;Ramp Buggy (Spoilerless);Off-Road;False;False;False;False;None;False
-401;Rampant Rocket;Motorcycles;False;False;False;False;None;False
-402;Rancher XL;Off-Road;False;False;False;False;None;False
-403;Rancher XL (Snow);Off-Road;False;False;False;False;None;False
-404;Rapid GT;Sports;False;False;False;False;None;False
-405;Rapid GT (Convertible);Sports;False;False;False;False;None;False
-406;Rapid GT Classic;Sports Classics;False;False;False;False;None;False
-407;Raptor;Sports;False;False;False;False;None;False
-408;Rat Bike;Motorcycles;False;False;False;False;None;False
-409;Rat-Loader;Muscle;False;False;False;False;None;False
-410;Rat-Truck;Muscle;False;True;False;False;Arena Workshop;False
-411;Reaper;Super;False;False;False;False;None;False
-412;Rebel;Off-Road;False;False;False;False;None;False
-413;Redwood Gauntlet;Muscle;False;False;False;False;None;False
-414;Regina;Sedans;False;False;False;False;None;False
-415;Rental Shuttle Bus;Service;False;False;False;False;None;True
-416;Retinue;Sports Classics;False;False;False;False;None;False
-417;Revolter;Sports;False;False;False;False;None;False
-418;Rhapsody;Compacts;False;False;False;False;None;False
-419;Rhino Tank;Military;False;False;False;False;None;True
-420;Riata;Off-Road;False;False;False;False;None;False
-421;Ripley;Utility;False;False;False;False;None;False
-422;Rocket Voltic;Super;False;True;False;False;Vehicle Wearhouse;False
-423;Rocoto;SUVs;False;False;False;False;None;False
-424;Rogue;Planes;False;True;False;False;Hanger;False
-425;Romero Hearse;Sedans;False;False;False;False;None;False
-426;Roosevelt;Sports Classics;False;False;False;False;None;False
-427;Roosevelt Valor;Sports Classics;False;False;False;False;None;False
-428;Rubble;Industrial;False;False;False;False;None;False
-429;Ruffian;Motorcycles;False;True;False;False;Clubhouse;False
-430;Ruiner;Muscle;False;True;False;False;Office Garage 1;False
-431;Ruiner 2000;Muscle;False;True;False;False;Vehicle Wearhouse;False
-432;Ruiner3;Muscle;False;False;False;False;None;False
-433;Rumpo;Vans;False;False;False;False;None;False
-434;Rumpo (Deludamol);Vans;False;False;False;False;None;False
-435;Rumpo Custom;Vans;False;False;False;False;None;False
-436;Ruston;Sports;False;True;False;False;Office Garage 2;False
-437;Rusty Rebel;Off-Road;False;False;False;False;None;False
-438;S80RR;Super;False;False;False;False;None;False
-439;SC1;Super;False;False;False;False;None;False
-440;Sabre Turbo;Muscle;False;True;False;False;Office Garage 3;False
-441;Sabre Turbo Custom;Muscle;False;False;False;False;None;False
-442;Sadler;Utility;False;False;False;False;None;False
-443;Sadler (Snow);Utility;False;False;False;False;None;False
-444;Sanchez;Motorcycles;False;True;False;False;870 Route 68 Approach;False
-445;Sanctus;Motorcycles;False;False;False;False;None;False
-446;Sandking SWB;Off-Road;False;False;False;False;None;False
-447;Sandking XL;Off-Road;False;True;False;False;870 Route 68 Approach;False
-448;Savage;Helicopters;False;True;False;False;Hanger;True
-449;Savestra;Sports Classics;False;False;False;False;None;False
-450;Schafter;Sedans;False;False;False;False;None;False
-451;Schafter LWB;Sports;False;False;False;False;None;False
-452;Schafter LWB (Armored);Sedans;False;False;False;False;None;False
-453;Schafter V12;Sports;False;False;False;False;None;False
-454;Schafter V12 (Armored);Sedans;False;False;False;False;None;False
-455;Schlagen GT;Sports;False;False;False;False;None;False
-456;Schwartzer;Sports;False;False;False;False;None;False
-457;Scorcher;Cycles;False;False;False;False;None;False
-458;Scramjet;Super;False;True;False;False;Mobile Operations Center;False
-459;Scrap Truck;Utility;False;False;False;False;None;False
-460;Sea Sparrow;Helicopters;False;False;False;False;None;False
-461;Seabreeze;Planes;False;True;False;False;Hanger;False
-462;Seashark;Boats;False;True;False;False;None;True
-463;Seashark (Lifeguard);Boats;False;False;False;False;None;False
-464;Seashark (Yacht);Boats;False;False;False;False;None;False
-465;Seminole;SUVs;False;False;False;False;None;False
-466;Sentinel;Coupes;False;False;False;False;None;False
-467;Sentinel Classic;Sports;False;False;False;False;None;False
-468;Sentinel XS;Coupes;False;True;False;False;Greenwich Parkway, Unit 76;False
-469;Serrano;SUVs;False;False;False;False;None;False
-470;Seven-70;Sports;False;False;False;False;None;False
-471;Shamal;Planes;False;False;False;False;None;True
-472;Shotaro;Motorcycles;False;True;False;False;Arena Workshop;False
-473;Skylift;Helicopters;False;False;False;False;None;False
-474;Slamvan;Muscle;False;True;False;False;Arena Workshop;False
-475;Slamvan Custom;Muscle;False;True;False;False;Office Garage 3;False
-476;Sovereign;Motorcycles;False;True;True;False;Clubhouse;False
-477;Space Docker;Off-Road;False;False;False;False;None;False
-478;Specter;Sports;False;False;False;False;None;False
-479;Specter Custom;Sports;False;True;False;False;Office Garage 3;False
-480;Speeder;Boats;False;False;False;False;None;True
-481;Speeder (Yacht);Boats;False;False;False;False;None;False
-482;Speedo;Vans;False;False;False;False;None;False
-483;Speedo Custom;Vans;False;True;False;False;Nightclub B1;False
-484;Sprunk Buffalo;Sports;False;False;False;False;None;False
-485;Squalo;Boats;False;False;False;False;None;True
-486;Stafford;Sedans;False;False;False;False;None;False
-487;Stallion;Muscle;False;False;False;False;None;False
-488;Stanier;Sedans;False;False;False;False;None;False
-489;Stinger;Sports Classics;False;False;False;False;None;False
-490;Stinger GT;Sports Classics;False;False;False;False;None;False
-491;Stirling GT;Sports Classics;False;False;False;False;None;False
-492;Stockade;Commercial;False;False;False;False;None;False
-493;Stockade (Snow);Commercial;False;False;False;False;None;False
-494;Stratum;Sedans;False;True;False;False;1337 Exceptionalists Way;False
-495;Street Blazer;Off-Road;False;False;False;False;None;False
-496;Streiter;Sports;False;False;False;False;None;False
-497;Stretch;Sedans;False;False;False;False;None;True
-498;Stromberg;Sports Classics;False;True;False;False;Office Garage 2;False
-499;Submersible;Boats;False;False;False;False;None;False
-500;Sultan;Sports;False;False;False;False;None;False
-501;Sultan RS;Super;False;True;False;False;Office Garage 3;False
-502;Suntrap;Boats;False;False;False;False;None;True
-503;Super Diamond;Sedans;False;False;False;False;None;False
-504;SuperVolito;Helicopters;False;False;False;False;None;True
-505;SuperVolito Carbon;Helicopters;False;False;False;False;None;True
-506;Surano;Sports;False;False;False;False;None;False
-507;Surfer;Vans;False;False;False;False;None;False
-508;Surfer (Beater);Vans;False;False;False;False;None;False
-509;Surge;Sedans;False;True;False;False;Nightclub B2;False
-510;Swift;Helicopters;False;False;False;False;None;True
-511;Swift Deluxe;Helicopters;False;False;False;False;None;True
-512;Swinger;Sports Classics;False;True;False;False;Office Garage 2;False
-513;T20;Super;False;False;False;False;None;False
-514;TM-02 Khanjali;Military;False;True;False;False;Facility;False
-515;Taco Van;Vans;False;False;False;False;None;False
-516;Tailgater;Sedans;False;False;False;False;None;False
-517;Taipan;Super;False;False;False;False;None;False
-518;Tampa;Muscle;False;False;False;False;None;False
-519;Taxi;Service;False;False;False;False;None;False
-520;Technical;Off-Road;False;False;False;False;None;True
-521;Technical Aqua;Off-Road;False;False;False;False;None;False
-522;Technical Custom;Off-Road;False;False;False;False;None;False
-523;Tempesta;Super;False;True;False;False;Office Garage 1;False
-524;Terrorbyte;Commercial;False;True;False;False;Nightclub B5;False
-525;Tezeract;Super;False;True;False;False;Nightclub B2;False
-526;The Liberator;Off-Road;False;True;False;False;None;True
-527;Thrax;Super;False;True;False;False;Casino Penthouse;False
-528;Thrust;Motorcycles;False;False;False;False;None;False
-529;Thruster;Military;False;True;False;False;Facility;False
-530;Tipper (First Generation);Industrial;False;False;False;False;None;False
-531;Tipper (Second Generation);Industrial;False;False;False;False;None;False
-532;Titan;Planes;False;False;False;False;None;True
-533;Torero;Sports Classics;False;False;False;False;None;False
-534;Tornado;Sports Classics;False;False;False;False;None;False
-535;Tornado (Beater);Sports Classics;False;False;False;False;None;False
-536;Tornado (Convertible);Sports Classics;False;False;False;False;None;False
-537;Tornado (Mariachi);Sports Classics;False;False;False;False;None;False
-538;Tornado Custom;Sports Classics;False;True;False;False;Office Garage 3;False
-539;Tornado Rat Rod;Sports Classics;False;False;False;False;None;False
-540;Toro;Boats;False;False;False;False;None;True
-541;Toro (Yacht);Boats;False;False;False;False;None;False
-542;Toros;SUVs;False;True;False;False;Eclipse Towers Penthouse Suite 3;False
-543;Tourbus;Service;False;False;False;False;None;False
-544;Towtruck;Utility;False;False;False;False;None;False
-545;Towtruck (Truck);Utility;False;False;False;False;None;False
-546;Tractor;Utility;False;False;False;False;None;False
-547;Trashmaster;Service;False;False;False;False;None;False
-548;Trashmaster (Rusty);Service;False;False;False;False;None;False
-549;Tri-Cycles Race Bike;Cycles;False;False;False;False;None;False
-550;Trophy Truck;Off-Road;False;False;False;False;None;False
-551;Tropic;Boats;False;False;False;False;None;True
-552;Tropic (Yacht);Boats;False;False;False;False;None;False
-553;Tropos Rallye;Sports;False;False;False;False;None;False
-554;Tug;Boats;False;False;False;False;None;True
-555;Tula;Planes;False;True;False;False;Hanger;False
-556;Tulip;Muscle;False;False;False;False;None;False
-557;Turismo Classic;Sports Classics;False;True;False;False;Office Garage 2;False
-558;Turismo R;Super;False;True;False;False;Office Garage 1;False
-559;Turreted Limo;Sedans;False;False;False;False;None;True
-560;Tyrant;Super;False;True;False;False;Office Garage 1;False
-561;Tyrus;Super;False;False;False;False;None;False
-562;Ultralight;Planes;False;True;False;False;Hanger;False
-563;Utility Truck (Box);Utility;False;False;False;False;None;False
-564;Utility Truck (Crane);Utility;False;False;False;False;None;False
-565;Utility Truck (Van);Utility;False;False;False;False;None;False
-566;V-65 Molotok;Planes;False;False;False;False;None;False
-567;Vacca;Super;False;False;False;False;None;False
-568;Vader;Motorcycles;False;True;True;False;Clubhouse;False
-569;Vagner;Super;False;True;False;False;Office Garage 1;False
-570;Valkyrie;Helicopters;False;False;False;False;None;True
-571;Valkyrie MOD.0;Helicopters;False;False;False;False;None;False
-572;Vamos;Muscle;False;True;False;False;Office Garage 1;False
-573;Velum;Planes;False;False;False;False;None;True
-574;Velum 5-Seater;Planes;False;False;False;False;None;True
-575;Verlierer;Sports;False;False;False;False;None;False
-576;Vestra;Planes;False;False;False;False;None;True
-577;Vigero;Muscle;False;False;False;False;None;False
-578;Vigilante;Super;False;False;False;False;None;False
-579;Vindicator;Motorcycles;False;False;False;False;None;False
-580;Virgo;Muscle;False;False;False;False;None;False
-581;Virgo Classic;Muscle;False;False;False;False;None;False
-582;Virgo Classic Custom;Muscle;False;False;False;False;None;False
-583;Viseris;Sports Classics;False;True;False;False;Office Garage 2;False
-584;Visione;Super;False;False;False;False;None;False
-585;Volatol;Planes;False;False;False;False;None;False
-586;Volatus;Helicopters;False;False;False;False;None;True
-587;Voltic;Super;False;True;False;False;Nightclub B2;False
-588;Voodoo;Muscle;False;True;False;False;Office Garage 3;False
-589;Voodoo Custom;Muscle;False;False;False;False;None;False
-590;Vortex;Motorcycles;False;True;True;False;Clubhouse;False
-591;Warrener;Sedans;False;False;False;False;None;False
-592;Washington;Sedans;False;True;False;False;1337 Exceptionalists Way;False
-593;Wastelander;Service;False;False;False;False;None;False
-594;Weaponized Tampa;Muscle;False;True;False;False;Facility;False
-595;Whippet Race Bike;Cycles;False;False;False;False;None;False
-596;Windsor;Coupes;False;False;False;False;None;False
-597;Windsor Drop;Coupes;False;False;False;False;None;False
-598;Wolfsbane;Motorcycles;False;False;False;False;None;False
-599;X80 Proto;Super;False;True;False;False;Office Garage 1;False
-600;XA-21;Super;False;False;False;False;None;False
-601;XLS;SUVs;False;False;False;False;None;False
-602;XLS (Armored);SUVs;False;False;False;False;None;False
-603;Xero Blimp;Planes;False;False;False;False;None;False
-604;Yosemite;Muscle;False;False;False;False;None;False
-605;Youga;Vans;False;False;False;False;None;False
-606;Youga Classic;Vans;False;False;False;False;None;False
-607;Z-Type;Sports Classics;False;False;False;False;None;False
-608;Zentorno;Super;False;True;False;False;Office Garage 1;False
-609;Zion;Coupes;False;True;False;False;Greenwich Parkway, Unit 76;False
-610;Zion Cabrio;Coupes;False;False;False;False;None;False
-611;Zion Classic;Sports Classics;False;False;False;False;None;False
-612;Zombie Bobber;Motorcycles;False;False;False;False;None;False
-613;Zombie Chopper;Motorcycles;False;True;False;False;Clubhouse;False
-614;Zorrusso;Super;False;False;False;False;None;False
+374;Dinghy (2-Seater);Boats;False;False;False;False;None;False
+216;Seashark;Boats;False;True;False;False;None;True
+480;Marquis;Boats;False;False;False;False;None;True
+493;Kraken;Boats;False;False;False;False;None;True
+396;Dinghy (Heist);Boats;False;False;False;False;None;False
+389;Dinghy (Yacht);Boats;False;False;False;False;None;False
+409;Dinghy;Boats;False;False;False;False;None;True
+285;Squalo;Boats;False;False;False;False;None;True
+203;Submersible;Boats;False;False;False;False;None;False
+122;Seashark (Lifeguard);Boats;False;False;False;False;None;False
+346;Suntrap;Boats;False;False;False;False;None;True
+137;Seashark (Yacht);Boats;False;False;False;False;None;False
+134;Toro;Boats;False;False;False;False;None;True
+554;Toro (Yacht);Boats;False;False;False;False;None;False
+184;Speeder (Yacht);Boats;False;False;False;False;None;False
+214;Tug;Boats;False;False;False;False;None;True
+191;Tropic;Boats;False;False;False;False;None;True
+195;Speeder;Boats;False;False;False;False;None;True
+228;Tropic (Yacht);Boats;False;False;False;False;None;False
+186;Jetmax;Boats;False;True;False;False;None;True
+159;Mule (Ramp-door);Commercial;False;False;False;False;None;False
+160;Mule;Commercial;False;False;False;False;None;True
+90;Nightmare Cerberus;Commercial;False;False;False;False;None;False
+565;Future Shock Cerberus;Commercial;False;False;False;False;None;False
+244;Speedo Hope It Works;Commercial;False;False;False;False;None;False
+466;Benson;Commercial;False;False;False;False;None;False
+351;Biff;Commercial;False;False;False;False;None;False
+478;Hauler;Commercial;False;False;False;False;None;False
+256;Stockade;Commercial;False;False;False;False;None;False
+481;Hauler Custom;Commercial;False;False;False;False;None;False
+257;Stockade (Snow);Commercial;False;False;False;False;None;False
+98;Mule (Heist);Commercial;False;False;False;False;None;False
+404;Apocalypse Cerberus;Commercial;False;False;False;False;None;False
+165;Phantom Wedge;Commercial;False;False;False;False;None;False
+71;Pounder Custom;Commercial;False;True;False;False;Nightclub B1;False
+72;Mule Custom;Commercial;False;True;False;False;Nightclub B1;False
+221;Prison Bus;Commercial;False;False;False;False;None;True
+485;Packer;Commercial;False;False;False;False;None;False
+82;Pounder;Commercial;False;False;False;False;None;False
+105;Phantom;Commercial;False;False;False;False;None;False
+88;Phantom Custom;Commercial;False;False;False;False;None;False
+80;Terrorbyte;Commercial;False;True;False;False;Nightclub B5;False
+78;Dilettante;Compacts;False;True;False;False;Nightclub B2;False
+104;Nightmare Issi;Compacts;False;False;False;False;None;False
+298;Dilettante (Security);Compacts;False;False;False;False;None;False
+269;Rhapsody;Compacts;False;False;False;False;None;False
+193;Future Shock Issi;Compacts;False;False;False;False;None;False
+52;Blista;Compacts;False;True;False;False;Greenwich Parkway, Unit 76;False
+8;Issi Classic;Compacts;False;True;False;False;Arena Workshop;False
+55;Prairie;Compacts;False;True;False;False;Greenwich Parkway, Unit 76;False
+54;Issi;Compacts;False;True;False;False;Greenwich Parkway, Unit 76;False
+34;Speedo Test Subject;Compacts;False;False;False;False;Clubhouse;False
+385;Apocalypse Issi;Compacts;False;False;False;False;None;False
+26;Speedo Didn't Work The Last Time;Compacts;False;False;False;False;Clubhouse;False
+35;Speedo I Don't Understand;Compacts;False;False;False;False;Clubhouse;False
+350;Brioso R/A;Compacts;False;False;False;False;None;False
+484;Panto;Compacts;False;False;False;False;None;False
+497;Jackal;Coupes;False;False;False;False;None;False
+376;Cognoscenti Cabrio;Coupes;False;False;False;False;None;False
+524;Felon GT;Coupes;False;False;False;False;None;False
+622;Speedo Think I Figured It Out;Coupes;False;False;False;False;Clubhouse;False
+50;Oracle;Coupes;False;True;False;False;Greenwich Parkway, Unit 76;False
+173;Sentinel;Coupes;False;False;False;False;None;False
+234;Windsor;Coupes;False;False;False;False;None;False
+232;Windsor Drop;Coupes;False;False;False;False;None;False
+38;Felon;Coupes;False;True;False;False;Eclipse Towers Penthouse Suite 3;False
+154;Oracle XS;Coupes;False;False;False;False;None;False
+236;Zion Cabrio;Coupes;False;False;False;False;None;False
+53;Zion;Coupes;False;True;False;False;Greenwich Parkway, Unit 76;False
+51;Sentinel XS;Coupes;False;True;False;False;Greenwich Parkway, Unit 76;False
+540;F620;Coupes;False;False;False;False;None;False
+488;Exemplar;Coupes;False;False;False;False;None;False
+391;Cruiser;Cycles;False;False;False;False;None;False
+531;Endurex Race Bike;Cycles;False;False;False;False;None;False
+425;BMX;Cycles;False;False;False;False;None;False
+223;Whippet Race Bike;Cycles;False;False;False;False;None;False
+189;Tri-Cycles Race Bike;Cycles;False;False;False;False;None;False
+87;Scorcher;Cycles;False;False;False;False;None;False
+518;Fixter;Cycles;False;False;False;False;None;False
+452;SuperVolito;Helicopters;False;False;False;False;None;True
+66;Buzzard Attack Chopper;Helicopters;False;True;False;False;Hanger;True
+217;Frogger;Helicopters;False;True;False;False;None;True
+65;FH-1 Hunter;Helicopters;False;True;False;False;Hanger;False
+85;Maverick;Helicopters;False;False;False;False;None;True
+359;Cargobob (Jetsam);Helicopters;False;False;False;False;None;True
+309;Cargobob (Closed Doors);Helicopters;False;False;False;False;None;False
+316;Swift Deluxe;Helicopters;False;False;False;False;None;True
+57;Savage;Helicopters;False;True;False;False;Hanger;True
+64;Cargobob;Helicopters;False;True;False;False;Hanger;True
+295;SuperVolito Carbon;Helicopters;False;False;False;False;None;True
+284;Volatus;Helicopters;False;False;False;False;None;True
+528;Frogger (Trevor Philips Enterprises);Helicopters;False;False;False;False;None;False
+60;Akula;Helicopters;False;True;False;False;Hanger;False
+318;Swift;Helicopters;False;False;False;False;None;True
+360;Cargobob (Trevor Philips Enterprises);Helicopters;False;False;False;False;None;False
+429;Annihilator;Helicopters;False;False;False;False;None;True
+181;Valkyrie MOD.0;Helicopters;False;False;False;False;None;False
+112;Sea Sparrow;Helicopters;False;False;False;False;None;False
+268;Skylift;Helicopters;False;False;False;False;None;False
+168;Valkyrie;Helicopters;False;False;False;False;None;True
+473;Havok;Helicopters;False;False;False;False;None;False
+330;Buzzard;Helicopters;False;False;False;False;None;False
+509;Dock Handler;Industrial;False;False;False;False;None;False
+506;Guardian;Industrial;False;False;False;False;None;False
+117;Rubble;Industrial;False;False;False;False;None;False
+115;Mixer (Second Generation);Industrial;False;False;False;False;None;False
+395;Cutter;Industrial;False;False;False;False;None;False
+114;Mixer (First Generation);Industrial;False;False;False;False;None;False
+499;Tipper (First Generation);Industrial;False;False;False;False;None;False
+336;Dump;Industrial;False;False;False;False;None;True
+319;Tipper (Second Generation);Industrial;False;False;False;False;None;False
+517;Flatbed;Industrial;False;False;False;False;None;False
+539;Dozer;Industrial;False;False;False;False;None;False
+49;APC;Military;False;True;False;False;Facility;False
+264;Rhino Tank;Military;False;False;False;False;None;True
+45;Thruster;Military;False;True;False;False;Facility;False
+354;Chernobog;Military;False;False;False;False;None;False
+48;TM-02 Khanjali;Military;False;True;False;False;Facility;False
+383;Apocalypse Scarab;Military;False;False;False;False;None;False
+145;Half-track;Military;False;False;False;False;None;False
+440;Barrage;Military;False;False;False;False;None;False
+439;Barracks Semi;Military;False;False;False;False;None;False
+438;Barracks (Heist);Military;False;False;False;False;None;False
+437;Barracks;Military;False;False;False;False;None;True
+557;Future Shock Scarab;Military;False;False;False;False;None;False
+16;Anti-Aircraft Trailer;Military;False;True;False;False;Bunker;False
+407;Crusader;Military;False;False;False;False;None;True
+152;Nightmare Scarab;Military;False;False;False;False;None;False
+24;Sovereign;Motorcycles;False;True;False;False;Clubhouse;False
+29;Zombie Chopper;Motorcycles;False;True;False;False;Clubhouse;False
+32;Vader;Motorcycles;False;True;False;False;Clubhouse;False
+28;Vortex;Motorcycles;False;True;False;False;Clubhouse;False
+479;Thrust;Motorcycles;False;False;False;False;None;False
+23;Faggio Sport;Motorcycles;False;True;False;False;Clubhouse;False
+208;Wolfsbane;Motorcycles;False;False;False;False;None;False
+30;Bati 801;Motorcycles;False;True;False;False;Clubhouse;False
+27;Nemesis;Motorcycles;False;True;False;False;Clubhouse;False
+225;Vindicator;Motorcycles;False;False;False;False;None;False
+617;Oppressor Mk II;Motorcycles;False;True;False;False;Terrorbyte;False
+525;Faggio;Motorcycles;False;False;False;False;None;False
+530;Enduro;Motorcycles;False;False;False;False;None;False
+12;Shotaro;Motorcycles;False;True;False;False;Arena Workshop;False
+441;Bati 801RR;Motorcycles;False;False;False;False;None;False
+536;FCR 1000 Custom;Motorcycles;False;False;False;False;None;False
+414;Apocalypse Deathbike;Motorcycles;False;False;False;False;None;False
+491;Hakuchou;Motorcycles;False;False;False;False;None;False
+405;Akuma;Motorcycles;False;False;False;False;None;False
+467;Bagger;Motorcycles;False;False;False;False;None;False
+377;Avarus;Motorcycles;False;False;False;False;None;False
+344;Daemon;Motorcycles;False;False;False;False;None;False
+453;Innovation;Motorcycles;False;False;False;False;None;False
+5;BF400;Motorcycles;False;True;False;False;870 Route 68 Approach;False
+325;Daemon (Lost);Motorcycles;False;False;False;False;None;False
+324;Defiler;Motorcycles;False;False;False;False;None;False
+444;Gargoyle;Motorcycles;False;False;False;False;None;False
+311;FCR 1000;Motorcycles;False;False;False;False;None;False
+434;Double T;Motorcycles;False;False;False;False;None;False
+33;Ruffian;Motorcycles;False;True;False;False;Clubhouse;False
+508;Hexer;Motorcycles;False;False;False;False;None;False
+410;Diabolus Custom;Motorcycles;False;False;False;False;None;False
+301;Diabolus;Motorcycles;False;False;False;False;None;False
+302;Carbon RS;Motorcycles;False;False;False;False;None;False
+555;Faggio Mod;Motorcycles;False;False;False;False;None;False
+13;Future Shock Deathbike;Motorcycles;False;True;False;False;Arena Workshop;False
+333;Chimera;Motorcycles;False;False;False;False;None;False
+317;Cliffhanger;Motorcycles;False;False;False;False;None;False
+541;Esskey;Motorcycles;False;False;False;False;None;False
+31;Hakuchou Drag;Motorcycles;False;True;False;False;Clubhouse;False
+7;Sanchez;Motorcycles;False;True;False;False;870 Route 68 Approach;False
+229;Zombie Bobber;Motorcycles;False;False;False;False;None;False
+490;Lectro;Motorcycles;False;False;False;False;None;False
+246;Rat Bike;Motorcycles;False;False;False;False;None;False
+121;Sanctus;Motorcycles;False;False;False;False;None;False
+172;Rampant Rocket;Motorcycles;False;False;False;False;None;False
+158;Nightmare Deathbike;Motorcycles;False;False;False;False;None;False
+116;Nightblade;Motorcycles;False;False;False;False;None;False
+292;Manchez;Motorcycles;False;False;False;False;None;False
+486;PCJ 600;Motorcycles;False;False;False;False;None;False
+140;Oppressor;Motorcycles;False;False;False;False;None;False
+148;Nightshade;Muscle;False;False;False;False;None;False
+306;Tampa;Muscle;False;False;False;False;None;False
+111;Peyote Gasser;Muscle;False;False;False;False;None;False
+420;Blade;Muscle;False;False;False;False;None;False
+162;Moonbeam Custom;Muscle;False;False;False;False;None;False
+43;Weaponized Tampa;Muscle;False;True;False;False;Facility;False
+616;Slamvan Custom;Muscle;False;True;False;False;Office Garage 3;False
+332;Buccaneer Custom;Muscle;False;False;False;False;None;False
+14;Rat-Truck;Muscle;False;True;False;False;Arena Workshop;False
+15;Future Shock Dominator;Muscle;False;True;False;False;Arena Workshop;False
+118;Moonbeam;Muscle;False;False;False;False;None;False
+501;Lost Slamvan;Muscle;False;False;False;False;None;False
+133;Tulip;Muscle;False;False;False;False;None;False
+472;Lurcher;Muscle;False;False;False;False;None;False
+89;Sabre Turbo Custom;Muscle;False;False;False;False;None;False
+608;Voodoo;Muscle;False;True;False;False;Office Garage 3;False
+415;Apocalypse Dominator;Muscle;False;False;False;False;None;False
+394;Apocalypse Imperator;Muscle;False;False;False;False;None;False
+363;Clique;Muscle;False;False;False;False;None;False
+303;Deviant;Muscle;False;False;False;False;None;False
+370;Chino Custom;Muscle;False;False;False;False;None;False
+349;Chino;Muscle;False;False;False;False;None;False
+239;Stallion;Muscle;False;False;False;False;None;False
+108;Nightmare Dominator;Muscle;False;False;False;False;None;False
+533;Dominator GTX;Muscle;False;False;False;False;None;False
+582;Ruiner;Muscle;False;True;False;False;Office Garage 1;False
+620;Ruiner 2000;Muscle;False;True;False;False;Vehicle Wearhouse;False
+156;Nightmare Impaler;Muscle;False;False;False;False;None;False
+131;Nightmare Imperator;Muscle;False;False;False;False;None;False
+328;Burger Shot Stallion;Muscle;False;False;False;False;None;False
+125;Nightmare Slamvan;Muscle;False;False;False;False;None;False
+586;Vamos;Muscle;False;True;False;False;Office Garage 1;False
+607;Sabre Turbo;Muscle;False;True;False;False;Office Garage 3;False
+382;Apocalypse Slamvan;Muscle;False;False;False;False;None;False
+430;Apocalypse Impaler;Muscle;False;False;False;False;None;False
+392;Coquette BlackFin;Muscle;False;False;False;False;None;False
+337;Dukes;Muscle;False;False;False;False;None;False
+510;Faction Custom Donk;Muscle;False;False;False;False;None;False
+445;Gauntlet;Muscle;False;False;False;False;None;False
+570;Future Shock Impaler;Muscle;False;False;False;False;None;False
+613;Buccaneer;Muscle;False;True;False;False;Office Garage 3;False
+130;Pißwasser Dominator;Muscle;False;False;False;False;None;False
+226;Virgo;Muscle;False;False;False;False;None;False
+222;Virgo Classic;Muscle;False;False;False;False;None;False
+233;Virgo Classic Custom;Muscle;False;False;False;False;None;False
+502;Gauntlet Classic;Muscle;False;False;False;False;None;False
+562;Future Shock Imperator;Muscle;False;False;False;False;None;False
+280;Redwood Gauntlet;Muscle;False;False;False;False;None;False
+503;Gauntlet Hellfire;Muscle;False;False;False;False;None;False
+523;Ellie;Muscle;False;False;False;False;None;False
+97;Ruiner3;Muscle;False;False;False;False;None;False
+457;Impaler;Muscle;False;False;False;False;None;False
+202;Yosemite;Muscle;False;False;False;False;None;False
+462;Hotknife;Muscle;False;False;False;False;None;False
+461;Duke O'Death;Muscle;False;False;False;False;None;False
+458;Hustler;Muscle;False;False;False;False;None;False
+206;Voodoo Custom;Muscle;False;False;False;False;None;False
+274;Rat-Loader;Muscle;False;False;False;False;None;False
+196;Vigero;Muscle;False;False;False;False;None;False
+577;Dominator;Muscle;False;True;False;False;Office Garage 1;False
+527;Hermes;Muscle;False;False;False;False;None;False
+548;Future Shock Slamvan;Muscle;False;False;False;False;None;False
+167;Picador;Muscle;False;False;False;False;None;False
+166;Phoenix;Muscle;False;False;False;False;None;False
+9;Slamvan;Muscle;False;True;False;False;Arena Workshop;False
+522;Faction;Muscle;False;False;False;False;None;False
+572;Faction Custom;Muscle;False;False;False;False;None;False
+567;Duneloader;Off-Road;False;False;False;False;None;False
+433;Caracara;Off-Road;False;False;False;False;None;False
+569;Hellion;Off-Road;False;False;False;False;None;False
+469;Hot Rod Blazer;Off-Road;False;False;False;False;None;False
+47;Insurgent Pick-Up Custom;Off-Road;False;True;False;False;Facility;False
+347;Desert Raid;Off-Road;False;False;False;False;None;False
+4;Kamacho Topless;Off-Road;False;True;False;False;870 Route 68 Approach;False
+119;Nightmare Bruiser;Off-Road;False;False;False;False;None;False
+86;Nightmare Brutus;Off-Road;False;False;False;False;None;False
+514;Dune Buggy;Off-Road;False;False;False;False;None;False
+431;Dubsta 6x6;Off-Road;False;False;False;False;None;False
+248;Riata;Off-Road;False;False;False;False;None;False
+566;Future Shock Bruiser;Off-Road;False;False;False;False;None;False
+543;Kamacho;Off-Road;False;False;False;False;None;False
+428;Apocalypse Bruiser;Off-Road;False;False;False;False;None;False
+542;Kalahari;Off-Road;False;False;False;False;None;False
+141;Rancher XL (Snow);Off-Road;False;False;False;False;None;False
+427;Apocalypse Brutus;Off-Road;False;False;False;False;None;False
+103;Rusty Rebel;Off-Road;False;False;False;False;None;False
+419;Blazer;Off-Road;False;False;False;False;None;False
+418;Blazer Lifeguard;Off-Road;False;False;False;False;None;False
+384;Apocalypse Sasquatch;Off-Road;False;False;False;False;None;False
+132;Rancher XL;Off-Road;False;False;False;False;None;False
+149;Nightshark;Off-Road;False;False;False;False;None;False
+416;Bodhi;Off-Road;False;False;False;False;None;False
+559;Future Shock Sasquatch;Off-Road;False;False;False;False;None;False
+6;Sandking XL;Off-Road;False;True;False;False;870 Route 68 Approach;False
+388;Brawler;Off-Road;False;False;False;False;None;False
+123;Nightmare Sasquatch;Off-Road;False;False;False;False;None;False
+281;Rebel;Off-Road;False;False;False;False;None;False
+561;Freecrawler;Off-Road;False;False;False;False;None;False
+212;Insurgent Pick-Up;Off-Road;False;True;False;False;None;True
+556;Future Shock Brutus;Off-Road;False;False;False;False;None;False
+423;Bifta;Off-Road;False;False;False;False;None;False
+83;Menacer;Off-Road;False;False;False;False;None;False
+273;Space Docker;Off-Road;False;False;False;False;None;False
+259;Street Blazer;Off-Road;False;False;False;False;None;False
+622;Speedo Might Be On To Something;Off-Road;False;False;False;False;Clubhouse;False
+215;The Liberator;Off-Road;False;True;False;False;None;True
+470;Insurgent;Off-Road;False;False;False;False;None;False
+312;Marshall;Off-Road;False;False;False;False;None;True
+454;Injection;Off-Road;False;False;False;False;None;False
+618;Blazer Aqua;Off-Road;False;True;False;False;Vehicle Wearhouse;False
+282;Technical;Off-Road;False;False;False;False;None;True
+20;Caracara 4x4;Off-Road;False;True;False;False;Casino Penthouse;False
+209;RC Bandito;Off-Road;False;False;False;False;None;False
+171;Ramp Buggy (Spoilerless);Off-Road;False;False;False;False;None;False
+241;Technical Aqua;Off-Road;False;False;False;False;None;False
+276;Mesa (Merryweather);Off-Road;False;False;False;False;None;False
+619;Ramp Buggy;Off-Road;False;True;False;False;Vehicle Wearhouse;False
+190;Trophy Truck;Off-Road;False;False;False;False;None;False
+124;Sandking SWB;Off-Road;False;False;False;False;None;False
+44;Dune FAV;Off-Road;False;True;False;False;Facility;False
+249;Technical Custom;Off-Road;False;False;False;False;None;False
+231;Vestra;Planes;False;False;False;False;None;True
+62;Hydra;Planes;False;True;False;False;Hanger;True
+413;Blimp;Planes;False;False;False;False;None;True
+175;V-65 Molotok;Planes;False;False;False;False;None;False
+109;RM-10 Bombushka;Planes;False;False;False;False;None;False
+25;Speedo Hammock of Banana;Planes;False;False;False;False;Clubhouse;False
+558;Jet;Planes;False;False;False;False;None;False
+320;Titan;Planes;False;False;False;False;None;True
+183;Velum 5-Seater;Planes;False;False;False;False;None;True
+447;Luxor Deluxe;Planes;False;False;False;False;None;True
+68;Tula;Planes;False;True;False;False;Hanger;False
+406;Alpha-Z1;Planes;False;False;False;False;None;False
+63;Cuban 800;Planes;False;True;False;False;Hanger;True
+348;B-11 Strikeforce;Planes;False;False;False;False;None;False
+402;Avenger (Prop);Planes;False;False;False;False;None;False
+67;P-45 Nokota;Planes;False;True;False;False;Hanger;False
+323;Atomic Blimp;Planes;False;False;False;False;None;False
+463;Dodo;Planes;False;False;False;False;None;True
+157;Velum;Planes;False;False;False;False;None;True
+397;Cargo Plane;Planes;False;False;False;False;None;False
+460;Howard NX-25;Planes;False;False;False;False;None;False
+128;Mogul;Planes;False;False;False;False;None;False
+487;P-996 LAZER;Planes;False;False;False;False;None;True
+335;Besra;Planes;False;False;False;False;None;True
+150;Nimbus;Planes;False;False;False;False;None;True
+446;Luxor;Planes;False;False;False;False;None;True
+449;Mallard;Planes;False;False;False;False;None;False
+58;Seabreeze;Planes;False;True;False;False;Hanger;False
+113;Miljet;Planes;False;False;False;False;None;True
+46;Avenger;Planes;False;True;False;False;Facility;False
+194;Xero Blimp;Planes;False;False;False;False;None;False
+230;Volatol;Planes;False;False;False;False;None;False
+56;LF-22 Starling;Planes;False;True;False;False;Hanger;False
+61;Rogue;Planes;False;True;False;False;Hanger;False
+69;Ultralight;Planes;False;True;False;False;Hanger;False
+515;Duster;Planes;False;False;False;False;None;True
+237;Shamal;Planes;False;False;False;False;None;True
+489;Mammatus;Planes;False;False;False;False;None;True
+59;Pyro;Planes;False;True;False;False;Hanger;False
+411;Cavalcade;SUVs;False;False;False;False;None;False
+278;Serrano;SUVs;False;False;False;False;None;False
+571;FQ 2;SUVs;False;False;False;False;None;False
+573;Baller LE;SUVs;False;False;False;False;None;False
+42;Dubsta;SUVs;False;True;False;False;Eclipse Towers Penthouse Suite 3;False
+575;Baller (Second Generation);SUVs;False;False;False;False;None;False
+36;Toros;SUVs;False;True;False;False;Eclipse Towers Penthouse Suite 3;False
+37;Habanero;SUVs;False;True;False;False;Eclipse Towers Penthouse Suite 3;False
+468;Baller;SUVs;False;False;False;False;None;False
+450;Baller LE (Armored);SUVs;False;False;False;False;None;False
+476;Landstalker;SUVs;False;False;False;False;None;False
+471;Baller LE LWB;SUVs;False;False;False;False;None;False
+443;Baller LE LWB (Armored);SUVs;False;False;False;False;None;False
+465;BeeJay XL;SUVs;False;False;False;False;None;False
+296;Cavalcade (Second Generation);SUVs;False;False;False;False;None;False
+201;XLS (Armored);SUVs;False;False;False;False;None;False
+40;Radius;SUVs;False;True;False;False;Eclipse Towers Penthouse Suite 3;False
+258;Rocoto;SUVs;False;False;False;False;None;False
+338;Dubsta2;SUVs;False;False;False;False;None;False
+151;Novak;SUVs;False;False;False;False;None;False
+41;Patriot;SUVs;False;True;False;False;Eclipse Towers Penthouse Suite 3;False
+107;Mesa (Snow);SUVs;False;False;False;False;None;False
+126;Patriot Stretch;SUVs;False;False;False;False;None;False
+84;Mesa;SUVs;False;False;False;False;None;False
+200;XLS;SUVs;False;False;False;False;None;False
+459;Huntley S;SUVs;False;False;False;False;None;False
+379;Contender;SUVs;False;False;False;False;None;False
+138;Seminole;SUVs;False;False;False;False;None;False
+474;Gresley;SUVs;False;False;False;False;None;False
+505;Granger;SUVs;False;False;False;False;None;False
+2;Washington;Sedans;False;True;False;False;1337 Exceptionalists Way;False
+260;Stafford;Sedans;False;False;False;False;None;False
+375;Asea (Snow);Sedans;False;False;False;False;None;False
+277;Schafter V12 (Armored);Sedans;False;False;False;False;None;False
+532;Emperor (Snow);Sedans;False;False;False;False;None;False
+11;Glendale;Sedans;False;True;False;False;Arena Workshop;False
+369;Cognoscenti 55 (Armored);Sedans;False;False;False;False;None;False
+367;Cognoscenti 55;Sedans;False;False;False;False;None;False
+373;Cognoscenti (Armored);Sedans;False;False;False;False;None;False
+0;Stratum;Sedans;False;True;False;False;1337 Exceptionalists Way;False
+91;Turreted Limo;Sedans;False;False;False;False;None;True
+365;Asea;Sedans;False;False;False;False;None;False
+3;Asterope;Sedans;False;True;False;False;1337 Exceptionalists Way;False
+366;Cognoscenti;Sedans;False;False;False;False;None;False
+211;Primo Custom;Sedans;False;False;False;False;None;False
+345;Super Diamond;Sedans;False;False;False;False;None;False
+252;Stanier;Sedans;False;False;False;False;None;False
+1;Premier;Sedans;False;True;False;False;1337 Exceptionalists Way;False
+551;Emperor (Beater);Sedans;False;False;False;False;None;False
+475;Intruder;Sedans;False;False;False;False;None;False
+179;Romero Hearse;Sedans;False;False;False;False;None;False
+455;Ingot;Sedans;False;False;False;False;None;False
+553;Fugitive;Sedans;False;False;False;False;None;False
+550;Emperor;Sedans;False;False;False;False;None;False
+79;Surge;Sedans;False;True;False;False;Nightclub B2;False
+483;Schafter LWB (Armored);Sedans;False;False;False;False;None;False
+304;Tailgater;Sedans;False;False;False;False;None;False
+286;Regina;Sedans;False;False;False;False;None;False
+265;Stretch;Sedans;False;False;False;False;None;True
+197;Warrener;Sedans;False;False;False;False;None;False
+135;Schafter;Sedans;False;False;False;False;None;False
+606;Primo;Sedans;False;True;False;False;Office Garage 3;False
+291;Festival Bus;Service;False;False;False;False;None;True
+238;Wastelander;Service;False;False;False;False;None;False
+192;Trashmaster;Service;False;False;False;False;None;False
+188;Trashmaster (Rusty);Service;False;False;False;False;None;False
+275;Rental Shuttle Bus;Service;False;False;False;False;None;True
+549;Dune;Service;False;False;False;False;None;True
+251;Tourbus;Service;False;False;False;False;None;False
+356;Brickade;Service;False;False;False;False;None;True
+314;Taxi;Service;False;False;False;False;None;False
+401;Airport Bus;Service;False;False;False;False;None;True
+358;Bus;Service;False;False;False;False;None;True
+341;Dashound;Service;False;False;False;False;None;True
+297;Surano;Sports;False;False;False;False;None;False
+596;Omnis;Sports;False;True;False;False;Office Garage 2;False
+504;Go Go Monkey Blista;Sports;False;False;False;False;None;False
+609;Elegy Retro Custom;Sports;False;True;False;False;Office Garage 3;False
+544;Jester Classic;Sports;False;False;False;False;None;False
+393;Coquette;Sports;False;False;False;False;None;False
+568;Fusilade;Sports;False;False;False;False;None;False
+537;Buffalo;Sports;False;False;False;False;None;False
+574;Furore GT;Sports;False;False;False;False;None;False
+560;Jester;Sports;False;False;False;False;None;False
+294;Sultan;Sports;False;False;False;False;None;False
+495;Itali GTO;Sports;False;False;False;False;None;False
+547;GB200;Sports;False;False;False;False;None;False
+240;Massacro;Sports;False;False;False;False;None;False
+381;Apocalypse ZR380;Sports;False;False;False;False;None;False
+448;Lynx;Sports;False;False;False;False;None;False
+599;Flash GT;Sports;False;True;False;False;Office Garage 2;False
+368;Comet Safari;Sports;False;False;False;False;None;False
+74;Raiden;Sports;False;True;False;False;Nightclub B2;False
+597;Ruston;Sports;False;True;False;False;Office Garage 2;False
+18;Paragon R (Armored);Sports;False;True;False;False;Casino Penthouse;False
+93;Neo;Sports;False;False;False;False;None;False
+22;Issi Sport;Sports;False;True;False;False;Casino Penthouse;False
+598;Pariah;Sports;False;True;False;False;Office Garage 2;False
+144;Paragon R;Sports;False;False;False;False;None;False
+464;Drift Tampa;Sports;False;False;False;False;None;False
+310;Carbonizzare;Sports;False;False;False;False;None;False
+591;Penumbra;Sports;False;True;False;False;Office Garage 2;False
+271;Revolter;Sports;False;False;False;False;None;False
+587;Elegy RH8;Sports;False;True;False;False;Office Garage 2;False
+270;Streiter;Sports;False;False;False;False;None;False
+371;Comet;Sports;False;False;False;False;None;False
+390;Comet Retro Custom;Sports;False;False;False;False;None;False
+372;Comet SR;Sports;False;False;False;False;None;False
+94;Neon;Sports;False;False;False;False;None;False
+614;Specter Custom;Sports;False;True;False;False;Office Garage 3;False
+513;Jugular;Sports;False;False;False;False;None;False
+161;Verlierer;Sports;False;False;False;False;None;False
+10;Future Shock ZR380;Sports;False;True;False;False;Arena Workshop;False
+602;Jester (Racecar);Sports;False;True;False;False;Office Garage 2;False
+76;Khamelion;Sports;False;True;False;False;Nightclub B2;False
+262;Seven-70;Sports;False;False;False;False;None;False
+147;Nightmare ZR380;Sports;False;False;False;False;None;False
+326;Buffalo S;Sports;False;False;False;False;None;False
+590;Hotring Sabre;Sports;False;True;False;False;Office Garage 2;False
+153;Schlagen GT;Sports;False;False;False;False;None;False
+521;Feltzer;Sports;False;False;False;False;None;False
+142;Schwartzer;Sports;False;False;False;False;None;False
+81;Kuruma (Armored);Sports;False;True;False;False;Nightclub Service Entrance;False
+235;Sentinel Classic;Sports;False;False;False;False;None;False
+442;Locust;Sports;False;False;False;False;None;False
+227;Tropos Rallye;Sports;False;False;False;False;None;False
+334;Bestia GTS;Sports;False;False;False;False;None;False
+182;Rapid GT;Sports;False;False;False;False;None;False
+435;Schafter LWB;Sports;False;False;False;False;None;False
+289;Schafter V12;Sports;False;False;False;False;None;False
+417;Blista Compact;Sports;False;False;False;False;None;False
+399;9F;Sports;False;False;False;False;None;False
+400;9F Cabrio;Sports;False;False;False;False;None;False
+601;Futo;Sports;False;True;False;False;Office Garage 2;False
+589;Massacro (Racecar);Sports;False;True;False;False;Office Garage 2;False
+498;Kuruma;Sports;False;False;False;False;None;False
+218;Raptor;Sports;False;False;False;False;None;False
+267;Specter;Sports;False;False;False;False;None;False
+412;Alpha;Sports;False;False;False;False;None;False
+19;8F Drafter;Sports;False;True;False;False;Casino Penthouse;False
+219;Rapid GT (Convertible);Sports;False;False;False;False;None;False
+247;Sprunk Buffalo;Sports;False;False;False;False;None;False
+436;Banshee;Sports;False;False;False;False;None;False
+139;Pigalle;Sports Classics;False;False;False;False;None;False
+177;Roosevelt Valor;Sports Classics;False;False;False;False;None;False
+178;Roosevelt;Sports Classics;False;False;False;False;None;False
+594;Peyote;Sports Classics;False;True;False;False;Office Garage 2;False
+588;Turismo Classic;Sports Classics;False;True;False;False;Office Garage 2;False
+611;Tornado Custom;Sports Classics;False;True;False;False;Office Garage 3;False
+600;Viseris;Sports Classics;False;True;False;False;Office Garage 2;False
+595;Stromberg;Sports Classics;False;True;False;False;Office Garage 2;False
+593;Infernus Classic;Sports Classics;False;True;False;False;Office Garage 2;False
+592;Swinger;Sports Classics;False;True;False;False;Office Garage 2;False
+603;Coquette Classic;Sports Classics;False;True;False;False;Office Garage 2;False
+198;Zion Classic;Sports Classics;False;False;False;False;None;False
+288;190z;Sports Classics;False;False;False;False;None;False
+492;Manana;Sports Classics;False;False;False;False;None;False
+451;Mamba;Sports Classics;False;False;False;False;None;False
+100;Savestra;Sports Classics;False;False;False;False;None;False
+102;Nebula Turbo;Sports Classics;False;False;False;False;None;False
+255;Stirling GT;Sports Classics;False;False;False;False;None;False
+254;Stinger GT;Sports Classics;False;False;False;False;None;False
+526;Fagaloa;Sports Classics;False;False;False;False;None;False
+253;Stinger;Sports Classics;False;False;False;False;None;False
+300;Cheetah Classic;Sports Classics;False;False;False;False;None;False
+299;Cheburek;Sports Classics;False;False;False;False;None;False
+361;Casco;Sports Classics;False;False;False;False;None;False
+110;Monroe;Sports Classics;False;False;False;False;None;False
+305;Deluxo;Sports Classics;False;False;False;False;None;False
+496;JB 700;Sports Classics;False;False;False;False;None;False
+283;Michelli GT;Sports Classics;False;False;False;False;None;False
+213;Tornado Rat Rod;Sports Classics;False;False;False;False;None;False
+380;Ardent;Sports Classics;False;False;False;False;None;False
+180;Rapid GT Classic;Sports Classics;False;False;False;False;None;False
+534;Dynasty;Sports Classics;False;False;False;False;None;False
+321;Torero;Sports Classics;False;False;False;False;None;False
+546;GT500;Sports Classics;False;False;False;False;None;False
+242;Tornado (Mariachi);Sports Classics;False;False;False;False;None;False
+261;Z-Type;Sports Classics;False;False;False;False;None;False
+552;Fränken Stange;Sports Classics;False;False;False;False;None;False
+307;Tornado;Sports Classics;False;False;False;False;None;False
+272;Retinue;Sports Classics;False;False;False;False;None;False
+243;Tornado (Beater);Sports Classics;False;False;False;False;None;False
+266;Tornado (Convertible);Sports Classics;False;False;False;False;None;False
+220;Vigilante;Super;False;False;False;False;None;False
+199;XA-21;Super;False;False;False;False;None;False
+355;Osiris;Super;False;False;False;False;None;False
+512;Entity XXR;Super;False;False;False;False;None;False
+95;Nero;Super;False;False;False;False;None;False
+605;Nero Custom;Super;False;True;False;False;Office Garage 3;False
+494;Itali GTB;Super;False;False;False;False;None;False
+362;Cyclone;Super;False;False;False;False;None;False
+70;Scramjet;Super;False;True;False;False;Mobile Operations Center;False
+342;Cheetah;Super;False;False;False;False;None;False
+581;Deveste Eight;Super;False;True;False;False;Office Garage 1;False
+621;Rocket Voltic;Super;False;True;False;False;Vehicle Wearhouse;False
+615;Sultan RS;Super;False;True;False;False;Office Garage 3;False
+207;RE-7B;Super;False;False;False;False;None;False
+322;T20;Super;False;False;False;False;None;False
+224;Visione;Super;False;False;False;False;None;False
+293;Taipan;Super;False;False;False;False;None;False
+327;Bullet;Super;False;False;False;False;None;False
+99;Tyrus;Super;False;False;False;False;None;False
+576;Tempesta;Super;False;True;False;False;Office Garage 1;False
+75;Tezeract;Super;False;True;False;False;Nightclub B2;False
+21;Thrax;Super;False;True;False;False;Casino Penthouse;False
+176;Vacca;Super;False;False;False;False;None;False
+96;Penetrator;Super;False;False;False;False;None;False
+535;ETR1;Super;False;False;False;False;None;False
+580;Autarch;Super;False;True;False;False;Office Garage 1;False
+77;Voltic;Super;False;True;False;False;Nightclub B2;False
+610;Itali GTB Custom;Super;False;True;False;False;Office Garage 3;False
+101;SC1;Super;False;False;False;False;None;False
+563;GP1;Super;False;False;False;False;None;False
+92;S80RR;Super;False;False;False;False;None;False
+482;Zorrusso;Super;False;False;False;False;None;False
+339;FMJ;Super;False;False;False;False;None;False
+579;Tyrant;Super;False;True;False;False;Office Garage 1;False
+585;Turismo R;Super;False;True;False;False;Office Garage 1;False
+604;Banshee 900R;Super;False;True;False;False;Office Garage 3;False
+578;Vagner;Super;False;True;False;False;Office Garage 1;False
+507;Krieger;Super;False;False;False;False;None;False
+263;Reaper;Super;False;False;False;False;None;False
+583;Zentorno;Super;False;True;False;False;Office Garage 1;False
+511;Emerus;Super;False;False;False;False;None;False
+456;Infernus;Super;False;False;False;False;None;False
+519;Entity XF;Super;False;False;False;False;None;False
+584;X80 Proto;Super;False;True;False;False;Office Garage 1;False
+398;811;Super;False;False;False;False;None;False
+408;Adder;Super;False;False;False;False;None;False
+17;Mobile Operations Center;Trailers;False;True;False;False;Bunker;False
+174;Utility Truck (Van);Utility;False;False;False;False;None;False
+520;Fieldmaster (Snow);Utility;False;False;False;False;None;False
+170;Utility Truck (Crane);Utility;False;False;False;False;None;False
+529;Fieldmaster;Utility;False;False;False;False;None;False
+127;Scrap Truck;Utility;False;False;False;False;None;False
+516;Forklift;Utility;False;False;False;False;None;False
+187;Tractor;Utility;False;False;False;False;None;False
+210;Sadler (Snow);Utility;False;False;False;False;None;False
+250;Ripley;Utility;False;False;False;False;None;False
+245;Towtruck (Truck);Utility;False;False;False;False;None;False
+169;Utility Truck (Box);Utility;False;False;False;False;None;False
+106;Towtruck;Utility;False;False;False;False;None;False
+343;Caddy (Bunker);Utility;False;False;False;False;None;False
+477;Lawn Mower;Utility;False;False;False;False;None;False
+545;Docktug;Utility;False;False;False;False;None;False
+155;Sadler;Utility;False;False;False;False;None;False
+403;Airtug;Utility;False;False;False;False;None;False
+331;Caddy;Utility;False;False;False;False;None;False
+329;Caddy (Civilian);Utility;False;False;False;False;None;False
+287;Gang Burrito;Vans;False;False;False;False;None;False
+500;Gang Burrito (Civilian);Vans;False;False;False;False;None;False
+143;Pony;Vans;False;False;False;False;None;False
+136;Pony (Smoke on The Water);Vans;False;False;False;False;None;False
+73;Speedo Custom;Vans;False;True;False;False;Nightclub B1;False
+129;Rumpo Custom;Vans;False;False;False;False;None;False
+313;Surfer (Beater);Vans;False;False;False;False;None;False
+352;Burrito (Snow);Vans;False;False;False;False;None;False
+164;Rumpo;Vans;False;False;False;False;None;False
+357;Camper;Vans;False;False;False;False;None;False
+204;Youga;Vans;False;False;False;False;None;False
+205;Youga Classic;Vans;False;False;False;False;None;False
+564;Journey;Vans;False;False;False;False;None;True
+163;Rumpo (Deludamol);Vans;False;False;False;False;None;False
+353;Burrito (Second Generation);Vans;False;False;False;False;None;False
+538;Burrito (McGill-Olsen);Vans;False;False;False;False;None;False
+432;Burrito (Bugstars);Vans;False;False;False;False;None;False
+422;Bison (McGill-Olsen);Vans;False;False;False;False;None;False
+386;Armored Boxville;Vans;False;False;False;False;None;False
+315;Taco Van;Vans;False;False;False;False;None;False
+421;Bison (The Mighty Bush);Vans;False;False;False;False;None;False
+364;Clown Van;Vans;False;False;False;False;None;False
+146;Paradise;Vans;False;False;False;False;None;False
+308;Boxville (Go Postal);Vans;False;False;False;False;None;False
+290;Surfer;Vans;False;False;False;False;None;False
+120;Minivan;Vans;False;False;False;False;None;False
+378;Boxville (Humane Labs);Vans;False;False;False;False;None;False
+279;Speedo;Vans;False;False;False;False;None;False
+387;Boxville;Vans;False;False;False;False;None;True
+185;Speedo Banana Hammock;Vans;False;False;False;False;None;False
+424;Bobcat XL;Vans;False;False;False;False;None;False
+612;Minivan Custom;Vans;False;True;False;False;Office Garage 3;False
+340;Burrito;Vans;False;False;False;False;None;False
+426;Boxville (Post OP);Vans;False;False;False;False;None;False
+39;Bison;Vans;False;True;False;False;Eclipse Towers Penthouse Suite 3;False

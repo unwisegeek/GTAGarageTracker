@@ -8,6 +8,7 @@ from PyQt5.QtGui import *
 from PyQt5.QtWidgets import *
 
 from Main_Window import Ui_MainWindow
+from Vehicle_Add import Ui_DialogVehicleAdd
 from Vehicle_Edit import Ui_DialogVehicleEdit
 from Garage_Edit import Ui_DialogGarageEdit
 from About_Window import Ui_About_Window
@@ -92,6 +93,78 @@ class AboutWindow(QDialog, Ui_About_Window):
         icon = QPixmap("GarageTracker.svg")
         self.labelIcon.setPixmap(icon)
         self.labelVersion.setText("Version 0.5")
+
+    def show(self):
+        self.show()
+
+
+class VehicleAdd(QDialog, Ui_DialogVehicleAdd):
+    def __init__(self, parent=None):
+        super(VehicleAdd, self).__init__(parent)
+        self.setupUi(self)
+
+        # Grab a list of Garages
+        garage_data = pd.read_csv("garages.csv", sep=";", engine="python")
+
+        # Populate Class List
+        class_list = ["Class", "Boats", "Commercial", "Compacts", "Coupes", "Cycles", "Helicopters", "Industrial",
+                      "Military", "Motorcycles", "Muscle", "Off-Road", "Planes", "SUVs", "Sedans", "Service", "Sports",
+                      "Sports Classics", "Super", "Utility", "Vans"]
+        self.comboClass.addItems(class_list)
+
+        # Populate Garage List
+        self.comboGarage.addItem("None")
+        for idx in range(0, len(garage_data['Name'])):
+            if str(garage_data['Owned'][idx]) == "True":
+                self.comboGarage.addItem(garage_data['Name'][idx])
+
+        self.pushOk.clicked.connect(lambda: self.write_config())
+        self.pushCancel.clicked.connect(lambda: self.close())
+
+    def write_config(self):
+        vehicle_data = pd.read_csv("vehicles.csv", sep=";", engine="python")
+
+        # Find Last Index Number in vehicle_data
+        list_info = {"Index": [], "Vehicle": [], "Class": [], "Wishlist": [], "Owned": [], "Insured": [],
+                     "Modified": [], "Garage": [], "Pegasus": []}
+
+        # Populate a List of Vehicles
+        for idx in range(0, len(vehicle_data['Vehicle'])):
+            list_info["Index"].append(str(vehicle_data['Index'][idx]))
+            list_info["Vehicle"].append(str(vehicle_data['Vehicle'][idx]))
+            list_info["Class"].append(str(vehicle_data['Class'][idx]))
+            list_info["Wishlist"].append(str(vehicle_data['Wishlist'][idx]))
+            list_info["Owned"].append(str(vehicle_data['Owned'][idx]))
+            list_info["Insured"].append(str(vehicle_data['Insured'][idx]))
+            list_info["Modified"].append(str(vehicle_data['Modified'][idx]))
+            list_info["Garage"].append(str(vehicle_data['Garage'][idx]))
+            list_info["Pegasus"].append(str(vehicle_data['Pegasus'][idx]))
+
+        last_index = len(list_info['Index']) - 1
+        if self.lineName.text() == "":
+            # message = QMessageBox.question(self, "Error", "Please assign a name for this vehicle.", QMessageBox.Ok)
+            QMessageBox.question(self, "Error", "Please assign a name for this vehicle.", QMessageBox.Ok)
+            return
+        if self.comboClass.currentText() == "Class":
+            # message = QMessageBox.question(self, "Error", "Please assign a class for this vehicle.", QMessageBox.Ok)
+            QMessageBox.question(self, "Error", "Please assign a class for this vehicle.", QMessageBox.Ok)
+            return
+        list_info["Index"].append(str(last_index))
+        list_info["Vehicle"].append(self.lineName.text())
+        list_info["Class"].append(self.comboClass.currentText())
+        list_info["Wishlist"].append(self.checkWishlist.isChecked())
+        list_info["Owned"].append(self.checkOwned.isChecked())
+        list_info["Insured"].append(self.checkInsured.isChecked())
+        list_info["Modified"].append(self.checkModified.isChecked())
+        list_info["Garage"].append(self.comboGarage.currentText())
+        list_info["Pegasus"].append(self.checkPegasus.isChecked())
+        new_vehicle_data = pd.DataFrame({"Index": list_info["Index"], "Vehicle": list_info["Vehicle"],
+                                         "Class": list_info["Class"], "Wishlist": list_info["Wishlist"],
+                                         "Owned": list_info["Owned"], "Insured": list_info["Insured"],
+                                         "Modified": list_info["Modified"], "Garage": list_info["Garage"],
+                                         "Pegasus": list_info["Pegasus"]})
+        new_vehicle_data.to_csv("vehicles.csv", sep=';', index=False)
+        self.close()
 
     def show(self):
         self.show()
@@ -232,6 +305,7 @@ class MainWindow:
         self.ui.actionTimerOpen.triggered.connect(lambda: subprocess.Popen(['python3', 'QtGTATimer.py']))
         self.ui.actionAbout.triggered.connect(lambda: self.about_menu_clicked())
         self.ui.actionQuit.triggered.connect(lambda: sys.exit())
+        self.ui.actionAdd_Vehicle.triggered.connect(lambda: self.vehicle_add())
         self.ui.comboVehiclesSortBy.activated.connect(self.vehicle_sort_criteria_changed)
         self.ui.comboGaragesSortBy.activated.connect(self.garage_sort_criteria_changed)
         self.ui.listDashboard.clicked.connect(lambda: self.dashboard_list_clicked())
@@ -315,6 +389,10 @@ class MainWindow:
         self.ui.tableGarage.setModel(gmodel)
         self.ui.tableGarage.setColumnHidden(0, True)
         self.set_gheaders()
+
+    def vehicle_add(self):
+        self.child_win = VehicleAdd()
+        self.child_win.exec_()
 
     def table_vehicle_clicked(self):
         target = ""

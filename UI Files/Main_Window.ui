@@ -400,13 +400,15 @@
      <x>0</x>
      <y>0</y>
      <width>781</width>
-     <height>28</height>
+     <height>25</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuFile">
     <property name="title">
      <string>File</string>
     </property>
+    <addaction name="actionAdd_Vehicle"/>
+    <addaction name="separator"/>
     <addaction name="actionQuit"/>
    </widget>
    <widget class="QMenu" name="menuTimer">
@@ -446,6 +448,11 @@
   <action name="actionAbout">
    <property name="text">
     <string>About GTAGarageTracker</string>
+   </property>
+  </action>
+  <action name="actionAdd_Vehicle">
+   <property name="text">
+    <string>Add Vehicle</string>
    </property>
   </action>
  </widget>
