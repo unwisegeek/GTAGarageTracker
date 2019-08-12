@@ -23,7 +23,6 @@ Index;Vehicle;Class;Wishlist;Owned;Insured;Modified;Garage;Pegasus
 160;Mule;Commercial;False;False;False;False;None;True
 90;Nightmare Cerberus;Commercial;False;False;False;False;None;False
 565;Future Shock Cerberus;Commercial;False;False;False;False;None;False
-244;Speedo Hope It Works;Commercial;False;False;False;False;None;False
 466;Benson;Commercial;False;False;False;False;None;False
 351;Biff;Commercial;False;False;False;False;None;False
 478;Hauler;Commercial;False;False;False;False;None;False
@@ -50,16 +49,12 @@ Index;Vehicle;Class;Wishlist;Owned;Insured;Modified;Garage;Pegasus
 8;Issi Classic;Compacts;False;True;False;False;Arena Workshop;False
 55;Prairie;Compacts;False;True;False;False;Greenwich Parkway, Unit 76;False
 54;Issi;Compacts;False;True;False;False;Greenwich Parkway, Unit 76;False
-34;Speedo Test Subject;Boats;True;True;True;True;Clubhouse;True
 385;Apocalypse Issi;Compacts;False;False;False;False;None;False
-26;Speedo Didn't Work The Last Time;Compacts;False;False;False;False;Clubhouse;False
-35;Speedo I Don't Understand;Compacts;False;False;False;False;None;False
 350;Brioso R/A;Compacts;False;False;False;False;None;False
 484;Panto;Compacts;False;False;False;False;None;False
 497;Jackal;Coupes;False;False;False;False;None;False
 376;Cognoscenti Cabrio;Coupes;False;False;False;False;None;False
 524;Felon GT;Coupes;False;False;False;False;None;False
-622;Speedo Think I Figured It Out;Coupes;False;False;False;False;Clubhouse;False
 50;Oracle;Coupes;False;True;False;False;Greenwich Parkway, Unit 76;False
 173;Sentinel;Coupes;False;False;False;False;None;False
 234;Windsor;Coupes;False;False;False;False;None;False
@@ -282,7 +277,6 @@ Index;Vehicle;Class;Wishlist;Owned;Insured;Modified;Garage;Pegasus
 83;Menacer;Off-Road;False;False;False;False;None;False
 273;Space Docker;Off-Road;False;False;False;False;None;False
 259;Street Blazer;Off-Road;False;False;False;False;None;False
-622;Speedo Might Be On To Something;Off-Road;False;False;False;False;Clubhouse;False
 215;The Liberator;Off-Road;False;True;False;False;None;True
 470;Insurgent;Off-Road;False;False;False;False;None;False
 312;Marshall;Off-Road;False;False;False;False;None;True
@@ -304,7 +298,6 @@ Index;Vehicle;Class;Wishlist;Owned;Insured;Modified;Garage;Pegasus
 413;Blimp;Planes;False;False;False;False;None;True
 175;V-65 Molotok;Planes;False;False;False;False;None;False
 109;RM-10 Bombushka;Planes;False;False;False;False;None;False
-25;Speedo Hammock of Banana;Planes;False;False;False;False;Clubhouse;False
 558;Jet;Planes;False;False;False;False;None;False
 320;Titan;Planes;False;False;False;False;None;True
 183;Velum 5-Seater;Planes;False;False;False;False;None;True
@@ -617,7 +610,6 @@ Index;Vehicle;Class;Wishlist;Owned;Insured;Modified;Garage;Pegasus
 378;Boxville (Humane Labs);Vans;False;False;False;False;None;False
 279;Speedo;Vans;False;False;False;False;None;False
 387;Boxville;Vans;False;False;False;False;None;True
-185;Speedo Banana Hammock;Vans;False;False;False;False;None;False
 424;Bobcat XL;Vans;False;False;False;False;None;False
 612;Minivan Custom;Vans;False;True;False;False;Office Garage 3;False
 340;Burrito;Vans;False;False;False;False;None;False

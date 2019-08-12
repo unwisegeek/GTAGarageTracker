@@ -230,19 +230,71 @@ class VehicleEditor(QDialog, Ui_DialogVehicleEdit):
 
         # Connect Slots
         self.pushCancel.clicked.connect(self.close)
-        self.pushOk.clicked.connect(lambda: self.write_config(vehicle_data, vehicle_info))
+        self.pushOk.clicked.connect(lambda: self.write_config(vehicle_data, vehicle_info, target))
 
-    def write_config(self, vehicle_data, vehicle_info):
-        index = int(vehicle_info['index'])
-        vehicle_data['Vehicle'][index] = str(self.lineName.text())
-        vehicle_data['Class'][index] = str(self.comboClass.currentText())
-        vehicle_data['Owned'][index] = self.checkOwned.isChecked()
-        vehicle_data['Garage'][index] = self.comboGarage.currentText()
-        vehicle_data['Wishlist'][index] = self.checkWishlist.isChecked()
-        vehicle_data['Pegasus'][index] = self.checkPegasus.isChecked()
-        vehicle_data['Insured'][index] = self.checkInsured.isChecked()
-        vehicle_data['Modified'][index] = self.checkModified.isChecked()
-        vehicle_data.to_csv("vehicles.csv", sep=';', index=False)
+    def write_config(self, vehicle_data, vehicle_info, target):
+        delete_vehicle = False
+        if self.checkDelete.isChecked():
+
+            confirm_delete = QMessageBox()
+            confirm_delete.setWindowTitle("Are You Sure?")
+            confirm_delete.setText("Are you sure you want to delete {} from the database?".format(target))
+            confirm_delete.setStandardButtons(QMessageBox.Yes | QMessageBox.No)
+            if (confirm_delete.exec() == QMessageBox.Yes):
+                delete_vehicle = True
+            else:
+                return
+
+        # Find Last Index Number in vehicle_data
+        list_info = {"Index": [], "Vehicle": [], "Class": [], "Wishlist": [], "Owned": [], "Insured": [],
+                     "Modified": [], "Garage": [], "Pegasus": []}
+
+        if delete_vehicle is True:
+            # Populate a List of Vehicles without the target vehicle
+            for idx in range(0, len(vehicle_data['Vehicle'])):
+                if str(vehicle_data['Vehicle'][idx]) != target:
+                    list_info["Index"].append(str(vehicle_data['Index'][idx]))
+                    list_info["Vehicle"].append(str(vehicle_data['Vehicle'][idx]))
+                    list_info["Class"].append(str(vehicle_data['Class'][idx]))
+                    list_info["Wishlist"].append(str(vehicle_data['Wishlist'][idx]))
+                    list_info["Owned"].append(str(vehicle_data['Owned'][idx]))
+                    list_info["Insured"].append(str(vehicle_data['Insured'][idx]))
+                    list_info["Modified"].append(str(vehicle_data['Modified'][idx]))
+                    list_info["Garage"].append(str(vehicle_data['Garage'][idx]))
+                    list_info["Pegasus"].append(str(vehicle_data['Pegasus'][idx]))
+
+            # Write the list without the target
+            new_vehicle_data = pd.DataFrame({"Index": list_info["Index"], "Vehicle": list_info["Vehicle"],
+                                             "Class": list_info["Class"], "Wishlist": list_info["Wishlist"],
+                                             "Owned": list_info["Owned"], "Insured": list_info["Insured"],
+                                             "Modified": list_info["Modified"], "Garage": list_info["Garage"],
+                                             "Pegasus": list_info["Pegasus"]})
+            new_vehicle_data.to_csv("vehicles.csv", sep=";", index=False, header=True)
+
+        if delete_vehicle is False:
+            # Populate a list of all Vehicles
+            for idx in range(0, len(vehicle_data['Vehicle'])):
+                list_info["Index"].append(str(vehicle_data['Index'][idx]))
+                list_info["Vehicle"].append(str(vehicle_data['Vehicle'][idx]))
+                list_info["Class"].append(str(vehicle_data['Class'][idx]))
+                list_info["Wishlist"].append(str(vehicle_data['Wishlist'][idx]))
+                list_info["Owned"].append(str(vehicle_data['Owned'][idx]))
+                list_info["Insured"].append(str(vehicle_data['Insured'][idx]))
+                list_info["Modified"].append(str(vehicle_data['Modified'][idx]))
+                list_info["Garage"].append(str(vehicle_data['Garage'][idx]))
+                list_info["Pegasus"].append(str(vehicle_data['Pegasus'][idx]))
+
+            # Write the new changes
+            index = int(vehicle_info['index'])
+            vehicle_data['Vehicle'][index] = str(self.lineName.text())
+            vehicle_data['Class'][index] = str(self.comboClass.currentText())
+            vehicle_data['Owned'][index] = self.checkOwned.isChecked()
+            vehicle_data['Garage'][index] = self.comboGarage.currentText()
+            vehicle_data['Wishlist'][index] = self.checkWishlist.isChecked()
+            vehicle_data['Pegasus'][index] = self.checkPegasus.isChecked()
+            vehicle_data['Insured'][index] = self.checkInsured.isChecked()
+            vehicle_data['Modified'][index] = self.checkModified.isChecked()
+            vehicle_data.to_csv("vehicles.csv", sep=';', index=False, header=True)
         self.close()
 
     def show(self):
