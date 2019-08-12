@@ -8,6 +8,7 @@ from PyQt5.QtGui import *
 from PyQt5.QtWidgets import *
 
 from Main_Window import Ui_MainWindow
+from Vehicle_Add import Ui_DialogVehicleAdd
 from Vehicle_Edit import Ui_DialogVehicleEdit
 from Garage_Edit import Ui_DialogGarageEdit
 from About_Window import Ui_About_Window
@@ -97,6 +98,76 @@ class AboutWindow(QDialog, Ui_About_Window):
         self.show()
 
 
+class VehicleAdd(QDialog, Ui_DialogVehicleAdd):
+    def __init__(self, parent=None):
+        super(VehicleAdd, self).__init__(parent)
+        self.setupUi(self)
+
+        # Grab a list of Garages
+        garage_data = pd.read_csv("garages.csv", sep=";", engine="python")
+
+        # Populate Class List
+        class_list = ["Class", "Boats", "Commercial", "Compacts", "Coupes", "Cycles", "Helicopters", "Industrial",
+                      "Military", "Motorcycles", "Muscle", "Off-Road", "Planes", "SUVs", "Sedans", "Service", "Sports",
+                      "Sports Classics", "Super", "Utility", "Vans"]
+        self.comboClass.addItems(class_list)
+
+        # Populate Garage List
+        self.comboGarage.addItem("None")
+        for idx in range(0, len(garage_data['Name'])):
+            if str(garage_data['Owned'][idx]) == "True":
+                self.comboGarage.addItem(garage_data['Name'][idx])
+
+        self.pushOk.clicked.connect(lambda: self.write_config())
+        self.pushCancel.clicked.connect(lambda: self.close())
+
+    def write_config(self):
+        vehicle_data = pd.read_csv("vehicles.csv", sep=";", engine="python")
+
+        # Find Last Index Number in vehicle_data
+        list_info = {"Index": [], "Vehicle": [], "Class": [], "Wishlist": [], "Owned": [], "Insured": [],
+                     "Modified": [], "Garage": [], "Pegasus": []}
+
+        # Populate a List of Vehicles
+        for idx in range(0, len(vehicle_data['Vehicle'])):
+            list_info["Index"].append(str(vehicle_data['Index'][idx]))
+            list_info["Vehicle"].append(str(vehicle_data['Vehicle'][idx]))
+            list_info["Class"].append(str(vehicle_data['Class'][idx]))
+            list_info["Wishlist"].append(str(vehicle_data['Wishlist'][idx]))
+            list_info["Owned"].append(str(vehicle_data['Owned'][idx]))
+            list_info["Insured"].append(str(vehicle_data['Insured'][idx]))
+            list_info["Modified"].append(str(vehicle_data['Modified'][idx]))
+            list_info["Garage"].append(str(vehicle_data['Garage'][idx]))
+            list_info["Pegasus"].append(str(vehicle_data['Pegasus'][idx]))
+
+        last_index = len(list_info['Index']) - 1
+        if self.lineName.text() == "":
+            QMessageBox.question(self, "Error", "Please assign a name for this vehicle.", QMessageBox.Ok)
+            return
+        if self.comboClass.currentText() == "Class":
+            QMessageBox.question(self, "Error", "Please assign a class for this vehicle.", QMessageBox.Ok)
+            return
+        list_info["Index"].append(str(last_index))
+        list_info["Vehicle"].append(self.lineName.text())
+        list_info["Class"].append(self.comboClass.currentText())
+        list_info["Wishlist"].append(self.checkWishlist.isChecked())
+        list_info["Owned"].append(self.checkOwned.isChecked())
+        list_info["Insured"].append(self.checkInsured.isChecked())
+        list_info["Modified"].append(self.checkModified.isChecked())
+        list_info["Garage"].append(self.comboGarage.currentText())
+        list_info["Pegasus"].append(self.checkPegasus.isChecked())
+        new_vehicle_data = pd.DataFrame({"Index": list_info["Index"], "Vehicle": list_info["Vehicle"],
+                                         "Class": list_info["Class"], "Wishlist": list_info["Wishlist"],
+                                         "Owned": list_info["Owned"], "Insured": list_info["Insured"],
+                                         "Modified": list_info["Modified"], "Garage": list_info["Garage"],
+                                         "Pegasus": list_info["Pegasus"]})
+        new_vehicle_data.to_csv("vehicles.csv", sep=';', index=False)
+        self.close()
+
+    def show(self):
+        self.show()
+
+
 class VehicleEditor(QDialog, Ui_DialogVehicleEdit):
     def __init__(self, target, parent=None):
         super(VehicleEditor, self).__init__(parent)
@@ -110,10 +181,14 @@ class VehicleEditor(QDialog, Ui_DialogVehicleEdit):
 
         # Find the target in the dataframe and populate the variables
         vehicle_info = {"index": "", "name": "", "owned": "", "garage": ""}
+        class_list = ["Boats", "Commercial", "Compacts", "Coupes", "Cycles", "Helicopters", "Industrial",
+                      "Military", "Motorcycles", "Muscle", "Off-Road", "Planes", "SUVs", "Sedans", "Service", "Sports",
+                      "Sports Classics", "Super", "Utility", "Vans"]
         for idx in range(0, len(vehicle_data['Vehicle'])):
             if vehicle_data['Vehicle'][idx] == target:
                 vehicle_info['index'] = idx
                 vehicle_info['name'] = vehicle_data['Vehicle'][idx]
+                vehicle_info['class'] = vehicle_data['Class'][idx]
                 vehicle_info['owned'] = str(vehicle_data['Owned'][idx])
                 vehicle_info['garage'] = str(vehicle_data['Garage'][idx])
                 vehicle_info['pegasus'] = str(vehicle_data['Pegasus'][idx])
@@ -122,6 +197,7 @@ class VehicleEditor(QDialog, Ui_DialogVehicleEdit):
                 vehicle_info['modified'] = str(vehicle_data['Modified'][idx])
 
         # Process the variables into the QT Layout
+        self.lineName.setText(vehicle_info["name"])
         if vehicle_info['owned'] == "True":
             self.checkOwned.setChecked(True)
         if vehicle_info['pegasus'] == "True":
@@ -132,26 +208,40 @@ class VehicleEditor(QDialog, Ui_DialogVehicleEdit):
             self.checkInsured.setChecked(True)
         if vehicle_info['modified'] == "True":
             self.checkModified.setChecked(True)
-        if vehicle_info['garage'] != "None":
+        if str(vehicle_info['garage']) != "None":
             for idx in range(0, len(garages_data['Name'])):
-                if garages_data['Owned'][idx] is True and garages_data['Name'][idx] == vehicle_info['garage']:
+                if str(garages_data['Owned'][idx]) == "True" and str(garages_data['Name'][idx]) == vehicle_info['garage']:
                     self.comboGarage.addItem(vehicle_info['garage'])
-        self.comboGarage.addItem("None")
-        for idx in range(0, len(garages_data['Name'])):
-            if garages_data['Owned'][idx] is True and garages_data['Name'][idx] != vehicle_info['garage']:
-                self.comboGarage.addItem(garages_data['Name'][idx])
+            for idx in range(0, len(garages_data['Name'])):
+                if str(garages_data['Owned'][idx]) == "True" and str(garages_data['Name'][idx]) != vehicle_info['garage']:
+                    self.comboGarage.addItem(garages_data['Name'][idx])
+            self.comboGarage.addItem("None")
+        elif vehicle_info['garage'] == "None":
+            self.comboGarage.addItem("None")
+            for idx in range(0, len(garages_data['Name'])):
+                if str(garages_data['Owned'][idx]) == "True":
+                    self.comboGarage.addItem(garages_data['Name'][idx])
+        for idx in range(0, len(class_list)):
+            if vehicle_info['class'] == class_list[idx]:
+                self.comboClass.addItem(class_list[idx])
+        for idx in range(0, len(class_list)):
+            if vehicle_info['class'] != class_list[idx]:
+                self.comboClass.addItem(class_list[idx])
 
         # Connect Slots
         self.pushCancel.clicked.connect(self.close)
         self.pushOk.clicked.connect(lambda: self.write_config(vehicle_data, vehicle_info))
 
     def write_config(self, vehicle_data, vehicle_info):
-        vehicle_data['Owned'][int(vehicle_info['index'])] = self.checkOwned.isChecked()
-        vehicle_data['Garage'][int(vehicle_info['index'])] = self.comboGarage.currentText()
-        vehicle_data['Wishlist'][int(vehicle_info['index'])] = self.checkWishlist.isChecked()
-        vehicle_data['Pegasus'][int(vehicle_info['index'])] = self.checkPegasus.isChecked()
-        vehicle_data['Insured'][int(vehicle_info['index'])] = self.checkInsured.isChecked()
-        vehicle_data['Modified'][int(vehicle_info['index'])] = self.checkModified.isChecked()
+        index = int(vehicle_info['index'])
+        vehicle_data['Vehicle'][index] = str(self.lineName.text())
+        vehicle_data['Class'][index] = str(self.comboClass.currentText())
+        vehicle_data['Owned'][index] = self.checkOwned.isChecked()
+        vehicle_data['Garage'][index] = self.comboGarage.currentText()
+        vehicle_data['Wishlist'][index] = self.checkWishlist.isChecked()
+        vehicle_data['Pegasus'][index] = self.checkPegasus.isChecked()
+        vehicle_data['Insured'][index] = self.checkInsured.isChecked()
+        vehicle_data['Modified'][index] = self.checkModified.isChecked()
         vehicle_data.to_csv("vehicles.csv", sep=';', index=False)
         self.close()
 
@@ -232,6 +322,7 @@ class MainWindow:
         self.ui.actionTimerOpen.triggered.connect(lambda: subprocess.Popen(['python3', 'QtGTATimer.py']))
         self.ui.actionAbout.triggered.connect(lambda: self.about_menu_clicked())
         self.ui.actionQuit.triggered.connect(lambda: sys.exit())
+        self.ui.actionAdd_Vehicle.triggered.connect(lambda: self.vehicle_add())
         self.ui.comboVehiclesSortBy.activated.connect(self.vehicle_sort_criteria_changed)
         self.ui.comboGaragesSortBy.activated.connect(self.garage_sort_criteria_changed)
         self.ui.listDashboard.clicked.connect(lambda: self.dashboard_list_clicked())
@@ -315,6 +406,10 @@ class MainWindow:
         self.ui.tableGarage.setModel(gmodel)
         self.ui.tableGarage.setColumnHidden(0, True)
         self.set_gheaders()
+
+    def vehicle_add(self):
+        self.child_win = VehicleAdd()
+        self.child_win.exec_()
 
     def table_vehicle_clicked(self):
         target = ""

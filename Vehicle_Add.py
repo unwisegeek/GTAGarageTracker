@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file './UI Files/vehicle_edit.ui'
+# Form implementation generated from reading ui file './UI Files/vehicle_add.ui'
 #
-# Created by: PyQt5 UI code generator 5.12.3
+# Created by: PyQt5 UI code generator 5.13.0
 #
 # WARNING! All changes made in this file will be lost!
 
@@ -10,21 +10,21 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 
 
-class Ui_DialogVehicleEdit(object):
-    def setupUi(self, DialogVehicleEdit):
-        DialogVehicleEdit.setObjectName("DialogVehicleEdit")
-        DialogVehicleEdit.resize(458, 200)
+class Ui_DialogVehicleAdd(object):
+    def setupUi(self, DialogVehicleAdd):
+        DialogVehicleAdd.setObjectName("DialogVehicleAdd")
+        DialogVehicleAdd.resize(458, 200)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(DialogVehicleEdit.sizePolicy().hasHeightForWidth())
-        DialogVehicleEdit.setSizePolicy(sizePolicy)
-        DialogVehicleEdit.setMinimumSize(QtCore.QSize(458, 200))
-        DialogVehicleEdit.setMaximumSize(QtCore.QSize(458, 200))
+        sizePolicy.setHeightForWidth(DialogVehicleAdd.sizePolicy().hasHeightForWidth())
+        DialogVehicleAdd.setSizePolicy(sizePolicy)
+        DialogVehicleAdd.setMinimumSize(QtCore.QSize(458, 200))
+        DialogVehicleAdd.setMaximumSize(QtCore.QSize(458, 200))
         icon = QtGui.QIcon()
         icon.addPixmap(QtGui.QPixmap("GarageTracker.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        DialogVehicleEdit.setWindowIcon(icon)
-        self.verticalLayout_5 = QtWidgets.QVBoxLayout(DialogVehicleEdit)
+        DialogVehicleAdd.setWindowIcon(icon)
+        self.verticalLayout_5 = QtWidgets.QVBoxLayout(DialogVehicleAdd)
         self.verticalLayout_5.setObjectName("verticalLayout_5")
         self.verticalLayout_4 = QtWidgets.QVBoxLayout()
         self.verticalLayout_4.setObjectName("verticalLayout_4")
@@ -32,32 +32,32 @@ class Ui_DialogVehicleEdit(object):
         self.horizontalLayout.setObjectName("horizontalLayout")
         self.verticalLayout = QtWidgets.QVBoxLayout()
         self.verticalLayout.setObjectName("verticalLayout")
-        self.checkWishlist = QtWidgets.QCheckBox(DialogVehicleEdit)
+        self.checkWishlist = QtWidgets.QCheckBox(DialogVehicleAdd)
         self.checkWishlist.setObjectName("checkWishlist")
         self.verticalLayout.addWidget(self.checkWishlist)
-        self.checkPegasus = QtWidgets.QCheckBox(DialogVehicleEdit)
+        self.checkPegasus = QtWidgets.QCheckBox(DialogVehicleAdd)
         self.checkPegasus.setObjectName("checkPegasus")
         self.verticalLayout.addWidget(self.checkPegasus)
         self.horizontalLayout.addLayout(self.verticalLayout)
         self.verticalLayout_2 = QtWidgets.QVBoxLayout()
         self.verticalLayout_2.setObjectName("verticalLayout_2")
-        self.checkOwned = QtWidgets.QCheckBox(DialogVehicleEdit)
+        self.checkOwned = QtWidgets.QCheckBox(DialogVehicleAdd)
         self.checkOwned.setObjectName("checkOwned")
         self.verticalLayout_2.addWidget(self.checkOwned)
         self.horizontalLayout.addLayout(self.verticalLayout_2)
         self.verticalLayout_3 = QtWidgets.QVBoxLayout()
         self.verticalLayout_3.setObjectName("verticalLayout_3")
-        self.checkInsured = QtWidgets.QCheckBox(DialogVehicleEdit)
+        self.checkInsured = QtWidgets.QCheckBox(DialogVehicleAdd)
         self.checkInsured.setObjectName("checkInsured")
         self.verticalLayout_3.addWidget(self.checkInsured)
-        self.checkModified = QtWidgets.QCheckBox(DialogVehicleEdit)
+        self.checkModified = QtWidgets.QCheckBox(DialogVehicleAdd)
         self.checkModified.setObjectName("checkModified")
         self.verticalLayout_3.addWidget(self.checkModified)
         self.horizontalLayout.addLayout(self.verticalLayout_3)
         self.verticalLayout_4.addLayout(self.horizontalLayout)
         self.horizontalLayout_3 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_3.setObjectName("horizontalLayout_3")
-        self.label = QtWidgets.QLabel(DialogVehicleEdit)
+        self.label = QtWidgets.QLabel(DialogVehicleAdd)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
@@ -68,7 +68,7 @@ class Ui_DialogVehicleEdit(object):
         self.label.setBaseSize(QtCore.QSize(101, 22))
         self.label.setObjectName("label")
         self.horizontalLayout_3.addWidget(self.label)
-        self.lineName = QtWidgets.QLineEdit(DialogVehicleEdit)
+        self.lineName = QtWidgets.QLineEdit(DialogVehicleAdd)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
@@ -80,15 +80,15 @@ class Ui_DialogVehicleEdit(object):
         self.lineName.setObjectName("lineName")
         self.horizontalLayout_3.addWidget(self.lineName)
         self.verticalLayout_4.addLayout(self.horizontalLayout_3)
-        self.comboClass = QtWidgets.QComboBox(DialogVehicleEdit)
+        self.comboClass = QtWidgets.QComboBox(DialogVehicleAdd)
         self.comboClass.setObjectName("comboClass")
         self.verticalLayout_4.addWidget(self.comboClass)
-        self.comboGarage = QtWidgets.QComboBox(DialogVehicleEdit)
+        self.comboGarage = QtWidgets.QComboBox(DialogVehicleAdd)
         self.comboGarage.setObjectName("comboGarage")
         self.verticalLayout_4.addWidget(self.comboGarage)
         self.horizontalLayout_2 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_2.setObjectName("horizontalLayout_2")
-        self.pushOk = QtWidgets.QPushButton(DialogVehicleEdit)
+        self.pushOk = QtWidgets.QPushButton(DialogVehicleAdd)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
@@ -102,7 +102,7 @@ class Ui_DialogVehicleEdit(object):
         self.horizontalLayout_2.addWidget(self.pushOk)
         spacerItem = QtWidgets.QSpacerItem(17, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
         self.horizontalLayout_2.addItem(spacerItem)
-        self.pushCancel = QtWidgets.QPushButton(DialogVehicleEdit)
+        self.pushCancel = QtWidgets.QPushButton(DialogVehicleAdd)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
@@ -117,17 +117,17 @@ class Ui_DialogVehicleEdit(object):
         self.verticalLayout_4.addLayout(self.horizontalLayout_2)
         self.verticalLayout_5.addLayout(self.verticalLayout_4)
 
-        self.retranslateUi(DialogVehicleEdit)
-        QtCore.QMetaObject.connectSlotsByName(DialogVehicleEdit)
+        self.retranslateUi(DialogVehicleAdd)
+        QtCore.QMetaObject.connectSlotsByName(DialogVehicleAdd)
 
-    def retranslateUi(self, DialogVehicleEdit):
+    def retranslateUi(self, DialogVehicleAdd):
         _translate = QtCore.QCoreApplication.translate
-        DialogVehicleEdit.setWindowTitle(_translate("DialogVehicleEdit", "Add A Vehicle"))
-        self.checkWishlist.setText(_translate("DialogVehicleEdit", "Wishlist"))
-        self.checkPegasus.setText(_translate("DialogVehicleEdit", "Pegasus"))
-        self.checkOwned.setText(_translate("DialogVehicleEdit", "Owned"))
-        self.checkInsured.setText(_translate("DialogVehicleEdit", "Insured"))
-        self.checkModified.setText(_translate("DialogVehicleEdit", "Full Mod"))
-        self.label.setText(_translate("DialogVehicleEdit", "Vehicle Name"))
-        self.pushOk.setText(_translate("DialogVehicleEdit", "Ok"))
-        self.pushCancel.setText(_translate("DialogVehicleEdit", "Cancel"))
+        DialogVehicleAdd.setWindowTitle(_translate("DialogVehicleAdd", "Add A Vehicle"))
+        self.checkWishlist.setText(_translate("DialogVehicleAdd", "Wishlist"))
+        self.checkPegasus.setText(_translate("DialogVehicleAdd", "Pegasus"))
+        self.checkOwned.setText(_translate("DialogVehicleAdd", "Owned"))
+        self.checkInsured.setText(_translate("DialogVehicleAdd", "Insured"))
+        self.checkModified.setText(_translate("DialogVehicleAdd", "Full Mod"))
+        self.label.setText(_translate("DialogVehicleAdd", "Vehicle Name"))
+        self.pushOk.setText(_translate("DialogVehicleAdd", "Ok"))
+        self.pushCancel.setText(_translate("DialogVehicleAdd", "Cancel"))
