@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file './UI Files/vehicle_edit.ui'
 #
-# Created by: PyQt5 UI code generator 5.13.0
+# Created by: PyQt5 UI code generator 5.12.3
 #
 # WARNING! All changes made in this file will be lost!
 
@@ -13,14 +13,14 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_DialogVehicleEdit(object):
     def setupUi(self, DialogVehicleEdit):
         DialogVehicleEdit.setObjectName("DialogVehicleEdit")
-        DialogVehicleEdit.resize(458, 151)
+        DialogVehicleEdit.resize(458, 200)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(DialogVehicleEdit.sizePolicy().hasHeightForWidth())
         DialogVehicleEdit.setSizePolicy(sizePolicy)
-        DialogVehicleEdit.setMinimumSize(QtCore.QSize(458, 150))
-        DialogVehicleEdit.setMaximumSize(QtCore.QSize(458, 151))
+        DialogVehicleEdit.setMinimumSize(QtCore.QSize(458, 200))
+        DialogVehicleEdit.setMaximumSize(QtCore.QSize(458, 200))
         icon = QtGui.QIcon()
         icon.addPixmap(QtGui.QPixmap("GarageTracker.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         DialogVehicleEdit.setWindowIcon(icon)
@@ -44,9 +44,6 @@ class Ui_DialogVehicleEdit(object):
         self.checkOwned = QtWidgets.QCheckBox(DialogVehicleEdit)
         self.checkOwned.setObjectName("checkOwned")
         self.verticalLayout_2.addWidget(self.checkOwned)
-        self.checkDelete = QtWidgets.QCheckBox(DialogVehicleEdit)
-        self.checkDelete.setObjectName("checkDelete")
-        self.verticalLayout_2.addWidget(self.checkDelete)
         self.horizontalLayout.addLayout(self.verticalLayout_2)
         self.verticalLayout_3 = QtWidgets.QVBoxLayout()
         self.verticalLayout_3.setObjectName("verticalLayout_3")
@@ -58,6 +55,34 @@ class Ui_DialogVehicleEdit(object):
         self.verticalLayout_3.addWidget(self.checkModified)
         self.horizontalLayout.addLayout(self.verticalLayout_3)
         self.verticalLayout_4.addLayout(self.horizontalLayout)
+        self.horizontalLayout_3 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_3.setObjectName("horizontalLayout_3")
+        self.label = QtWidgets.QLabel(DialogVehicleEdit)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.label.sizePolicy().hasHeightForWidth())
+        self.label.setSizePolicy(sizePolicy)
+        self.label.setMinimumSize(QtCore.QSize(101, 22))
+        self.label.setMaximumSize(QtCore.QSize(101, 22))
+        self.label.setBaseSize(QtCore.QSize(101, 22))
+        self.label.setObjectName("label")
+        self.horizontalLayout_3.addWidget(self.label)
+        self.lineName = QtWidgets.QLineEdit(DialogVehicleEdit)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.lineName.sizePolicy().hasHeightForWidth())
+        self.lineName.setSizePolicy(sizePolicy)
+        self.lineName.setMinimumSize(QtCore.QSize(0, 22))
+        self.lineName.setMaximumSize(QtCore.QSize(16777215, 22))
+        self.lineName.setBaseSize(QtCore.QSize(0, 22))
+        self.lineName.setObjectName("lineName")
+        self.horizontalLayout_3.addWidget(self.lineName)
+        self.verticalLayout_4.addLayout(self.horizontalLayout_3)
+        self.comboClass = QtWidgets.QComboBox(DialogVehicleEdit)
+        self.comboClass.setObjectName("comboClass")
+        self.verticalLayout_4.addWidget(self.comboClass)
         self.comboGarage = QtWidgets.QComboBox(DialogVehicleEdit)
         self.comboGarage.setObjectName("comboGarage")
         self.verticalLayout_4.addWidget(self.comboGarage)
@@ -97,12 +122,12 @@ class Ui_DialogVehicleEdit(object):
 
     def retranslateUi(self, DialogVehicleEdit):
         _translate = QtCore.QCoreApplication.translate
-        DialogVehicleEdit.setWindowTitle(_translate("DialogVehicleEdit", "Vehicle Editor"))
+        DialogVehicleEdit.setWindowTitle(_translate("DialogVehicleEdit", "Add A Vehicle"))
         self.checkWishlist.setText(_translate("DialogVehicleEdit", "Wishlist"))
         self.checkPegasus.setText(_translate("DialogVehicleEdit", "Pegasus"))
         self.checkOwned.setText(_translate("DialogVehicleEdit", "Owned"))
-        self.checkDelete.setText(_translate("DialogVehicleEdit", "Delete"))
         self.checkInsured.setText(_translate("DialogVehicleEdit", "Insured"))
         self.checkModified.setText(_translate("DialogVehicleEdit", "Full Mod"))
+        self.label.setText(_translate("DialogVehicleEdit", "Vehicle Name"))
         self.pushOk.setText(_translate("DialogVehicleEdit", "Ok"))
         self.pushCancel.setText(_translate("DialogVehicleEdit", "Cancel"))
