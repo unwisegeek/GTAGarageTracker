@@ -413,9 +413,10 @@
    </widget>
    <widget class="QMenu" name="menuTimer">
     <property name="title">
-     <string>Timer</string>
+     <string>Utilities</string>
     </property>
     <addaction name="actionTimerOpen"/>
+    <addaction name="actionVWC"/>
    </widget>
    <widget class="QMenu" name="menuHelp">
     <property name="title">
@@ -437,7 +438,7 @@
   </action>
   <action name="actionTimerOpen">
    <property name="text">
-    <string>Open</string>
+    <string>Mission Timer</string>
    </property>
   </action>
   <action name="actionHelpContents">
@@ -453,6 +454,11 @@
   <action name="actionAdd_Vehicle">
    <property name="text">
     <string>Add Vehicle</string>
+   </property>
+  </action>
+  <action name="actionVWC">
+   <property name="text">
+    <string>Vehicle Warehouse Checklist</string>
    </property>
   </action>
  </widget>

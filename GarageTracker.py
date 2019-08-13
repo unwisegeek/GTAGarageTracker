@@ -12,6 +12,7 @@ from Vehicle_Add import Ui_DialogVehicleAdd
 from Vehicle_Edit import Ui_DialogVehicleEdit
 from Garage_Edit import Ui_DialogGarageEdit
 from About_Window import Ui_About_Window
+from VW_Checklist import Ui_VWChecklist
 
 global_vehicle_data = pd.read_csv("vehicles.csv", sep=";", engine='python')
 global_garage_data = pd.read_csv("garages.csv", sep=";", engine='python')
@@ -301,6 +302,16 @@ class VehicleEditor(QDialog, Ui_DialogVehicleEdit):
         self.vehicle_edit_win.show()
 
 
+class VehicleWarehouseChecklist(QDialog, Ui_VWChecklist):
+    def __init__(self, parent=None):
+        super(VehicleWarehouseChecklist, self).__init__(parent)
+        self.setupUi(self)
+
+        self.pushCancel.clicked.connect(self.close)
+
+    def show(self):
+        self.show()
+
 # noinspection PyAttributeOutsideInit
 class MainWindow:
     def __init__(self):
@@ -371,6 +382,7 @@ class MainWindow:
         self.set_dtheaders()
 
         # Connections to Slots
+        self.ui.actionVWC.triggered.connect(lambda: self.show_vehicle_warehouse_checklist())
         self.ui.actionTimerOpen.triggered.connect(lambda: subprocess.Popen(['python3', 'QtGTATimer.py']))
         self.ui.actionAbout.triggered.connect(lambda: self.about_menu_clicked())
         self.ui.actionQuit.triggered.connect(lambda: sys.exit())
@@ -384,6 +396,10 @@ class MainWindow:
         self.ui.tableVehicle.doubleClicked.connect(lambda: self.table_vehicle_clicked())
         self.ui.tableGarage.doubleClicked.connect(lambda: self.table_garage_clicked())
         self.ui.tableDashboard.doubleClicked.connect(lambda: self.table_dashboard_clicked())
+
+    def show_vehicle_warehouse_checklist(self):
+        self.child_win = VehicleWarehouseChecklist()
+        self.child_win.exec_()
 
     def dashboard_list_clicked(self):
         target = ""

@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file './UI Files/Main_Window.ui'
 #
-# Created by: PyQt5 UI code generator 5.13.0
+# Created by: PyQt5 UI code generator 5.12.3
 #
 # WARNING! All changes made in this file will be lost!
 
@@ -216,10 +216,13 @@ class Ui_MainWindow(object):
         self.actionAbout.setObjectName("actionAbout")
         self.actionAdd_Vehicle = QtWidgets.QAction(MainWindow)
         self.actionAdd_Vehicle.setObjectName("actionAdd_Vehicle")
+        self.actionVWC = QtWidgets.QAction(MainWindow)
+        self.actionVWC.setObjectName("actionVWC")
         self.menuFile.addAction(self.actionAdd_Vehicle)
         self.menuFile.addSeparator()
         self.menuFile.addAction(self.actionQuit)
         self.menuTimer.addAction(self.actionTimerOpen)
+        self.menuTimer.addAction(self.actionVWC)
         self.menuHelp.addAction(self.actionHelpContents)
         self.menuHelp.addSeparator()
         self.menuHelp.addAction(self.actionAbout)
@@ -242,10 +245,11 @@ class Ui_MainWindow(object):
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tabGarages), _translate("MainWindow", "Garages"))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tabDashboard), _translate("MainWindow", "Dashboard"))
         self.menuFile.setTitle(_translate("MainWindow", "File"))
-        self.menuTimer.setTitle(_translate("MainWindow", "Timer"))
+        self.menuTimer.setTitle(_translate("MainWindow", "Utilities"))
         self.menuHelp.setTitle(_translate("MainWindow", "Help"))
         self.actionQuit.setText(_translate("MainWindow", "Quit"))
-        self.actionTimerOpen.setText(_translate("MainWindow", "Open"))
+        self.actionTimerOpen.setText(_translate("MainWindow", "Mission Timer"))
         self.actionHelpContents.setText(_translate("MainWindow", "Contents"))
         self.actionAbout.setText(_translate("MainWindow", "About GTAGarageTracker"))
         self.actionAdd_Vehicle.setText(_translate("MainWindow", "Add Vehicle"))
+        self.actionVWC.setText(_translate("MainWindow", "Vehicle Warehouse Checklist"))

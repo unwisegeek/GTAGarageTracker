@@ -80,12 +80,12 @@ Index;Name;Type;Capacity;Owned;Plan
 15;Greenwich Parkway, Unit 76;High-End;10;True;Coupes and Compacts
 97;Hanger;Real Estate;20;True;Aircraft
 105;Mobile Operations Center;Vehicle;1;True;MOC Vehicle Storage
-95;Nightclub Service Entrance;Real Estate;1;True;Armored Car Storage
 94;Nightclub B1;Real Estate;3;True;Delivery Vehicles
 93;Nightclub B2;Real Estate;10;True;Electric Vehicles
 92;Nightclub B3;Real Estate;10;True; 
 91;Nightclub B4;Real Estate;10;True; 
 90;Nightclub B5;Real Estate;1;True;Terrorbyte Storage
+95;Nightclub Service Entrance;Real Estate;1;True;Armored Car Storage
 89;Office Garage 1;Real Estate;20;True;Super and Muscle
 98;Office Garage 2;Real Estate;20;True;Sports and Sports Classics
 88;Office Garage 3;Real Estate;20;True;Benny's Original Motorworks Vehicles
@@ -93,7 +93,7 @@ Index;Name;Type;Capacity;Owned;Plan
 85;Pegasus Only;Other;10;False; 
 48;Popular Street, Unit 124;Low-End;2;False; 
 64;Popular Street, Unit 14;Mid;6;False; 
-38;Popular Street, Unit 2;High-End;10;False; 
+38;Popular Street, Unit 2;High-End;10;True;Overflow Vehicles
 30;Richards Majestic, Apartment 2;High-End;10;False; 
 34;Richards Majestic, Apartment 4;High-End;10;False; 
 39;Richards Majestic, Apartment 51;High-End;10;False; 

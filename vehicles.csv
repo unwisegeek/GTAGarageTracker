@@ -122,25 +122,25 @@ Index;Vehicle;Class;Wishlist;Owned;Insured;Modified;Garage;Pegasus
 16;Anti-Aircraft Trailer;Military;False;True;False;False;Bunker;False
 407;Crusader;Military;False;False;False;False;None;True
 152;Nightmare Scarab;Military;False;False;False;False;None;False
-24;Sovereign;Motorcycles;False;True;False;False;Clubhouse;False
-29;Zombie Chopper;Motorcycles;False;True;False;False;Clubhouse;False
-32;Vader;Motorcycles;False;True;False;False;Clubhouse;False
-28;Vortex;Motorcycles;False;True;False;False;Clubhouse;False
+24;Sovereign;Motorcycles;False;True;False;False;Popular Street, Unit 2;False
+29;Zombie Chopper;Motorcycles;False;True;False;False;Popular Street, Unit 2;False
+32;Vader;Motorcycles;False;True;True;False;Popular Street, Unit 2;False
+28;Vortex;Motorcycles;False;True;True;False;Popular Street, Unit 2;False
 479;Thrust;Motorcycles;False;False;False;False;None;False
-23;Faggio Sport;Motorcycles;False;True;False;False;Clubhouse;False
+23;Faggio Sport;Motorcycles;False;True;True;True;Popular Street, Unit 2;False
 208;Wolfsbane;Motorcycles;False;False;False;False;None;False
-30;Bati 801;Motorcycles;False;True;False;False;Clubhouse;False
-27;Nemesis;Motorcycles;False;True;False;False;Clubhouse;False
+30;Bati 801;Motorcycles;False;True;True;True;Clubhouse;False
+27;Nemesis;Motorcycles;False;True;True;False;Popular Street, Unit 2;False
 225;Vindicator;Motorcycles;False;False;False;False;None;False
 617;Oppressor Mk II;Motorcycles;False;True;False;False;Terrorbyte;False
 525;Faggio;Motorcycles;False;False;False;False;None;False
 530;Enduro;Motorcycles;False;False;False;False;None;False
-12;Shotaro;Motorcycles;False;True;False;False;Arena Workshop;False
+12;Shotaro;Motorcycles;False;True;True;True;Clubhouse;False
 441;Bati 801RR;Motorcycles;False;False;False;False;None;False
 536;FCR 1000 Custom;Motorcycles;False;False;False;False;None;False
 414;Apocalypse Deathbike;Motorcycles;False;False;False;False;None;False
-491;Hakuchou;Motorcycles;False;False;False;False;None;False
-405;Akuma;Motorcycles;False;False;False;False;None;False
+491;Hakuchou;Motorcycles;False;True;True;False;Clubhouse;False
+405;Akuma;Motorcycles;False;True;True;False;Clubhouse;False
 467;Bagger;Motorcycles;False;False;False;False;None;False
 377;Avarus;Motorcycles;False;False;False;False;None;False
 344;Daemon;Motorcycles;False;False;False;False;None;False
@@ -148,20 +148,20 @@ Index;Vehicle;Class;Wishlist;Owned;Insured;Modified;Garage;Pegasus
 5;BF400;Motorcycles;False;True;False;False;870 Route 68 Approach;False
 325;Daemon (Lost);Motorcycles;False;False;False;False;None;False
 324;Defiler;Motorcycles;False;False;False;False;None;False
-444;Gargoyle;Motorcycles;False;False;False;False;None;False
+444;Gargoyle;Motorcycles;False;True;True;False;Clubhouse;False
 311;FCR 1000;Motorcycles;False;False;False;False;None;False
-434;Double T;Motorcycles;False;False;False;False;None;False
-33;Ruffian;Motorcycles;False;True;False;False;Clubhouse;False
+434;Double T;Motorcycles;False;True;True;False;Clubhouse;False
+33;Ruffian;Motorcycles;False;True;True;True;Clubhouse;False
 508;Hexer;Motorcycles;False;False;False;False;None;False
 410;Diabolus Custom;Motorcycles;False;False;False;False;None;False
 301;Diabolus;Motorcycles;False;False;False;False;None;False
-302;Carbon RS;Motorcycles;False;False;False;False;None;False
+302;Carbon RS;Motorcycles;False;True;True;False;Clubhouse;False
 555;Faggio Mod;Motorcycles;False;False;False;False;None;False
 13;Future Shock Deathbike;Motorcycles;False;True;False;False;Arena Workshop;False
 333;Chimera;Motorcycles;False;False;False;False;None;False
-317;Cliffhanger;Motorcycles;False;False;False;False;None;False
+317;Cliffhanger;Motorcycles;False;True;True;False;Clubhouse;False
 541;Esskey;Motorcycles;False;False;False;False;None;False
-31;Hakuchou Drag;Motorcycles;False;True;False;False;Clubhouse;False
+31;Hakuchou Drag;Motorcycles;False;True;True;True;Clubhouse;False
 7;Sanchez;Motorcycles;False;True;False;False;870 Route 68 Approach;False
 229;Zombie Bobber;Motorcycles;False;False;False;False;None;False
 490;Lectro;Motorcycles;False;False;False;False;None;False
