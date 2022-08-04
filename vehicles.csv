@@ -361,7 +361,7 @@ Index;Vehicle;Class;Wishlist;Owned;Insured;Modified;Garage;Pegasus
 359;Oppressor Mk II;Motorcycles;False;True;False;False;Terrorbyte;False
 360;Oracle;Coupes;False;True;False;False;Greenwich Parkway, Unit 76;False
 361;Oracle XS;Coupes;False;False;False;False;None;False
-362;Osiris;Super;False;False;False;False;None;False
+362;Osiris;Super;False;True;True;True;Office Garage 1;False
 363;P-45 Nokota;Planes;False;True;False;False;Hanger;False
 364;P-996 LAZER;Planes;False;False;False;False;None;True
 365;PCJ 600;Motorcycles;False;False;False;False;None;False
@@ -513,7 +513,7 @@ Index;Vehicle;Class;Wishlist;Owned;Insured;Modified;Garage;Pegasus
 510;Swift;Helicopters;False;False;False;False;None;True
 511;Swift Deluxe;Helicopters;False;False;False;False;None;True
 512;Swinger;Sports Classics;False;True;False;False;Office Garage 2;False
-513;T20;Super;False;False;False;False;None;False
+513;T20;Super;False;True;True;True;Office Garage 1;False
 514;TM-02 Khanjali;Military;False;True;False;False;Facility;False
 515;Taco Van;Vans;False;False;False;False;None;False
 516;Tailgater;Sedans;False;False;False;False;None;False
